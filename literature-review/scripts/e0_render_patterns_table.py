@@ -36,7 +36,7 @@ def main() -> int:
 \centering\footnotesize
 \setlength{\tabcolsep}{2.6pt}
 \renewcommand{\arraystretch}{1.05}
-\caption{Reporting evidence and check ownership by decision interface across the 139 families. Rows partition the families by the interface letters in Table~\ref{tab:e0-systematization}: selection (S), generation (G), deterministic computation (C) and unspecified (U). Cells count families. Reporting columns use the evidence audit, and check columns count families whose published entry names an owner.}\label{tab:taxonomy-patterns}
+\caption{Reporting evidence and check ownership by decision interface across the 139 families. Rows partition the families by the interface letters of Table~\ref{tab:e0-systematization}, which denote selection (S), generation (G), deterministic computation (C) and unspecified (U). Cells count families. Reporting columns use the evidence audit, and check columns count families whose published entry names an owner. Load has low coding agreement (Table~\ref{tab:e0-agreement}), and the check columns support no prevalence estimate ($\S$\ref{sec:systematization}).}\label{tab:taxonomy-patterns}
 \begin{tabular}{@{}lrrrrrrrr@{}}
 \toprule
 \rowcolor{ebBlue} & & \multicolumn{2}{c}{Loop claim} & & & & \multicolumn{2}{c}{Check owned} \\
