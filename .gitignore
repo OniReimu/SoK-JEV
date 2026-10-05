@@ -7,3 +7,4 @@ artifacts/
 out/
 __pycache__/
 *.pyc
+.cache/
