@@ -1,0 +1,45 @@
+\begingroup\footnotesize
+\setlength{\tabcolsep}{4pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{table}[!htbp]
+\centering
+\caption{Pre-adjudication coding agreement: 231 initial pairs and 174 independent rechecks after scope alignment. A is exact agreement (\%), and $\kappa$ and AC1 use the original codebook categories. Multi-select A is exact-set agreement, and its option-wise coefficients appear in Table~\ref{tab:e0-agreement-options}. Combined pools these two pre-adjudication strata.}
+\label{tab:e0-agreement}
+\def\familytab{\begin{tabular}{lrrrrrrrrr}
+\toprule
+\rowcolor{ebBlue} Field & \multicolumn{3}{c}{\shortstack{Initial comparable\\$n=231$}} & \multicolumn{3}{c}{\shortstack{Aligned recheck\\$n=174$}} & \multicolumn{3}{c}{\shortstack{Combined\\$n=405$}} \\
+\rowcolor{ebBlue} & A (\%) & $\kappa$ & AC1 & A (\%) & $\kappa$ & AC1 & A (\%) & $\kappa$ & AC1 \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{10}{l}{\textbf{\itshape Timing, workload, and comparison}} \\*
+Named timing endpoint & 93.5 & N/A & N/A & 87.9 & N/A & N/A & 91.1 & N/A & N/A \\
+Specified metric denominator & 91.8 & 0.839 & 0.908 & 89.7 & 0.835 & 0.882 & 90.9 & 0.838 & 0.897 \\
+p95 or higher & 100.0 & 1.000 & 1.000 & 99.4 & 0.935 & 0.994 & 99.8 & 0.965 & 0.997 \\
+Deadline attainment & 99.1 & 0.663 & 0.991 & 97.1 & 0.674 & 0.970 & 98.3 & 0.674 & 0.982 \\
+Input load & 26.0 & 0.062 & 0.071 & 30.5 & 0.108 & 0.115 & 27.9 & 0.083 & 0.088 \\
+Queue / waiting & 37.7 & 0.006 & 0.268 & 41.4 & 0.083 & 0.300 & 39.3 & 0.041 & 0.281 \\
+Stability evidence & 26.4 & 0.021 & 0.099 & 36.2 & 0.144 & 0.203 & 30.6 & 0.075 & 0.143 \\
+Non-learning comparison & 92.2 & 0.736 & 0.914 & 90.8 & 0.725 & 0.896 & 91.6 & 0.731 & 0.906 \\
+\rowcolor{ebAmber!45}\multicolumn{10}{l}{\textbf{\itshape Control-loop claim and deployment}} \\*
+Explicit loop claim & 86.1 & 0.692 & 0.850 & 81.6 & 0.649 & 0.799 & 84.2 & 0.673 & 0.828 \\
+Supported loop claim & 97.8 & 0.000 & 0.978 & 98.9 & 0.851 & 0.988 & 98.3 & 0.625 & 0.982 \\
+Named execution location & 83.5 & N/A & N/A & 77.6 & N/A & N/A & 81.0 & N/A & N/A \\
+Network round trip included & 45.0 & 0.187 & 0.314 & 39.1 & 0.118 & 0.232 & 42.5 & 0.169 & 0.276 \\
+\rowcolor{ebAmber!45}\multicolumn{10}{l}{\textbf{\itshape Validation responsibilities}} \\*
+Format check reported & 82.7 & 0.645 & 0.803 & 84.5 & 0.661 & 0.825 & 83.5 & 0.652 & 0.812 \\
+Semantic check reported & 85.7 & 0.294 & 0.850 & 85.6 & 0.464 & 0.846 & 85.7 & 0.380 & 0.848 \\
+Final-state check reported & 37.2 & 0.213 & 0.245 & 48.9 & 0.340 & 0.380 & 42.2 & 0.269 & 0.302 \\
+Three gates distinguished & 65.8 & 0.183 & 0.619 & 73.6 & 0.365 & 0.706 & 69.1 & 0.261 & 0.656 \\
+\rowcolor{ebAmber!45}\multicolumn{10}{l}{\textbf{\itshape Artifact pointers}} \\*
+Public code pointer & 96.5 & 0.925 & 0.962 & 92.5 & 0.846 & 0.917 & 94.8 & 0.891 & 0.943 \\
+Public data pointer & 86.6 & 0.728 & 0.851 & 90.8 & 0.817 & 0.898 & 88.4 & 0.768 & 0.871 \\
+\bottomrule
+\end{tabular}}
+\setlength{\tabcolsep}{0pt}\sbox0{\familytab}
+\dimen0=\linewidth\advance\dimen0 by -1pt\advance\dimen0 by -\wd0\divide\dimen0 by 20
+\ifdim\dimen0<1.5pt \dimen0=1.5pt\fi
+\setlength{\tabcolsep}{\dimen0}
+\sokfitcolumns{\familytab}{20}
+\familytab
+\end{table}
+\endgroup

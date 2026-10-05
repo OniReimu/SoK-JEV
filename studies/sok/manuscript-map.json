@@ -1,0 +1,582 @@
+{
+  "title": "SoK: Jev and Semantic Decision Engines in Network Control Loops",
+  "overleaf_commit": "cadf3037f8506af1f1f77fd8e5c36ff486402344",
+  "canonical_pdf_sha256": "b3fbdfcb574cf1b9b8201ff986c528c468d7133a458f989d4accab3ba3f49eb2",
+  "files": [
+    {
+      "path": "IEEEtran.bst",
+      "workspace_path": "IEEEtran.bst",
+      "sha256": "314f0ece704568faf827011bac498650691b2b5ee06320720830e782416d5a5f"
+    },
+    {
+      "path": "IEEEtran.cls",
+      "workspace_path": "IEEEtran.cls",
+      "sha256": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7"
+    },
+    {
+      "path": "figures/control-boundary.pdf",
+      "workspace_path": "figures/family/control-boundary.pdf",
+      "sha256": "d4e841c91fd69fe8d0a7359a300c11a2559fc673d1572b6d806d0d669572adc4"
+    },
+    {
+      "path": "figures/control-boundary.svg",
+      "workspace_path": "figures/family/control-boundary.svg",
+      "sha256": "1a35e19fd4d1e0c7f6eb76da3680b3ee3d4a0c20e0097fa08ab618260b980978"
+    },
+    {
+      "path": "figures/reporting-a.pdf",
+      "workspace_path": "figures/family/e0-audit-0.pdf",
+      "sha256": "8253b82278b2542e2f41c42c69c3e517c79529b821cb2ff2ca288acd275e3dff"
+    },
+    {
+      "path": "figures/reporting-b.pdf",
+      "workspace_path": "figures/family/e0-audit-1.pdf",
+      "sha256": "e8917891be4af12438ff5cb6a81546224fe56ed106bd97fd762904cbf6dd70a1"
+    },
+    {
+      "path": "figures/reporting-c.pdf",
+      "workspace_path": "figures/family/e0-audit-2.pdf",
+      "sha256": "672c644d3c45ad95dfb6a57fb48af49c0eb42a8e1fcb6d4c1c86146859c0b7d2"
+    },
+    {
+      "path": "figures/reporting-d.pdf",
+      "workspace_path": "figures/family/e0-audit-3.pdf",
+      "sha256": "82f29b8b7e481c6c63d164b019fcda6a00046069f3e5260a9970df4370aa1f61"
+    },
+    {
+      "path": "figures/reporting-legend.pdf",
+      "workspace_path": "figures/family/e0-audit-legend.pdf",
+      "sha256": "6a5678230a035e41ab62b1936623cd13cb88cc987a7af332f8dcf573c2bfedd4"
+    },
+    {
+      "path": "figures/rq-d-deadlines-a.pdf",
+      "workspace_path": "figures/family/e1-deadlines-0.pdf",
+      "sha256": "c7e66dd9b64d19144d7dd7f21c51416dc6adb4097ab4604bcc6f483bbe6ceec4"
+    },
+    {
+      "path": "figures/rq-d-deadlines-b.pdf",
+      "workspace_path": "figures/family/e1-deadlines-1.pdf",
+      "sha256": "36c19121e833aea5f15d999e90885911eb72d8ed6c8ea9618e38dcfbf2e458e1"
+    },
+    {
+      "path": "figures/rq-d-deadlines-c.pdf",
+      "workspace_path": "figures/family/e1-deadlines-2.pdf",
+      "sha256": "ecab98e34b16b20d13f251ba0774a3a98fe7b4c8ae5494d06dea0285a5f42a5b"
+    },
+    {
+      "path": "figures/rq-d-deadlines-d.pdf",
+      "workspace_path": "figures/family/e1-deadlines-3.pdf",
+      "sha256": "9de3e771a1de7926b7551872381b4944c83c27786f5974fa593b783d2ddf0193"
+    },
+    {
+      "path": "figures/rq-d-deadlines-legend.pdf",
+      "workspace_path": "figures/family/e1-deadlines-legend.pdf",
+      "sha256": "c0a372d4ee27549258c27b78af66dfdde78231757a55a40b8def458f8a5c6adf"
+    },
+    {
+      "path": "figures/rq-f-load-a.pdf",
+      "workspace_path": "figures/family/e2-load-0.pdf",
+      "sha256": "2e425d6791e6dc36c546b904465861a5cc00de75551a9b91a9d696ac1b569acb"
+    },
+    {
+      "path": "figures/rq-f-load-b.pdf",
+      "workspace_path": "figures/family/e2-load-1.pdf",
+      "sha256": "e237ce0a7d2ec941dd2c9211d9fa0e20c1b3ba084196f3aa241a041386a1da1c"
+    },
+    {
+      "path": "figures/rq-f-load-legend.pdf",
+      "workspace_path": "figures/family/e2-load-legend.pdf",
+      "sha256": "36c223ce1a7966cc88f629b14776dfa085e3d5b8bd420b89cb4415dddd5ac0d6"
+    },
+    {
+      "path": "figures/rq-f-paths-a.pdf",
+      "workspace_path": "figures/family/e2-paths-0.pdf",
+      "sha256": "0f7f6b95e595c2bc31e092ac1233522712824634bc09fa46f2b89a707d77f7d6"
+    },
+    {
+      "path": "figures/rq-f-paths-b.pdf",
+      "workspace_path": "figures/family/e2-paths-1.pdf",
+      "sha256": "381f3ce30c0b0b4b2b8985eb4cc380ba1b26e439fc24fa40d310712d3926438f"
+    },
+    {
+      "path": "figures/rq-f-paths-c.pdf",
+      "workspace_path": "figures/family/e2-paths-2.pdf",
+      "sha256": "3af7a21e6b421bb1f37318e723125ebc088c24675efd51b659568e4307296d53"
+    },
+    {
+      "path": "figures/rq-f-paths-d.pdf",
+      "workspace_path": "figures/family/e2-paths-3.pdf",
+      "sha256": "b863ac44d1dfaac60c4c091123a3969ec34f57bac6842d5467672f87b67854ff"
+    },
+    {
+      "path": "figures/rq-f-paths-legend.pdf",
+      "workspace_path": "figures/family/e2-paths-legend.pdf",
+      "sha256": "32b2595f7b473d09426f9ed438a8ba57ee8db8732e03634dea5cc80606f1b759"
+    },
+    {
+      "path": "figures/rq-a-structure-a.pdf",
+      "workspace_path": "figures/family/rq-a-structure-0.pdf",
+      "sha256": "9db9155afa3c471c465c2afa15e7c5657d2f22734924ac6c1c6782b0fbb32f7b"
+    },
+    {
+      "path": "figures/rq-a-structure-b.pdf",
+      "workspace_path": "figures/family/rq-a-structure-1.pdf",
+      "sha256": "52ff3a57317f727d71d29dbfcd55cb88b661dd9988c724c9d5502f67eee756b6"
+    },
+    {
+      "path": "figures/rq-a-structure-c.pdf",
+      "workspace_path": "figures/family/rq-a-structure-2.pdf",
+      "sha256": "7b8c76d23672445a8d1ad91acb648c7a74be54143f2e4a9d01247f5533adbabf"
+    },
+    {
+      "path": "figures/rq-a-structure-d.pdf",
+      "workspace_path": "figures/family/rq-a-structure-3.pdf",
+      "sha256": "ec4d738f0c186c678798f19304479a82a9e6c4d9d727d01cec0799341e100f8e"
+    },
+    {
+      "path": "figures/rq-a-structure-legend.pdf",
+      "workspace_path": "figures/family/rq-a-structure-legend.pdf",
+      "sha256": "3581c0bc7e6838ae60be26b228c4e839cc1cd2a5e75c25ebc4a2a2b228f97cbe"
+    },
+    {
+      "path": "figures/rq-b-observation-a.pdf",
+      "workspace_path": "figures/family/rq-b-observation-0.pdf",
+      "sha256": "bcfdce110fd4ac951e01631930c2a97463324b720d1c0949174fd7f24cf59108"
+    },
+    {
+      "path": "figures/rq-b-observation-b.pdf",
+      "workspace_path": "figures/family/rq-b-observation-1.pdf",
+      "sha256": "e88cd3cd372fdc8a99a8b62eee8d1bc5fd1dc1d54c61e11a7e8c8134204c8639"
+    },
+    {
+      "path": "figures/rq-b-observation-c.pdf",
+      "workspace_path": "figures/family/rq-b-observation-2.pdf",
+      "sha256": "e34a7ed83b754a5855314cedb25d5f7110940ad52bdfbc647d32eb2761d89428"
+    },
+    {
+      "path": "figures/rq-b-observation-d.pdf",
+      "workspace_path": "figures/family/rq-b-observation-3.pdf",
+      "sha256": "de016386ea9de2dc0dc3036d59dc201be771f1eb7d6695fb89f99e92e70e3556"
+    },
+    {
+      "path": "figures/rq-b-observation-legend.pdf",
+      "workspace_path": "figures/family/rq-b-observation-legend.pdf",
+      "sha256": "578685e206f9aac1457f4c17d51580c81d64c47a8cc97adf9c3087f092b98259"
+    },
+    {
+      "path": "figures/rq-c-coverage-a.pdf",
+      "workspace_path": "figures/family/rq-c-coverage-0.pdf",
+      "sha256": "dc1781a56072f7d5ace620c0caa74d2971e1e7226627b23a8ad5d60130c06225"
+    },
+    {
+      "path": "figures/rq-c-coverage-b.pdf",
+      "workspace_path": "figures/family/rq-c-coverage-1.pdf",
+      "sha256": "085a64488d8914fb89b24bbd19fcb73fb34e66fbc421206d3967845c9bd86dbf"
+    },
+    {
+      "path": "figures/rq-c-coverage-c.pdf",
+      "workspace_path": "figures/family/rq-c-coverage-2.pdf",
+      "sha256": "283742e31c02b31d9fc7fdcf953d7617c69e1ca653778491683d913d46278182"
+    },
+    {
+      "path": "figures/rq-c-coverage-d.pdf",
+      "workspace_path": "figures/family/rq-c-coverage-3.pdf",
+      "sha256": "f3a75e240da2545bd04086f2d1081e650c927b6a66abb72409af15861b8e1f94"
+    },
+    {
+      "path": "figures/rq-c-coverage-legend.pdf",
+      "workspace_path": "figures/family/rq-c-coverage-legend.pdf",
+      "sha256": "3df47f3ff90bd4a25f89b7d4acbd1469c6a8003bd8fd476e3acff6b18e206392"
+    },
+    {
+      "path": "figures/rq-d-load-a.pdf",
+      "workspace_path": "figures/family/rq-d-load-0.pdf",
+      "sha256": "ba0b0b7bfade5c1e9bb48e74eb892cfff88675cf8d7b13fe4de3dfb59d4b2699"
+    },
+    {
+      "path": "figures/rq-d-load-b.pdf",
+      "workspace_path": "figures/family/rq-d-load-1.pdf",
+      "sha256": "14f2e434a2a804ea8378ebabdf27f3e3602aaca6feca0b046e79162f3953ac13"
+    },
+    {
+      "path": "figures/rq-d-load-c.pdf",
+      "workspace_path": "figures/family/rq-d-load-2.pdf",
+      "sha256": "6b5d10ebcce72e97036ec070343d49a386bc5a8082b178c7b2e61366f7547b7c"
+    },
+    {
+      "path": "figures/rq-d-load-d.pdf",
+      "workspace_path": "figures/family/rq-d-load-3.pdf",
+      "sha256": "c3aee0561324bf17ebe35e786bd4c08e61cc285e63e71d76f9857fa942ca1538"
+    },
+    {
+      "path": "figures/rq-d-load-legend.pdf",
+      "workspace_path": "figures/family/rq-d-load-legend.pdf",
+      "sha256": "5f83173809aef4e83ed652d798cb33ec5f65dd23d58f0e5c5502c43e4107fa6a"
+    },
+    {
+      "path": "figures/rq-e-gates-a.pdf",
+      "workspace_path": "figures/family/rq-e-gates-0.pdf",
+      "sha256": "f61ea41cb058254955171abbcd7c4c7782659c7d2877af56e63cb4271c8537ec"
+    },
+    {
+      "path": "figures/rq-e-gates-b.pdf",
+      "workspace_path": "figures/family/rq-e-gates-1.pdf",
+      "sha256": "e2112c647746cb2896e35f599411c56b4b42d8eb7a4112bca8e2d9d91a7dd309"
+    },
+    {
+      "path": "figures/rq-e-gates-c.pdf",
+      "workspace_path": "figures/family/rq-e-gates-2.pdf",
+      "sha256": "26d0e67d28bcb08d84928a19a30334de2d69b71eb36fcdc3758e5291fa0985a5"
+    },
+    {
+      "path": "figures/rq-e-gates-d.pdf",
+      "workspace_path": "figures/family/rq-e-gates-3.pdf",
+      "sha256": "1ba133e0e39d50786c1abd5b4a42f788f6b4f5800fe1d58bb3a3436b9ae271a6"
+    },
+    {
+      "path": "figures/rq-e-gates-legend.pdf",
+      "workspace_path": "figures/family/rq-e-gates-legend.pdf",
+      "sha256": "da47e2d807e1b07fb00296a3b490e424d24e7b458ff9d7510610cd80dbaa3a1a"
+    },
+    {
+      "path": "figures/screening-flow.pdf",
+      "workspace_path": "figures/screening-flow.pdf",
+      "sha256": "042d8bf6a47c1ad817662327c744f008d32cceffd0ed206c9652cba395f56133"
+    },
+    {
+      "path": "figures/screening-flow.svg",
+      "workspace_path": "figures/screening-flow.svg",
+      "sha256": "bf0dfae6de7e846c6b288015c75eb15b077b454552b5722942aee6b4afb90f67"
+    },
+    {
+      "path": "macros.tex",
+      "workspace_path": "macros.tex",
+      "sha256": "6fea5228519f8916e6b368d49c1799dc980bf65135a4dee65921577b658758ae"
+    },
+    {
+      "path": "main.tex",
+      "workspace_path": "main.tex",
+      "sha256": "4498e6d441ab12ddfb81b414c0f2cfe03d43740d5c3c81cf1252daa5b845d186"
+    },
+    {
+      "path": "palette.tex",
+      "workspace_path": "palette.tex",
+      "sha256": "38bf5c612fa1cc65bc398f1c4c175459098616ac14fbf8498f6759c076349245"
+    },
+    {
+      "path": "references.bib",
+      "workspace_path": "references.bib",
+      "sha256": "f5b3283d32ad5a207bbb0f4f9ebf8ec67f5157c39bc9844eae0bd4a2c5f14b26"
+    },
+    {
+      "path": "sections/abstract.tex",
+      "workspace_path": "sections/abstract.tex",
+      "sha256": "86674e6f9502fde69c1c39f00bb96e8be113d915a64b7569edca4876cf5965fa"
+    },
+    {
+      "path": "sections/background.tex",
+      "workspace_path": "sections/background.tex",
+      "sha256": "d345bf4af9325d4ff0974f13e19cb61f3b7a241ff27981ac329ebce500551937"
+    },
+    {
+      "path": "sections/conclusion.tex",
+      "workspace_path": "sections/conclusion.tex",
+      "sha256": "3fc2e54dd00eb662213ebd5587399b76c193040aa57911cbd96540d4c052fc28"
+    },
+    {
+      "path": "sections/evaluation.tex",
+      "workspace_path": "sections/cross-study.tex",
+      "sha256": "c631fff53320f70bfbb51e9b51f2a1df5974669b7b372d685b7aef210639754b"
+    },
+    {
+      "path": "sections/design-rules.tex",
+      "workspace_path": "sections/design-rules.tex",
+      "sha256": "b302ba5ad29df081eb13f430a1787de5d3b21a7f3e7e22410dc616d7731ee70c"
+    },
+    {
+      "path": "sections/reporting.tex",
+      "workspace_path": "sections/evidence-audit.tex",
+      "sha256": "fbc1e1225fffcf204b3de17c8a02f050436a61722e63ea5e6f70ca959963eec1"
+    },
+    {
+      "path": "sections/framework.tex",
+      "workspace_path": "sections/framework.tex",
+      "sha256": "4d5bd9e08688cf07db43c91c3ae5a20cdda4e8bd35be351339c0e34523221e1b"
+    },
+    {
+      "path": "sections/introduction.tex",
+      "workspace_path": "sections/introduction.tex",
+      "sha256": "ef2937f1e17d9c65c5d5a3c2eb73cd87eb5bf6b875b1f665b5228b3533a849df"
+    },
+    {
+      "path": "sections/open-problems.tex",
+      "workspace_path": "sections/open-problems.tex",
+      "sha256": "cf4f572eb18b013a1726c385ffa10290a70597c326530c56aa2636745e65119e"
+    },
+    {
+      "path": "sections/review-method.tex",
+      "workspace_path": "sections/review-method.tex",
+      "sha256": "2813f36e53525cae9ec5648461c4d867009c9dd509ea95b795bdb319f0887004"
+    },
+    {
+      "path": "sections/systematization.tex",
+      "workspace_path": "sections/systematization.tex",
+      "sha256": "2f12456ffee1e33b2dd596bea3d13d5dbed93abb5a1975c5f27bef1712ffedd9"
+    },
+    {
+      "path": "supplement/radio-controls.csv",
+      "workspace_path": "supplement/6g-c2-controls.csv",
+      "sha256": "35dc0557692f4e0dc3b76343166e089ceb1df26f388e42dc838df553b97a29e2"
+    },
+    {
+      "path": "supplement/radio-eligibility.csv",
+      "workspace_path": "supplement/6g-c2-h2-summary.csv",
+      "sha256": "2677518207ffce15d98364105cf8147729cf2cf9ccc38230d731cf16c344ec8a"
+    },
+    {
+      "path": "supplement/radio-comparisons.json",
+      "workspace_path": "supplement/6g-c2-hypotheses.json",
+      "sha256": "b1a0c63a28922f8f35867adbc9bb659b2c4a02b21cb13571cb79dee31d641206"
+    },
+    {
+      "path": "supplement/radio-modes.csv",
+      "workspace_path": "supplement/6g-c2-rq1_modes.csv",
+      "sha256": "75045678d6b84e8e90761ae408219c1bbdcd2256d4d8865a291064c1c5ff39fa"
+    },
+    {
+      "path": "supplement/radio-workflows.csv",
+      "workspace_path": "supplement/6g-c2-rq5.csv",
+      "sha256": "5c3a57cf80831f9a9a02a513d0f501fdcbdbad5519a624e863ddf1db48556756"
+    },
+    {
+      "path": "supplement/radio-runs.csv",
+      "workspace_path": "supplement/6g-c2-runs.csv",
+      "sha256": "385c995dd67e34a6f2769da0dc3bbade2f5cda2f23dabbee6d7244290038ea63"
+    },
+    {
+      "path": "supplement/radio-unavailable.json",
+      "workspace_path": "supplement/6g-c2-skipped.json",
+      "sha256": "e2a9997fc17b66c1734f452442d4832e574bf24022766ef06789e163a23917ea"
+    },
+    {
+      "path": "supplement/README.md",
+      "workspace_path": "supplement/README.md",
+      "sha256": "273b20179fa3f943a8130408aaf2e286d7710ad59c446893743ed2b9f9db9df7"
+    },
+    {
+      "path": "supplement/cells.csv",
+      "workspace_path": "supplement/cells.csv",
+      "sha256": "54530778f3eb5612c69a0f6a7489bc9108b1838a71b3b0d8ba5d25e699d38be8"
+    },
+    {
+      "path": "supplement/coding-families.csv",
+      "workspace_path": "supplement/coding-families.csv",
+      "sha256": "28a93844c19ad7fc45a73ffa4828e2a3927857498c7ad3e273e32dd8474e6df9"
+    },
+    {
+      "path": "supplement/coding-scopes.csv",
+      "workspace_path": "supplement/coding-scopes.csv",
+      "sha256": "207b6173b18497551ec435815758ec1dcf44d7f54da76510b607e436311f6c20"
+    },
+    {
+      "path": "supplement/coding-sources.csv",
+      "workspace_path": "supplement/coding-sources.csv",
+      "sha256": "06712b3548f2fd251e987195c97a51c7a141ad087d550ecc82479ab0a3779dee"
+    },
+    {
+      "path": "supplement/contrasts.csv",
+      "workspace_path": "supplement/contrasts.csv",
+      "sha256": "930d532cacfeb9f8ffe5b2915f878a2ff225261405fc379579ab940164287a5e"
+    },
+    {
+      "path": "supplement/delay-results.csv",
+      "workspace_path": "supplement/e2-results.csv",
+      "sha256": "a680a07d4811fade5d32a540908ba88d7cefcb561497daf4b204723e20fb9b9c"
+    },
+    {
+      "path": "supplement/timing.csv",
+      "workspace_path": "supplement/fixed.csv",
+      "sha256": "1f83435762a39826f9a23b0133236108bb3d746d32389e0b1f8fc9598b45b66f"
+    },
+    {
+      "path": "supplement/loads.csv",
+      "workspace_path": "supplement/loads.csv",
+      "sha256": "0795e3786af80ad764f4ee9d6860f0addd6d15124a096ab684e9ce77cbba73f3"
+    },
+    {
+      "path": "supplement/online.csv",
+      "workspace_path": "supplement/online.csv",
+      "sha256": "aa11135c7a48f8b511ac27ac648e9c3cde7330790d63bd07db3fd8e734e72c74"
+    },
+    {
+      "path": "supplement/physical-paths.csv",
+      "workspace_path": "supplement/physical_paths.csv",
+      "sha256": "e727982ae67ec79158c23ec996f23febb42b98827b1da14a6daf685f0f6ff0ec"
+    },
+    {
+      "path": "supplement/systematization.csv",
+      "workspace_path": "supplement/systematization.csv",
+      "sha256": "6abddfb6477759124b71bbf6f0965f985d42b24d0e99e18557880fa45e04f128"
+    },
+    {
+      "path": "tables/coding-agreement-options.tex",
+      "workspace_path": "tables/e0-agreement-options.tex",
+      "sha256": "20f98c46bf33c36b6e0c0e535e129accdae9de02ee8e4a70043cc3beac97c13b"
+    },
+    {
+      "path": "tables/coding-agreement.tex",
+      "workspace_path": "tables/e0-agreement-table.tex",
+      "sha256": "a05c3a2e6b25fd5257146298321132c84f09cefd38d113fdd13b45bb43248aef"
+    },
+    {
+      "path": "tables/reporting-coverage.tex",
+      "workspace_path": "tables/e0-audit-table.tex",
+      "sha256": "c801ccea567a737690b60a8771962e80ab083a2480521f7110b926a407f310fb"
+    },
+    {
+      "path": "tables/coding-categories.tex",
+      "workspace_path": "tables/e0-categories-table.tex",
+      "sha256": "4ca01d62ea7018871ba222b3633d9e1ab6724d1fc57ac7a786cfe7e7174c627c"
+    },
+    {
+      "path": "tables/rq-d-timing.tex",
+      "workspace_path": "tables/e1-timing.tex",
+      "sha256": "a23b24a9fe72306c4629a5d7e040b9cd5c911ff78a5c69d9013f679da7ce3468"
+    },
+    {
+      "path": "tables/api-fees.tex",
+      "workspace_path": "tables/retained-billing.tex",
+      "sha256": "8f04a2031739e5537db5d9fb90261a33722806796a9f4f68a2bee8a2faccf056"
+    },
+    {
+      "path": "tables/network-execution.tex",
+      "workspace_path": "tables/retained-catalogue-online.tex",
+      "sha256": "2bc9d7426ba9d8cc613666d64e14964133b3d28b16693be07cc5da95edf8dd67"
+    },
+    {
+      "path": "tables/contract-catalogue.tex",
+      "workspace_path": "tables/retained-contract-catalogue.tex",
+      "sha256": "f3ab8ff9e9d0bfccb2ab858c9e882d79fafbc6c6a3be37c279e7d790c1049d74"
+    },
+    {
+      "path": "tables/network-catalogue.tex",
+      "workspace_path": "tables/retained-network-catalogue.tex",
+      "sha256": "4be59513183baaae954169c45e398fac6b41b64110198b314574c9f085723ec6"
+    },
+    {
+      "path": "tables/placement-observations.tex",
+      "workspace_path": "tables/retained-observation.tex",
+      "sha256": "b6b156be104147b2f7542e4a2d45059cbced7c01b782ddbce7dabaab0e213629"
+    },
+    {
+      "path": "tables/policy-execution.tex",
+      "workspace_path": "tables/retained-policy-online.tex",
+      "sha256": "78ade3378e06c2192fc3e4ce784d2e442350ef3228e634e30f2e5e1f126bac4e"
+    },
+    {
+      "path": "tables/policy-structure.tex",
+      "workspace_path": "tables/retained-policy-scale.tex",
+      "sha256": "2856c250af74757d8bf2a4442e241014d5f303867dc902d665a07a8133fd4498"
+    },
+    {
+      "path": "tables/placement-quotas.tex",
+      "workspace_path": "tables/retained-quota.tex",
+      "sha256": "58acab01fa238e39be2d1cd1e6e0032bdb2e17d38d562f203f34887a6cb774e3"
+    },
+    {
+      "path": "tables/repair-faults.tex",
+      "workspace_path": "tables/retained-repair-faults.tex",
+      "sha256": "0ba4f07d30f6a84879521f56f14f911f087d1ac66de69de98b08b22badd8342f"
+    },
+    {
+      "path": "tables/repair-observations.tex",
+      "workspace_path": "tables/retained-repair-observation.tex",
+      "sha256": "e854e77ced5682908bdf1722dcadfb5d00d50017cf254f241f31d759577e7947"
+    },
+    {
+      "path": "tables/repair-execution.tex",
+      "workspace_path": "tables/retained-repair-online.tex",
+      "sha256": "f684b70fa3ef9d9484b2efe88228f55f349deecbbbe4a7470efaccea32e90f3b"
+    },
+    {
+      "path": "tables/forwarding-catalogue.tex",
+      "workspace_path": "tables/retained-route-catalogue.tex",
+      "sha256": "ab038a4b37e22657f372bbfd68cde163ad3b59ea2bd5937a16c8f8a9add3a6f5"
+    },
+    {
+      "path": "tables/forwarding-execution.tex",
+      "workspace_path": "tables/retained-route-online.tex",
+      "sha256": "0e4e9ba698a6376450822c708cc83df70b33fdd1eea251099c7a6d3ebe29e5a9"
+    },
+    {
+      "path": "tables/placement-execution.tex",
+      "workspace_path": "tables/retained-service-online.tex",
+      "sha256": "db83c7222788a41d0ad0ef6884ddc31db4b5efab5fb37b9e821b3ce3db00e1b9"
+    },
+    {
+      "path": "tables/review-protocol.tex",
+      "workspace_path": "tables/review-protocol.tex",
+      "sha256": "08b57e4d32db4c0db8f1fc36359a47a28827c91a7a1cb7fc788cc5d9aa90aecd"
+    },
+    {
+      "path": "tables/rq-a-length.tex",
+      "workspace_path": "tables/rq-a-length.tex",
+      "sha256": "a3bd34f56f3a738be1063dec1601d4abec718531a877deb77586a8bc87e4bc52"
+    },
+    {
+      "path": "tables/rq-a-native.tex",
+      "workspace_path": "tables/rq-a-native.tex",
+      "sha256": "1aa36b9052ae0e866038b59b75f705c647a087778a3f71ecd8a2daae501eb9a8"
+    },
+    {
+      "path": "tables/rq-b-native.tex",
+      "workspace_path": "tables/rq-b-native.tex",
+      "sha256": "4fe6bb9e17e91e747ff44289275c3c56ed5e8a0e4a1828ec6c36a6ad21bd4512"
+    },
+    {
+      "path": "tables/rq-c-contract.tex",
+      "workspace_path": "tables/rq-c-contract.tex",
+      "sha256": "8a3d71c49a75231b156431d10d5b1ed07ffbbafcda485e6033a963d942e8a2ae"
+    },
+    {
+      "path": "tables/rq-d-service-load-high.tex",
+      "workspace_path": "tables/rq-d-capacity-edge-high.tex",
+      "sha256": "9ac035838e134c4a550c0b58320e1fc9be30c90967bd469e500b207941badcbd"
+    },
+    {
+      "path": "tables/rq-d-radio-load.tex",
+      "workspace_path": "tables/rq-d-capacity-sixg.tex",
+      "sha256": "208984789c057a8eba4f5caf1bce1eb655a26f61db6645996ad4c99490a8412d"
+    },
+    {
+      "path": "tables/rq-d-service-load.tex",
+      "workspace_path": "tables/rq-d-capacity.tex",
+      "sha256": "f812614ada75652ca528fb09d9243872de7d51872a4e7ddc32f686c60e91147b"
+    },
+    {
+      "path": "tables/rq-e-paired.tex",
+      "workspace_path": "tables/rq-e-paired.tex",
+      "sha256": "532cd5d8a008320b0fe89e9b3c168a6712dcd395c98ec02005b1fcccff5be926"
+    },
+    {
+      "path": "tables/screening.tex",
+      "workspace_path": "tables/screening-flow.tex",
+      "sha256": "da98e0da3bb4bb09a7a0ce8b2b5ba43fb46dabaa5636d970a898c21428da35c1"
+    },
+    {
+      "path": "tables/radio-control.tex",
+      "workspace_path": "tables/sixg-published-radio.tex",
+      "sha256": "84f972eb2a10a8942f1db14955e7d5d44ef4064bbb196cd43ca26e2eee7eba79"
+    },
+    {
+      "path": "tables/literature-map.tex",
+      "workspace_path": "tables/systematization-table.tex",
+      "sha256": "0d9dd0a3d583233276f1d8649c7ad4d504f20e5737700baeec0127dbe314ae65"
+    },
+    {
+      "path": "tables/rq-f-delay.tex",
+      "workspace_path": "tables/tab-e2-results.tex",
+      "sha256": "0ad283e90407ee5068c729db9d8a66b3705802d6d752292c5078d81f611ba638"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+name: jev-e2-ring
+mgmt:
+  network: jev-e2-ring-mgmt
+  ipv4-subnet: 192.168.252.0/24
+topology:
+  defaults:
+    kind: linux
+    image: quay.io/frrouting/frr@sha256:54aca1fe272e8ab298aba491211d4b4a303ff95aa42cf7ff6487b14dc7b4e513
+    sysctls:
+      net.ipv4.ip_forward: "1"
+      net.ipv4.conf.all.rp_filter: "0"
+  nodes:
+    r1:
+      binds:
+        - r1.conf:/etc/frr/frr.conf
+        - daemons:/etc/frr/daemons
+        - vtysh.conf:/etc/frr/vtysh.conf
+    r2:
+      binds:
+        - r2.conf:/etc/frr/frr.conf
+        - daemons:/etc/frr/daemons
+        - vtysh.conf:/etc/frr/vtysh.conf
+    r3:
+      binds:
+        - r3.conf:/etc/frr/frr.conf
+        - daemons:/etc/frr/daemons
+        - vtysh.conf:/etc/frr/vtysh.conf
+    r4:
+      binds:
+        - r4.conf:/etc/frr/frr.conf
+        - daemons:/etc/frr/daemons
+        - vtysh.conf:/etc/frr/vtysh.conf
+    r5:
+      binds:
+        - r5.conf:/etc/frr/frr.conf
+        - daemons:/etc/frr/daemons
+        - vtysh.conf:/etc/frr/vtysh.conf
+    r6:
+      binds:
+        - r6.conf:/etc/frr/frr.conf
+        - daemons:/etc/frr/daemons
+        - vtysh.conf:/etc/frr/vtysh.conf
+    r7:
+      binds:
+        - r7.conf:/etc/frr/frr.conf
+        - daemons:/etc/frr/daemons
+        - vtysh.conf:/etc/frr/vtysh.conf
+    r8:
+      binds:
+        - r8.conf:/etc/frr/frr.conf
+        - daemons:/etc/frr/daemons
+        - vtysh.conf:/etc/frr/vtysh.conf
+  links:
+    - endpoints: [r1:eth1, r2:eth2]
+    - endpoints: [r2:eth1, r3:eth2]
+    - endpoints: [r3:eth1, r4:eth2]
+    - endpoints: [r4:eth1, r5:eth2]
+    - endpoints: [r5:eth1, r6:eth2]
+    - endpoints: [r6:eth1, r7:eth2]
+    - endpoints: [r7:eth1, r8:eth2]
+    - endpoints: [r8:eth1, r1:eth2]

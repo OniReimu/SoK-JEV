@@ -1,0 +1,63 @@
+\begingroup\begin{table}[!htbp]\centering\scriptsize
+\caption{Policy input structure. Changed/Preserved each contain 60 cases, distinguished by whether all 64 requirements change the minimum-cost feasible choice. Conditions retain a feasible candidate and pair the same cases and candidates. Long irrelevant context and repetition retain four distinct requirements. Tokens gives observed ranges at matched character budgets. Best correctness per condition is in bold.}
+\label{tab:retained-policy-scale}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrrr}
+\toprule
+\rowcolor{ebBlue} \multicolumn{1}{c}{} & \multicolumn{3}{c}{Correct decisions $\uparrow$} & \multicolumn{1}{c}{Valid $\uparrow$} & \multicolumn{2}{c}{Response (s) $\downarrow$} & \multicolumn{1}{c}{Input} \\
+\rowcolor{ebBlue} Method & Changed & Preserved & All & All & Median & p95 & Tokens \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Short input: 4 requirements, 6k characters}}} \\
+\rowcolor{ebCoral!10}\sokjev & 52/60 & 55/60 & 107/120 & 120/120 & 0.382 & 0.646 & 1699--2640 \\
+\deepseek & 38/60 & 43/60 & 81/120 & 119/120 & 0.558 & 1.441 & 1262--1630 \\
+\gemini & 39/60 & 47/60 & 86/120 & 120/120 & 0.987 & 1.252 & 1396--2321 \\
+\sokglm & 43/60 & 39/60 & 82/120 & 120/120 & 0.883 & 4.645 & 1174--1559 \\
+\sokqwen & 13/60 & 9/60 & 22/120 & 120/120 & 0.328 & 0.389 & 1322--2261 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{60/60} & \cellcolor{ebCoral!35}\textbf{60/60} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ & N/A \\
+Cheapest & 48/60 & 45/60 & 93/120 & 120/120 & $<.001$ & $<.001$ & N/A \\
+First entry & 20/60 & 17/60 & 37/120 & 120/120 & $<.001$ & $<.001$ & N/A \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Long irrelevant context: 4 requirements, 24k characters}}} \\
+\rowcolor{ebCoral!10}\sokjev & 52/60 & 56/60 & 108/120 & 120/120 & 0.468 & 0.988 & 4469--5410 \\
+\deepseek & 38/60 & 37/60 & 75/120 & 119/120 & 0.608 & 1.046 & 4264--4633 \\
+\gemini & 38/60 & 50/60 & 88/120 & 120/120 & 1.167 & 1.470 & 4397--5323 \\
+\sokglm & 41/60 & 37/60 & 78/120 & 120/120 & 1.034 & 2.964 & 3944--4331 \\
+\sokqwen & 9/60 & 10/60 & 19/120 & 120/120 & 0.568 & 0.648 & 4092--5032 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{60/60} & \cellcolor{ebCoral!35}\textbf{60/60} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ & N/A \\
+Cheapest & 48/60 & 45/60 & 93/120 & 120/120 & $<.001$ & $<.001$ & N/A \\
+First entry & 20/60 & 17/60 & 37/120 & 120/120 & $<.001$ & $<.001$ & N/A \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Repeated requirements: 4 requirements, 24k characters}}} \\
+\rowcolor{ebCoral!10}\sokjev & 55/60 & 56/60 & 111/120 & 120/120 & 0.431 & 0.687 & 9186--9816 \\
+\deepseek & 38/60 & 39/60 & 77/120 & 120/120 & 0.630 & 1.446 & 8628--9440 \\
+\gemini & 40/60 & 48/60 & 88/120 & 120/120 & 1.161 & 1.462 & 8815--9444 \\
+\sokglm & 43/60 & 33/60 & 76/120 & 120/120 & 1.171 & 2.055 & 6928--7161 \\
+\sokqwen & 16/60 & 16/60 & 32/120 & 120/120 & 0.984 & 1.048 & 8801--9436 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{60/60} & \cellcolor{ebCoral!35}\textbf{60/60} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ & N/A \\
+Cheapest & 48/60 & 45/60 & 93/120 & 120/120 & $<.001$ & $<.001$ & N/A \\
+First entry & 20/60 & 17/60 & 37/120 & 120/120 & $<.001$ & $<.001$ & N/A \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{16 distinct requirements: 16 requirements, 24k characters}}} \\
+\rowcolor{ebCoral!10}\sokjev & 43/60 & 54/60 & 97/120 & 120/120 & 0.415 & 0.673 & 4553--5486 \\
+\deepseek & 24/60 & 39/60 & 63/120 & 120/120 & 0.602 & 1.205 & 4329--4685 \\
+\gemini & 29/60 & 47/60 & 76/120 & 120/120 & 1.125 & 1.393 & 4476--5393 \\
+\sokglm & 26/60 & 37/60 & 63/120 & 120/120 & 1.013 & 1.929 & 3992--4372 \\
+\sokqwen & 2/60 & 3/60 & 5/120 & 120/120 & 0.576 & 0.644 & 4176--5105 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{60/60} & \cellcolor{ebCoral!35}\textbf{60/60} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ & N/A \\
+Cheapest & 28/60 & 45/60 & 73/120 & 120/120 & $<.001$ & $<.001$ & N/A \\
+First entry & 18/60 & 17/60 & 35/120 & 120/120 & $<.001$ & $<.001$ & N/A \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{64 distinct requirements: 64 requirements, 24k characters}}} \\
+\rowcolor{ebCoral!10}\sokjev & 11/60 & 36/60 & 47/120 & 120/120 & 0.406 & 0.758 & 4880--5818 \\
+\deepseek & 11/60 & 39/60 & 50/120 & 120/120 & 0.634 & 1.601 & 4580--4902 \\
+\gemini & 32/60 & 47/60 & 79/120 & 120/120 & 1.140 & 1.393 & 4782--5705 \\
+\sokglm & 3/60 & 42/60 & 45/120 & 120/120 & 1.033 & 2.793 & 4173--4558 \\
+\sokqwen & 0/60 & 2/60 & 2/120 & 120/120 & 0.601 & 0.688 & 4501--5440 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{60/60} & \cellcolor{ebCoral!35}\textbf{60/60} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ & N/A \\
+Cheapest & 0/60 & 45/60 & 45/120 & 120/120 & $<.001$ & $<.001$ & N/A \\
+First entry & 13/60 & 17/60 & 30/120 & 120/120 & $<.001$ & $<.001$ & N/A \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/16\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sbox0{\retainedtab}
+\typeout{RETAINED policy-scale width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

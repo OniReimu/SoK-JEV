@@ -1,0 +1,54 @@
+\begin{table*}[!htbp]
+\centering\scriptsize
+\caption{Public-gate minus self-check correctness (pp). Intervals are paired stratified-bootstrap 95\% estimates. $p_{\mathrm{Holm}}$ uses the 45-comparison workflow family. Validity and return time describe the public-gate arm. Instructions and refresh actions also change. Best correctness per condition is in bold.}
+\label{tab:rq-e-paired}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}\setlength{\extrarowheight}{0pt}
+\def\familytab{\begin{tabular}{lrrrrrr}
+\toprule
+\rowcolor{ebBlue}
+Method & Self-check & Public gate & $\Delta$ pp [95\% CI] & $p_{\mathrm{Holm}}$ & Valid / $n$ & Return p50 / p95 (s) \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{7}{l}{\textbf{\itshape Independent quotas}} \\
+\rowcolor{ebCoral!10}\sokjev & 29/120 & 84/120 & 45.8 \textcolor{black!60}{[37.5,54.2]} & $2.331\times10^{-15}$ & 120/120 & 0.358 / 0.604 \\
+\deepseek & 19/120 & 60/120 & 34.2 \textcolor{black!60}{[25.0,43.3]} & $9.366\times10^{-9}$ & 120/120 & 0.509 / 1.175 \\
+\gemini & 40/120 & 69/120 & 24.2 \textcolor{black!60}{[14.2,34.2]} & 0.0008467 & 120/120 & 1.009 / 1.241 \\
+\sokglm & 1/120 & 71/120 & 58.3 \textcolor{black!60}{[49.2,66.7]} & $1.391\times10^{-18}$ & 119/120 & 0.843 / 3.553 \\
+\sokqwen & 30/120 & 52/120 & 18.3 \textcolor{black!60}{[10.8,26.7]} & 0.003618 & 120/120 & 0.311 / 0.411 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{120/120} & \cellcolor{ebCoral!35}\textbf{120/120} & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+Per-stage rule & \cellcolor{ebCoral!35}\textbf{120/120} & \cellcolor{ebCoral!35}\textbf{120/120} & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+Ungated & \cellcolor{ebCoral!35}\textbf{120/120} & \cellcolor{ebCoral!35}\textbf{120/120} & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+First & 28/120 & 28/120 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{7}{l}{\textbf{\itshape Shared quotas}} \\
+\rowcolor{ebCoral!10}\sokjev & 14/120 & 42/120 & 23.3 \textcolor{black!60}{[15.8,30.8]} & $2.079\times10^{-6}$ & 120/120 & 0.353 / 0.715 \\
+\deepseek & 14/120 & 33/120 & 15.8 \textcolor{black!60}{[8.3,23.3]} & 0.004852 & 120/120 & 0.501 / 1.087 \\
+\gemini & 36/120 & 40/120 & 3.3 \textcolor{black!60}{[-5.8,12.5]} & 1 & 120/120 & 1.009 / 1.234 \\
+\sokglm & 1/120 & 50/120 & 40.8 \textcolor{black!60}{[32.5,49.2]} & $1.457\times10^{-13}$ & 120/120 & 0.840 / 8.439 \\
+\sokqwen & 20/120 & 39/120 & 15.8 \textcolor{black!60}{[8.3,23.3]} & 0.009012 & 120/120 & 0.319 / 0.389 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{120/120} & \cellcolor{ebCoral!35}\textbf{120/120} & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+Per-stage rule & 60/120 & 60/120 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+Ungated & \cellcolor{ebCoral!35}\textbf{120/120} & \cellcolor{ebCoral!35}\textbf{120/120} & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+First & 31/120 & 31/120 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{7}{l}{\textbf{\itshape Shared quotas + fault-domain separation}} \\
+\rowcolor{ebCoral!10}\sokjev & 6/120 & 45/120 & 32.5 \textcolor{black!60}{[25.0,40.0]} & $1.455\times10^{-10}$ & 120/120 & 0.375 / 0.585 \\
+\deepseek & 4/120 & 17/120 & 10.8 \textcolor{black!60}{[5.8,15.8]} & 0.007324 & 120/120 & 0.506 / 0.999 \\
+\gemini & 42/120 & 61/120 & 15.8 \textcolor{black!60}{[5.8,25.8]} & 0.1404 & 120/120 & 1.021 / 1.276 \\
+\sokglm & 0/120 & 34/120 & 28.3 \textcolor{black!60}{[20.8,35.8]} & $4.54\times10^{-9}$ & 120/120 & 0.808 / 3.075 \\
+\sokqwen & 4/120 & 14/120 & 8.3 \textcolor{black!60}{[3.3,13.3]} & 0.1587 & 120/120 & 0.322 / 0.401 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{120/120} & \cellcolor{ebCoral!35}\textbf{120/120} & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+Per-stage rule & \cellcolor{ebCoral!35}\textbf{120/120} & \cellcolor{ebCoral!35}\textbf{120/120} & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+Ungated & \cellcolor{ebCoral!35}\textbf{120/120} & \cellcolor{ebCoral!35}\textbf{120/120} & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+First & 32/120 & 32/120 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 120/120 & 0.000 / 0.000 \\
+\bottomrule
+\end{tabular}}
+\setlength{\tabcolsep}{0pt}\sbox0{\familytab}
+\dimen0=\linewidth\advance\dimen0 by -1pt\advance\dimen0 by -\wd0\divide\dimen0 by 14
+\ifdim\dimen0<1.5pt \dimen0=1.5pt\fi
+\setlength{\tabcolsep}{\dimen0}\familytab
+\end{table*}

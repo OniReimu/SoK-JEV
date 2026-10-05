@@ -1,0 +1,10 @@
+# Environment used for 2026-10-05 offline checks; historical runs have their own manifests.
+numpy==2.0.2
+scipy==1.13.1
+matplotlib==3.9.4
+Pillow==11.3.0
+PyYAML==6.0.3
+pdfplumber==0.11.7
+bibtexparser==1.4.3
+reportlab==4.4.9
+pytest==9.1.1

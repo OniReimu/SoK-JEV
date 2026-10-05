@@ -1,0 +1,66 @@
+\begingroup\begin{table}[!htbp]\centering\scriptsize
+\caption{Observation conditions. Each node-count group has 40 cases across four demand families, balanced by shared-quota binding. Inputs contain four candidates and 9,000 characters. Correct requires minimum-cost feasible selection or justified refresh. The complete/shared condition is the same measurement reused in Table~\ref{tab:retained-quota}. Response time ends at decision return. Best correctness per condition is in bold.}
+\label{tab:retained-observation}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrrr}
+\toprule
+\rowcolor{ebBlue} \multicolumn{1}{c}{} & \multicolumn{4}{c}{Correct decisions $\uparrow$} & \multicolumn{1}{c}{Valid $\uparrow$} & \multicolumn{2}{c}{Response (s) $\downarrow$} \\
+\rowcolor{ebBlue} Method & 3 nodes & 5 nodes & 8 nodes & All & All & Median & p95 \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Complete / shared quota}}} \\
+\rowcolor{ebCoral!10}\sokjev & 10/40 & 2/40 & 2/40 & 14/120 & 120/120 & 0.364 & 0.619 \\
+\deepseek & 10/40 & 4/40 & 0/40 & 14/120 & 120/120 & 0.499 & 0.754 \\
+\gemini & 17/40 & 10/40 & 9/40 & 36/120 & 120/120 & 1.027 & 1.584 \\
+\sokglm & 0/40 & 1/40 & 0/40 & 1/120 & 120/120 & 0.884 & 8.373 \\
+\sokqwen & 14/40 & 5/40 & 1/40 & 20/120 & 120/120 & 0.247 & 0.352 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Ungated rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Equivalent prose}}} \\
+\rowcolor{ebCoral!10}\sokjev & 10/40 & 2/40 & 1/40 & 13/120 & 120/120 & 0.355 & 0.585 \\
+\deepseek & 8/40 & 3/40 & 0/40 & 11/120 & 120/120 & 0.477 & 0.859 \\
+\gemini & 14/40 & 12/40 & 11/40 & 37/120 & 120/120 & 0.986 & 1.236 \\
+\sokglm & 0/40 & 0/40 & 1/40 & 1/120 & 120/120 & 0.783 & 6.672 \\
+\sokqwen & 15/40 & 8/40 & 3/40 & 26/120 & 120/120 & 0.247 & 0.340 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Ungated rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Missing required report}}} \\
+\rowcolor{ebCoral!10}\sokjev & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & 0.353 & 0.583 \\
+\deepseek & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & 0.477 & 0.738 \\
+\gemini & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & 0.962 & 1.257 \\
+\sokglm & 39/40 & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & 119/120 & 120/120 & 0.776 & 3.059 \\
+\sokqwen & 0/40 & 0/40 & 0/40 & 0/120 & 120/120 & 0.250 & 0.331 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Ungated rule & 0/40 & 0/40 & 0/40 & 0/120 & 120/120 & $<.001$ & $<.001$ \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Stale required report}}} \\
+\rowcolor{ebCoral!10}\sokjev & 39/40 & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & 119/120 & 119/120 & 0.353 & 0.594 \\
+\deepseek & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & 0.494 & 0.811 \\
+\gemini & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & 0.963 & 1.249 \\
+\sokglm & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & 0.855 & 18.322 \\
+\sokqwen & 1/40 & 2/40 & 6/40 & 9/120 & 120/120 & 0.250 & 0.329 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Ungated rule & 0/40 & 0/40 & 0/40 & 0/120 & 120/120 & $<.001$ & $<.001$ \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Conflicting current reports}}} \\
+\rowcolor{ebCoral!10}\sokjev & 10/40 & 20/40 & 20/40 & 50/120 & 120/120 & 0.355 & 0.606 \\
+\deepseek & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & 0.499 & 0.897 \\
+\gemini & 5/40 & 9/40 & 17/40 & 31/120 & 120/120 & 0.986 & 1.397 \\
+\sokglm & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & 0.812 & 12.777 \\
+\sokqwen & 0/40 & 0/40 & 2/40 & 2/120 & 120/120 & 0.248 & 0.330 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Ungated rule & 0/40 & 0/40 & 0/40 & 0/120 & 120/120 & $<.001$ & $<.001$ \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Older conflict resolved}}} \\
+\rowcolor{ebCoral!10}\sokjev & 9/40 & 1/40 & 1/40 & 11/120 & 120/120 & 0.374 & 0.590 \\
+\deepseek & 1/40 & 0/40 & 1/40 & 2/120 & 120/120 & 0.507 & 0.813 \\
+\gemini & 14/40 & 10/40 & 7/40 & 31/120 & 120/120 & 1.015 & 1.276 \\
+\sokglm & 0/40 & 1/40 & 0/40 & 1/120 & 120/120 & 0.861 & 6.439 \\
+\sokqwen & 2/40 & 0/40 & 0/40 & 2/120 & 120/120 & 0.249 & 0.334 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Ungated rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/16\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sbox0{\retainedtab}
+\typeout{RETAINED observation width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

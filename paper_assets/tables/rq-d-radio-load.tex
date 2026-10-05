@@ -1,0 +1,58 @@
+\begin{table*}[!htbp]
+\centering\scriptsize
+\caption{RAN-policy arrival load borrowed and reanalysed from the RAN study~\cite{li2026intent}. Completion is an installable policy within modeled A1/E2 timing. Return and completion use all arrivals. Queue quantiles condition on observed waits.}
+\label{tab:rq-d-capacity-sixg}
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{0.94}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}\setlength{\extrarowheight}{0pt}
+\def\familytab{\begin{tabular}{lrrrrr}
+\toprule
+\rowcolor{ebBlue}
+Implementation & \shortstack{Offered $\rho$\\{}[CI]} & \shortstack{Accepted\\$\rho$} & \shortstack{Queue (s)\\p50 / p95} & \shortstack{Return $\leq B$\\(\%) [CI]} & \shortstack{Native completion\\(\%) [CI]} \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{6}{l}{\textbf{\itshape RAN policy: 0.1 arrivals/s, B = 1 s. 300 arrivals per row}} \\
+\rowcolor{ebCoral!10}\jev & 0.008 \textcolor{black!60}{[0.008,0.008]} & 0.008 & 0.001 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+\semif & 0.011 \textcolor{black!60}{[0.007,0.019]} & 0.012 & 0.006 / 0.027 & 98.7 \textcolor{black!60}{[95.7,100.0]} & 98.7 \textcolor{black!60}{[95.7,100.0]} \\
+\anyjev & 0.017 \textcolor{black!60}{[0.017,0.018]} & 0.019 & 0.005 / 0.026 & 92.7 \textcolor{black!60}{[88.6,96.4]} & 74.3 \textcolor{black!60}{[69.0,79.7]} \\
+\deepseek & 0.020 \textcolor{black!60}{[0.018,0.023]} & 0.022 & 0.001 / 0.002 & 89.0 \textcolor{black!60}{[85.1,92.8]} & 89.0 \textcolor{black!60}{[85.1,92.8]} \\
+\glm & 0.039 \textcolor{black!60}{[0.035,0.044]} & 0.042 & 0.001 / 0.002 & 23.3 \textcolor{black!60}{[17.7,29.5]} & 22.0 \textcolor{black!60}{[16.4,28.0]} \\
+\qwenflash & 0.059 \textcolor{black!60}{[0.055,0.063]} & 0.063 & 0.002 / 0.002 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 0.0 \textcolor{black!60}{[0.0,0.0]} \\
+\qwenjson & 0.010 \textcolor{black!60}{[0.010,0.011]} & 0.011 & 0.006 / 0.028 & 99.7 \textcolor{black!60}{[98.9,100.0]} & 99.7 \textcolor{black!60}{[98.9,100.0]} \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{6}{l}{\textbf{\itshape RAN policy: 0.5 arrivals/s, B = 1 s. 300 arrivals per row}} \\
+\rowcolor{ebCoral!10}\jev & 0.038 \textcolor{black!60}{[0.037,0.039]} & 0.040 & 0.002 / 0.002 & 99.7 \textcolor{black!60}{[98.9,100.0]} & 99.7 \textcolor{black!60}{[98.9,100.0]} \\
+\semif & 0.040 \textcolor{black!60}{[0.037,0.042]} & 0.042 & 0.002 / 0.006 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+\anyjev & 0.119 \textcolor{black!60}{[0.105,0.135]} & 0.128 & 0.001 / 0.006 & 63.7 \textcolor{black!60}{[54.0,74.2]} & 52.3 \textcolor{black!60}{[43.5,61.6]} \\
+\deepseek & 0.095 \textcolor{black!60}{[0.072,0.134]} & 0.102 & 0.002 / 0.002 & 93.0 \textcolor{black!60}{[87.3,97.2]} & 92.7 \textcolor{black!60}{[86.9,96.9]} \\
+\glm & 0.248 \textcolor{black!60}{[0.187,0.310]} & 0.265 & 0.002 / 1.437 & 25.3 \textcolor{black!60}{[14.6,37.2]} & 24.7 \textcolor{black!60}{[14.1,36.4]} \\
+\qwenflash & 0.277 \textcolor{black!60}{[0.267,0.288]} & 0.296 & 0.002 / 0.002 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 0.0 \textcolor{black!60}{[0.0,0.0]} \\
+\qwenjson & 0.052 \textcolor{black!60}{[0.052,0.052]} & 0.056 & 0.002 / 0.006 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{6}{l}{\textbf{\itshape RAN policy: 1 arrivals/s, B = 1 s. 300 arrivals per row}} \\
+\rowcolor{ebCoral!10}\jev & 0.074 \textcolor{black!60}{[0.073,0.076]} & 0.079 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+\semif & 0.095 \textcolor{black!60}{[0.080,0.113]} & 0.102 & 0.001 / 0.003 & 97.3 \textcolor{black!60}{[93.2,100.0]} & 97.3 \textcolor{black!60}{[93.2,100.0]} \\
+\anyjev & 0.347 \textcolor{black!60}{[0.291,0.404]} & 0.371 & 0.001 / 1.474 & 36.7 \textcolor{black!60}{[27.4,46.3]} & 29.0 \textcolor{black!60}{[21.1,38.0]} \\
+\deepseek & 0.221 \textcolor{black!60}{[0.161,0.298]} & 0.236 & 0.002 / 0.914 & 84.0 \textcolor{black!60}{[70.2,94.5]} & 84.0 \textcolor{black!60}{[70.2,94.5]} \\
+\glm & 0.232 \textcolor{black!60}{[0.206,0.256]} & 0.248 & 0.002 / 0.002 & 73.0 \textcolor{black!60}{[61.4,85.8]} & 70.7 \textcolor{black!60}{[59.5,83.6]} \\
+\qwenflash & 0.524 \textcolor{black!60}{[0.513,0.538]} & 0.561 & 0.002 / 1.260 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 0.0 \textcolor{black!60}{[0.0,0.0]} \\
+\qwenjson & 0.106 \textcolor{black!60}{[0.104,0.107]} & 0.113 & 0.001 / 0.003 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{6}{l}{\textbf{\itshape RAN policy: 2 arrivals/s, B = 1 s. 300 arrivals per row}} \\
+\rowcolor{ebCoral!10}\jev & 0.149 \textcolor{black!60}{[0.146,0.152]} & 0.159 & 0.002 / 0.002 & 99.7 \textcolor{black!60}{[98.8,100.0]} & 99.7 \textcolor{black!60}{[98.8,100.0]} \\
+\semif & 0.261 \textcolor{black!60}{[0.193,0.318]} & 0.279 & 0.001 / 0.259 & 90.0 \textcolor{black!60}{[81.3,100.0]} & 88.7 \textcolor{black!60}{[79.5,100.0]} \\
+\anyjev & 1.169 \textcolor{black!60}{[1.134,1.210]} & 1.250 & 25.171 / 34.533 & 0.7 \textcolor{black!60}{[0.0,1.8]} & 0.7 \textcolor{black!60}{[0.0,1.8]} \\
+\deepseek & 0.403 \textcolor{black!60}{[0.290,0.599]} & 0.431 & 0.002 / 6.366 & 84.7 \textcolor{black!60}{[63.2,98.7]} & 84.7 \textcolor{black!60}{[63.2,98.7]} \\
+\glm & 0.350 \textcolor{black!60}{[0.334,0.361]} & 0.374 & 0.002 / 0.231 & 92.7 \textcolor{black!60}{[90.1,95.7]} & 91.3 \textcolor{black!60}{[87.8,95.2]} \\
+\qwenflash & 1.085 \textcolor{black!60}{[1.065,1.111]} & 1.160 & 15.227 / 20.295 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 0.0 \textcolor{black!60}{[0.0,0.0]} \\
+\qwenjson & 0.217 \textcolor{black!60}{[0.215,0.220]} & 0.232 & 0.001 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+\bottomrule
+\end{tabular}}
+\setlength{\tabcolsep}{0pt}\sbox0{\familytab}
+\dimen0=\linewidth\advance\dimen0 by -1pt\advance\dimen0 by -\wd0\divide\dimen0 by 12
+\ifdim\dimen0<1.5pt \dimen0=1.5pt\fi
+\setlength{\tabcolsep}{\dimen0}\familytab
+\end{table*}

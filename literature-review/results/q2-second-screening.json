@@ -1,0 +1,200 @@
+{
+  "units": 111,
+  "routes": {
+    "agreed": 90,
+    "split_to_fulltext": 12,
+    "reconciled": 9
+  },
+  "final": {
+    "exclude": 61,
+    "include": 24,
+    "background": 26
+  },
+  "by_original": {
+    "TA-B": {
+      "exclude": 42,
+      "include": 16,
+      "background": 21
+    },
+    "TA-X": {
+      "exclude": 19,
+      "include": 6,
+      "background": 1
+    },
+    "FT-background": {
+      "include": 2,
+      "background": 4
+    }
+  },
+  "same_class_as_original": 44,
+  "to_fulltext_check": [
+    {
+      "screen_id": "Q006",
+      "catalog_id": "C:clark2026jev",
+      "original": "TA-B",
+      "original_reason": "标准、概念、产品或软件背景；不作为独立原始审计研究。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q008",
+      "catalog_id": "C:crankshaw2016clipper",
+      "original": "TA-B",
+      "original_reason": "通用模型、缓存、解码或检索方法，保留为背景。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q010",
+      "catalog_id": "C:doro2022orchestran",
+      "original": "TA-B",
+      "original_reason": "传统控制、一般DRL、监控/验证或资源方法的对照背景；本轮不扩展其全部文献。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q011",
+      "catalog_id": "C:etsi2021zsm0091",
+      "original": "TA-B",
+      "original_reason": "标准、概念、产品或软件背景；不作为独立原始审计研究。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q047",
+      "catalog_id": "C:wang2025dualmind",
+      "original": "TA-B",
+      "original_reason": "世界模型无线调度；既有记录表明System1术语不等同语义决策接口，作为邻接方法。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q060",
+      "catalog_id": "A:2111.07724",
+      "original": "TA-B",
+      "original_reason": "研究输出为技术-硬件性能预测矩阵；编排仅作为未来用途。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q064",
+      "catalog_id": "A:2308.15890",
+      "original": "TA-X",
+      "original_reason": "逻辑编程和深度学习编排，不是通信网络决策。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q066",
+      "catalog_id": "A:2404.15153",
+      "original": "TA-B",
+      "original_reason": "通用LLM模型路由性能，非网络运行决策。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q072",
+      "catalog_id": "A:2503.20561",
+      "original": "TA-X",
+      "original_reason": "通用提示工程理论。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q074",
+      "catalog_id": "A:2505.11978",
+      "original": "TA-B",
+      "original_reason": "IV-C2中LLM输入为训练回报和训练进度，输出DRL超参数；不将离线训练调参当运行网络决策。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q077",
+      "catalog_id": "A:2509.22834",
+      "original": "TA-B",
+      "original_reason": "研究明确聚焦从零规划设备、物理拓扑和布局；本轮限定已部署网络运行管理。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q080",
+      "catalog_id": "A:2512.23562",
+      "original": "TA-B",
+      "original_reason": "通用视觉语言模型路由基准。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q085",
+      "catalog_id": "A:2604.27084",
+      "original": "TA-B",
+      "original_reason": "§3.1.2的LLM提供贝叶斯网络结构学习先验，作为模型构建背景；本轮不扩展所有学习型配置优化。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q086",
+      "catalog_id": "A:2605.11516",
+      "original": "TA-B",
+      "original_reason": "主张性文章，摘要未给出独立机制评估或可分离案例。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q088",
+      "catalog_id": "A:2606.13091",
+      "original": "TA-B",
+      "original_reason": "意图指由行为反推的效用函数；未见声明式意图解释或检查接口，属于邻接控制方法。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q089",
+      "catalog_id": "A:2606.27665",
+      "original": "TA-X",
+      "original_reason": "Vue前端路由与GUI测试，非通信网络。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q090",
+      "catalog_id": "A:2608.16422",
+      "original": "TA-X",
+      "original_reason": "网络攻击模拟场景生成及攻陷评估，非运行管理任务。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q093",
+      "catalog_id": "A:2504.09647",
+      "original": "TA-B",
+      "original_reason": "贡献是服务仓库构建、打包和属性分析；不等同运行期网络资源选择。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q096",
+      "catalog_id": "A:2512.20278",
+      "original": "TA-X",
+      "original_reason": "办公软件跨服务流程记忆。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q099",
+      "catalog_id": "A:2602.12748",
+      "original": "TA-X",
+      "original_reason": "通用可解释AI系统架构。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q101",
+      "catalog_id": "A:2606.03557",
+      "original": "TA-B",
+      "original_reason": "固定注册表中的功能模型路由，实验隔离路由且不调用后端；保留作接口背景，当前未建立网络状态或资源约束决策。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q104",
+      "catalog_id": "A:2509.25736",
+      "original": "TA-B",
+      "original_reason": "本文评测重点为生成微调数据及RAGAS数据质量；运行诊断方案由后续MAS文章另评。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q106",
+      "catalog_id": "C:kakarla2020finding",
+      "original": "FT-background",
+      "original_reason": "既有来源记录显示可分离的网络意图/配置/资源或诊断步骤；仍需本轮全文资格确认。",
+      "route": "include"
+    },
+    {
+      "screen_id": "Q109",
+      "catalog_id": "A:2509.13901",
+      "original": "FT-background",
+      "original_reason": "声明式意图到网络服务部署与GitOps执行时延。",
+      "route": "include"
+    }
+  ]
+}

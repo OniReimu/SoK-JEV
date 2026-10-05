@@ -1,0 +1,162 @@
+{
+ "families": 129,
+ "interfaces": {
+  "exact_set": {
+   "n": 129,
+   "exact": 0.535
+  },
+  "S": {
+   "n": 129,
+   "agreement": 0.76,
+   "kappa": 0.514,
+   "ac1": 0.525
+  },
+  "G": {
+   "n": 129,
+   "agreement": 0.868,
+   "kappa": 0.721,
+   "ac1": 0.752
+  },
+  "C": {
+   "n": 129,
+   "agreement": 0.845,
+   "kappa": 0.689,
+   "ac1": 0.692
+  },
+  "U": {
+   "n": 129,
+   "agreement": 0.946,
+   "kappa": -0.013,
+   "ac1": 0.943
+  }
+ },
+ "path": {
+  "n": 103,
+  "agreement": 0.825,
+  "kappa": 0.54,
+  "ac1": 0.8
+ },
+ "roles": {
+  "exact_set": {
+   "n": 125,
+   "exact": 0.552
+  },
+  "intent_handler": {
+   "n": 125,
+   "agreement": 0.848,
+   "kappa": 0.636,
+   "ac1": 0.741
+  },
+  "config_synthesis": {
+   "n": 125,
+   "agreement": 0.832,
+   "kappa": 0.557,
+   "ac1": 0.73
+  },
+  "controller": {
+   "n": 125,
+   "agreement": 0.808,
+   "kappa": 0.583,
+   "ac1": 0.644
+  },
+  "assurance": {
+   "n": 125,
+   "agreement": 0.92,
+   "kappa": 0.812,
+   "ac1": 0.861
+  },
+  "planning": {
+   "n": 125,
+   "agreement": 0.968,
+   "kappa": 0.65,
+   "ac1": 0.965
+  },
+  "policy_agent": {
+   "n": 125,
+   "agreement": 0.944,
+   "kappa": 0.341,
+   "ac1": 0.939
+  },
+  "other": {
+   "n": 125,
+   "agreement": 0.952,
+   "kappa": -0.022,
+   "ac1": 0.95
+  }
+ },
+ "observation": {
+  "performed": {
+   "n": 129,
+   "agreement": 0.682,
+   "kappa": 0.125,
+   "ac1": 0.528
+  },
+  "owner": {
+   "n": 5,
+   "exact": 0.4
+  },
+  "mechanism": {
+   "n": 5,
+   "exact": 0.8
+  },
+  "owner_mechanism": {
+   "n": 4,
+   "exact": 0.5
+  },
+  "any_evaluated": {
+   "n": 0
+  }
+ },
+ "feasibility": {
+  "performed": {
+   "n": 129,
+   "agreement": 0.705,
+   "kappa": 0.417,
+   "ac1": 0.436
+  },
+  "owner": {
+   "n": 53,
+   "exact": 0.472
+  },
+  "mechanism": {
+   "n": 56,
+   "exact": 0.643
+  },
+  "owner_mechanism": {
+   "n": 51,
+   "exact": 0.471
+  },
+  "any_evaluated": {
+   "n": 12,
+   "agreement": 0.917,
+   "kappa": 0.833,
+   "ac1": 0.834
+  }
+ },
+ "coverage": {
+  "performed": {
+   "n": 129,
+   "agreement": 0.651,
+   "kappa": 0.169,
+   "ac1": 0.447
+  },
+  "owner": {
+   "n": 7,
+   "exact": 0.429
+  },
+  "mechanism": {
+   "n": 8,
+   "exact": 0.875
+  },
+  "owner_mechanism": {
+   "n": 6,
+   "exact": 0.5
+  },
+  "any_evaluated": {
+   "n": 2,
+   "agreement": 1.0,
+   "kappa": 1.0,
+   "ac1": 1.0
+  }
+ }
+}

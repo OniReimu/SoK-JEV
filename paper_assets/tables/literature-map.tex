@@ -1,0 +1,296 @@
+\begingroup\footnotesize
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{1.10}
+\setlength{\LTcapwidth}{\textwidth}
+\newlength{\soklitwidth}\setlength{\soklitwidth}{\dimexpr\textwidth-1pt-8\tabcolsep\relax}
+\begin{longtable}{>{\raggedright\arraybackslash}p{.09\soklitwidth}>{\centering\arraybackslash}p{.07\soklitwidth}>{\raggedright\arraybackslash}p{.36\soklitwidth}>{\raggedright\arraybackslash}p{.48\soklitwidth}}
+\caption{Three-axis literature map of 139 paper families, ordered by the lowest reference number in each row. S: selection; G: generation; C: deterministic computation; U: interface unspecified. Multiple letters retain multiple interfaces. Check labels distinguish observation state, feasibility or related checks, and candidate coverage. Unlisted check types have unresolved ownership. NE marks rows with all three unresolved.}\label{tab:e0-systematization}\\
+\toprule
+\rowcolor{ebBlue} Work & Interface & Task and execution path & Check responsibility \\
+\midrule\endfirsthead
+\caption[]{Three-axis literature map (continued). S: selection; G: generation; C: computation; U: unspecified. Unlisted checks and NE denote unresolved ownership.}\\
+\toprule
+\rowcolor{ebBlue} Work & Interface & Task and execution path & Check responsibility \\
+\midrule\endhead
+\bottomrule\endfoot
+\cite{li2026replacing} & S/G/C & Intent interpretation to edge admission/execution & \emph{State:} Scheduler reads queues/workers; \emph{Feasibility:} Scheduler: predicted feasibility; \emph{Coverage:} Scheduler: reject if no eligible node \\
+\addlinespace[1pt]
+\cite{wei2025inta} & G & Retrieved manuals to multivendor command-line output & \emph{Feasibility:} INTA: syntax matching; LLM: semantic equivalence \\
+\addlinespace[1pt]
+\cite{miyaoka2025chatdriven,e0sourceS13} & S/G/C & Intent parameters to placement/routing solver & \emph{Feasibility:} Integer linear program: resource/placement constraints; \emph{Coverage:} Optimizer: joint request-subset admission \\
+\addlinespace[1pt]
+\cite{wang2025network,e0arxiv250701997} & G & Tool-driven anomaly localization and diagnosis & \textit{NE} \\
+\addlinespace[1pt]
+\cite{manias2024intentbased} & S/G & Intent extraction; proposed core placement & \textit{NE} \\
+\addlinespace[1pt]
+\cite{nam2026llmbased} & G & Deployment-workflow generation and twin testing & \textit{NE} \\
+\addlinespace[1pt]
+\cite{wang2024netconfeval,e0arxiv230906342} & G & Task-specific policy, API and routing generation & \emph{Feasibility:} LLM diagnosis; task-specific tests/verifiers \\
+\addlinespace[1pt]
+\cite{el-hassany2018netcomplete} & C & Routing-sketch completion before activation & \emph{Feasibility:} NetComplete: sketch and routing constraints \\
+\addlinespace[1pt]
+\cite{hossain2025netintent} & G/C & Flow generation, installation and drift repair & \emph{Feasibility:} LLM: conflict detection; controller: resolution \\
+\addlinespace[1pt]
+\cite{clark2026jev} & S/G & Agent diagnosis with ranked tests and evidence gates & \emph{State:} Planner reads fresh snapshot; review: current failure; \emph{Feasibility:} Jev review: cause, restoration and durability \\
+\addlinespace[1pt]
+\cite{li2026fast} & S/G/C & Versioned intent contracts to edge placement & \emph{State:} Controller versions; scheduler reads queues; \emph{Feasibility:} Execution layer: permissions; scheduler: placement \\
+\addlinespace[1pt]
+\cite{asadli2026evaluating} & G & Offline configuration repair with feedback & \emph{Feasibility:} Batfish/Config2Spec: final scoring; optional agent feedback \\
+\addlinespace[1pt]
+\cite{angi2025llnet} & G/C & Intent JSON to confirmed switch rules & \emph{Feasibility:} Network Manager: installed-intent conflicts; \emph{Coverage:} Intent Converter: devices/scenarios \\
+\addlinespace[1pt]
+\cite{beckett2016dont} & C & Policy compilation to BGP configurations & \emph{Feasibility:} Propane: permitted paths/preferences \\
+\addlinespace[1pt]
+\cite{brodimas2025intentbased} & S/G & Agent plans to cluster/service deployment & \textit{NE} \\
+\addlinespace[1pt]
+\cite{chen2022softwaredefined} & S/C & Offline device-model and parameter mapping & \emph{Feasibility:} NAssim: command-line hierarchy and device-model tests \\
+\addlinespace[1pt]
+\cite{dinh2025endtoend} & G & Business intent to RAN/core service configuration & \textit{NE} \\
+\addlinespace[1pt]
+\cite{dzeparoska2024intent} & S/G & Intent fulfillment and drift-triggered repair & \emph{Feasibility:} LLM validator: policy-tree review \\
+\addlinespace[1pt]
+\cite{el-hassany2017networkwide} & C & Solver-based network configuration synthesis & \emph{Feasibility:} SyNET: modeled forwarding constraints; \emph{Coverage:} Solver: solution if one exists in model \\
+\addlinespace[1pt]
+\cite{islam2026intent} & G & State-grounded service-objective construction & \textit{NE} \\
+\addlinespace[1pt]
+\cite{jacobs2021hey} & G/S/C & Confirmed intent to compiler/controller & \emph{Feasibility:} Exploratory classifier: intent contradictions \\
+\addlinespace[1pt]
+\cite{jha2025itbench} & G & Network-fault diagnosis and mitigation in ITBench & \textit{NE} \\
+\addlinespace[1pt]
+\cite{li2025jaunt} & S & Per-request tool selection with latency prediction & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260822644,manias2024semantic} & S/G & Static route selection and dynamic parameters & \textit{NE} \\
+\addlinespace[1pt]
+\cite{mcnamara2023nlp} & S & Registered workflow/model to slice or network function virtualization (NFV) action & \textit{NE} \\
+\addlinespace[1pt]
+\cite{mondal2023what} & G & Configuration translation/generation with feedback & \emph{Feasibility:} Campion: equivalence; Batfish: routing properties \\
+\addlinespace[1pt]
+\cite{njah2023intentbased} & G & Intent entity extraction; proposed SDN activation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{ramanathan2023practical} & C & BGP compilation, staging and activation & \emph{Feasibility:} Aura: switch-emulation policy tests \\
+\addlinespace[1pt]
+\cite{schneider2021snowcap} & C & Safe update ordering with convergence waits & \emph{Feasibility:} Snowcap: temporal safety over modeled states \\
+\addlinespace[1pt]
+\cite{tian2019safely} & C & Access-control-list verification, repair and migration & \emph{Feasibility:} Jinjing: formal reachability/placement constraints \\
+\addlinespace[1pt]
+\cite{tseng2026faultbench} & G & Tool-driven diagnosis and proposed remediation & \emph{State:} Agent tests ticket premises against observations \\
+\addlinespace[1pt]
+\cite{e0sourceS02,tu2025intentbased} & G/C & Confirmed intent translation to NFV deployment & \emph{Feasibility:} NFV-Intent/NI-MANO: capabilities and resource flavors \\
+\addlinespace[1pt]
+\cite{wu2024netllm} & S & Learned bitrate and cluster-action selection & \textit{NE} \\
+\addlinespace[1pt]
+\cite{zhou2025netarena} & G & Agent planning/repair with environment feedback & \textit{NE} \\
+\addlinespace[1pt]
+\cite{zhu2026omniplan} & G/S/C & Intent preferences to network-planning experts & \emph{Feasibility:} Mixed-integer programs: constraints; fast experts: heuristics \\
+\addlinespace[1pt]
+\cite{e0arxiv180702205} & C & Policies to SDN paths and conflict advice & \emph{Feasibility:} OSDF: rule-based conflict classification \\
+\addlinespace[1pt]
+\cite{e0arxiv190403228} & G/C & Confirmed voice intent to OpenFlow rules & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv191000967} & C & Behavior-guided search for P4 programs & \emph{Feasibility:} Search fitness: supplied examples/rules \\
+\addlinespace[1pt]
+\cite{e0arxiv200805509} & G/C & Confirmed intent to NFV service-chain deployment & \emph{Feasibility:} Intent Deployer: configuration-consistency check \\
+\addlinespace[1pt]
+\cite{e0arxiv210505179} & C & Conceptual access-policy parsing and refinement & \emph{Feasibility:} Proposed configurator: authorization conflicts \\
+\addlinespace[1pt]
+\cite{e0arxiv210505594} & U & Conceptual smart-grid intent to network slices & \emph{Feasibility:} Proposed orchestrator: SLA/profile checks \\
+\addlinespace[1pt]
+\cite{e0arxiv220503932} & C & Controlled intent to simulated public-safety service & \emph{Feasibility:} Proposed intent validator: resource/conflict checks \\
+\addlinespace[1pt]
+\cite{e0arxiv221211874} & C & Optical feasibility to lightpath deployment & \emph{Feasibility:} Lightpath computation and routing/spectrum assignment: optical and wavelength constraints \\
+\addlinespace[1pt]
+\cite{e0arxiv230208544} & C & Knowledge-based intent to simulated services & \emph{Feasibility:} Network-layer validator: resource/model checks \\
+\addlinespace[1pt]
+\cite{e0arxiv230409711} & C & Internet Protocol (IP)/optical intent compilation in simulation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv230409916} & C & Constrained vehicular-edge service mapping & \emph{Feasibility:} Priority-aware installation/location-aware mapping heuristics: node/link constraints \\
+\addlinespace[1pt]
+\cite{e0arxiv230702757} & G & Distributed transmit-power proposals & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv240108341} & C & Modeled RAN tilt-conflict resolution & \emph{Feasibility:} Bargaining: feasible utility sets \\
+\addlinespace[1pt]
+\cite{e0arxiv240202768} & S & Device-intent symbols to quality-of-service (QoS) slices & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv240309369} & G & Configuration generation and vendor translation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv240415091} & S/C & Time-series monitoring of intent drift & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv240507850} & G/S & Entity/knowledge-graph completion to intent templates & \emph{Feasibility:} KG2E classifier: triple plausibility \\
+\addlinespace[1pt]
+\cite{e0arxiv240606059} & G/S/C & Intent validity to hierarchical RAN control & \emph{Feasibility:} Prediction and QoS-drift validity rules \\
+\addlinespace[1pt]
+\cite{e0arxiv240717767} & S & Parent-bandit selection of joint service priorities & \emph{Feasibility:} Learned parent policy: modeled resource conflicts \\
+\addlinespace[1pt]
+\cite{e0arxiv240813298} & S/G & Intent to iterative verified configuration & \emph{Feasibility:} Batfish: behavior checks and repair feedback \\
+\addlinespace[1pt]
+\cite{e0arxiv241114283} & G & Retrieved configuration to error reports & \emph{Feasibility:} LLM: syntax/dependency diagnosis \\
+\addlinespace[1pt]
+\cite{e0arxiv241116232} & S & Wireless-mesh action recommendation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv250311933} & G/S & Intent/model selection to service and xApp creation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv250509339} & G & Retrieved context to structured network intent & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv250518389} & G/C & Lua scheduler construction before slot execution & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv250604594} & S/C & Wi-Fi channel initialization followed by search & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv250712061} & S/U & Proposed intent choice; implemented enforcement & \emph{Coverage:} Ontology: operable candidate techniques \\
+\addlinespace[1pt]
+\cite{e0arxiv250714230} & S/G & History-based transmit-power strategy over O1 & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv250921026} & G/S & Intent translation to learned throughput control & \emph{Feasibility:} Translator: basic prior-intent conflict check \\
+\addlinespace[1pt]
+\cite{e0arxiv251021894} & G/C & Fact graph and generated network queries & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv251105133} & S & Malicious-intent classification at ingress & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv251121084} & S/G & 5G request classification to command generation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv251220627} & G/S/C & Strategies to predicted deployment approval & \emph{Feasibility:} Federated evaluators: predicted deployability \\
+\addlinespace[1pt]
+\cite{lira2025network} & S/G & Iterative configuration generation with verification & \emph{Feasibility:} Assigned verifier; implementation unspecified \\
+\addlinespace[1pt]
+\cite{e0arxiv251220275} & G/C & Language-planned actions through graph admission & \emph{State:} Shape constraints and graph queries reject stale entities; \emph{Feasibility:} G-SPEC: next-state policy guards \\
+\addlinespace[1pt]
+\cite{e0arxiv260106640} & S/G & RAN/core recommendations to slice provisioning & \emph{Feasibility:} Specialists/orchestrator: model consistency checks \\
+\addlinespace[1pt]
+\cite{e0arxiv260112744} & G/C & Optimization-code generation and SDN demonstration & \emph{Feasibility:} Gurobi: generated-program constraints \\
+\addlinespace[1pt]
+\cite{e0arxiv260113114} & G/C & Planned, timed slice-rate changes via tools & \emph{Feasibility:} Feasibility/session tools: action constraints \\
+\addlinespace[1pt]
+\cite{e0arxiv260213672} & S/C & Risk-based drift alerts and attribution & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260214283} & S/C & Multi-intent risk alerts and root-cause attribution & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260306647} & G/S & Agent plans/code to emulated-network deployment & \emph{Feasibility:} Senior model: policy comparison; emulation: tests \\
+\addlinespace[1pt]
+\cite{e0arxiv260301663} & G/C & Intent contract to rApp policy and xApp control & \emph{Feasibility:} Agent: intent; rApp: history-based feasibility estimate \\
+\addlinespace[1pt]
+\cite{e0arxiv260323772} & G/S/U & Policy activation; proposed ranked assurance repair & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260409678} & G & Interactive routing commands to converged state & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260620564} & G/S & Multivendor command-line generation and model judging & \emph{Feasibility:} Model-judge panel: benchmark semantic scoring \\
+\addlinespace[1pt]
+\cite{e0arxiv260502911} & S/G & Expert/weight selection to resource allocation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260406856} & S/G & Security intent completion to domain agents & \emph{Coverage:} Orchestrator: support check and alert \\
+\addlinespace[1pt]
+\cite{e0arxiv260407264} & G/C/S & Offline intent compilation to certified low-Earth-orbit routing & \emph{Feasibility:} Validator/certifier: supported hard-constraint fragments; \emph{Coverage:} Certifier: fragment-bound accept/reject; unresolved abstain \\
+\addlinespace[1pt]
+\cite{e0arxiv260422513} & S/G & Configuration-context selection and repair & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260427359} & C & Resource Description Framework intent representation/ontology validation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{parra-ullauri2026rolebased} & G/C & Business intent to governed service orders & \emph{Feasibility:} Assigned tools: feasibility; supervisor: admission \\
+\addlinespace[1pt]
+\cite{e0arxiv260527428} & G/C & Event-driven parameter updates to task routing & \emph{State:} Feedback model uses completed, available records; \emph{Coverage:} Router: device/risk filter; routes with penalties if all risky \\
+\addlinespace[1pt]
+\cite{e0arxiv260600417} & G & Core-network plans to user-plane-function/user reassignment & \emph{Feasibility:} Executor agent: plan-feasibility assessment \\
+\addlinespace[1pt]
+\cite{e0arxiv260601222} & G & 5G base-station configuration/repair to approved startup & \emph{Feasibility:} Verification agent: review; operator: startup approval \\
+\addlinespace[1pt]
+\cite{e0arxiv260605076} & C & Offline port-policy compliance and drift monitoring & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260708809} & S/C & Intent profiles to O1 assurance counters & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260728826} & S & Distilled policy for isolation/restoration actions & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260800908} & C/S & Candidate screening to network deployment & \emph{Feasibility:} Executor: exact residual check and repair/fallback; \emph{Coverage:} Guard: no executable generated candidate; fallback \\
+\addlinespace[1pt]
+\cite{e0arxiv260823179} & G & Interactive command-line changes scored in emulation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260904486} & G/C & Command generation with uncertainty-based review & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260912144} & S & Security classification of intent windows & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260921103} & G/S/C & Intent translation to tool-based policy inspection & \emph{State:} State manager: atomic, versioned snapshots; \emph{Feasibility:} Tools: network predicates; LLM: final verdict \\
+\addlinespace[1pt]
+\cite{e0arxiv260925356} & S/G & Telecom fault classification with reasoning & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260927386} & G/C & Numerical algorithm search to path allocation & \emph{Feasibility:} Trusted network functions: feasibility constraints \\
+\addlinespace[1pt]
+\cite{e0arxiv260931397} & G/C & Intent compilation to corrected traffic-shaping rules & \emph{Feasibility:} Fixed-template module: policy and tc constraints \\
+\addlinespace[1pt]
+\cite{e0arxiv180303106} & C & Multilayer SDN service setup and teardown & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv200807162} & U & Conceptual domain/capability/service orchestration & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv241210107} & S/G & Wireless tool selection and allocation generation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv250216198} & S/G & Semantic objectives to sequential resource actions & \emph{State:} Controller updates state after each allocation; \emph{Feasibility:} Executor: represented-state feasibility mask \\
+\addlinespace[1pt]
+\cite{e0arxiv250708164} & G/S & Network queries and service subscriptions & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260316458} & G/S/C & Semantic rewards to reinforcement-learning placement/resource solving & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260321251} & G/S & Tool-assisted wireless allocation and QoS decisions & \emph{Feasibility:} Agent: predicted-throughput QoS verdict \\
+\addlinespace[1pt]
+\cite{martins2026intentdriven} & G/S/C & Catalog discovery to service-profile decomposition & \emph{Feasibility:} Capability predicates: extracted requirements; \emph{Coverage:} Catalog layer: supplied-profile match; greedy coverage \\
+\addlinespace[1pt]
+\cite{e0arxiv190905528} & G/S & Troubleshooting dialogue acts and responses & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv240608305} & S/G/C & Network-health diagnosis and proposed mitigation & \emph{Feasibility:} LLM prompts: evidence and action checks \\
+\addlinespace[1pt]
+\cite{e0arxiv240706085} & S/C & Packet reconstruction to failure/localization labels & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv250116842} & G/C/S & Network knowledge to diagnostic plans/reports & \emph{Feasibility:} Z3 component: rules; model: diagnostic report \\
+\addlinespace[1pt]
+\cite{e0arxiv251100651} & S/G & Delegated telecom diagnosis and action planning & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260405400} & G/S & Runbook, API and diagnostic-branch assistance & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260413353} & S/G & Clarification to cross-domain diagnostic queries & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0arxiv260504530} & S/C & Symptom probes to skill-based fault localization & \emph{State:} Diagnostic agent cross-checks IP/layer evidence \\
+\addlinespace[1pt]
+\cite{e0arxiv260600582} & S/G & Multimodal faults to root-cause/propagation chains & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0sourceS01} & G & Multidomain intent translation to service descriptors & \emph{Feasibility:} Proposed handlers: conflict/resource checks \\
+\addlinespace[1pt]
+\cite{e0sourceS03} & S/C & Parameter/command mapping to target command-line trees & \emph{Feasibility:} Constraint-satisfaction solver: translation and view consistency \\
+\addlinespace[1pt]
+\cite{e0sourceS04} & G & Graph-grounded routing-parameter updates & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0sourceS05} & G/S/C & Dialogue-based intent to Open Network Operating System installation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0sourceS06} & G & Command generation and probes in emulation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0sourceS08} & G/S & Production alert diagnosis with operator assistance & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0sourceS09} & G/S/C & Dialogue-selected workflows to health reports & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0sourceS10} & G/S & Workflow/domain-specific-language generation with diagnostic tools & \emph{Feasibility:} Parsers, dry runs and invariant validators \\
+\addlinespace[1pt]
+\cite{e0sourceS12} & G/C/S & Alarm propagation graphs to root-cause diagnosis & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0sourceS15} & S & LLM-assisted learning for O-RAN slice allocation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{asif2025ribn} & G/S/C & Intent translation to learned service-chain placement & \emph{Feasibility:} Similarity/k-nearest-neighbour classifier: intent contradictions \\
+\addlinespace[1pt]
+\cite{e0sourceS17} & G/S/C & Example/template selection to formal synthesis & \emph{Feasibility:} CEGS: formal checks of encoded intent, topology and templates \\
+\addlinespace[1pt]
+\cite{e0sourceS18} & G/S & Clarified intent to guide-based mitigation actions & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0sourceS19} & G/S/U & Conceptual incident diagnosis and mitigation & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0sourceS20} & S/G & Intrusion classification with explanatory alerts & \textit{NE} \\
+\addlinespace[1pt]
+\cite{e0sourceS21} & S & Federated traffic/log anomaly classification & \textit{NE} \\
+\addlinespace[1pt]
+\cite{doro2022orchestran} & C/S & Request-driven model placement and xApp dispatch & \emph{Feasibility:} Binary integer linear program: resources, timescales, input-data reachability; \emph{Coverage:} Optimizer: request admission from catalog models \\
+\addlinespace[1pt]
+\cite{e0arxiv211107724} & C/S/U & Intent policies; ML-hardware performance estimation & \emph{Feasibility:} Policy configurator: conflict check; \emph{Coverage:} Policy configurator: technique availability; both unevaluated \\
+\addlinespace[1pt]
+\cite{e0arxiv250922834} & G/C & Offline intent to planned optical network design & \emph{Feasibility:} Grammar parser: structure; planner: deployment constraints; \emph{Coverage:} Planner: reports infeasible requirements \\
+\addlinespace[1pt]
+\cite{e0arxiv260427084} & G/C & Offline causal priors to RAN power-control configuration & \emph{State:} Bayesian network conditions on current measurements; incremental updates \\
+\addlinespace[1pt]
+\cite{e0arxiv260816422} & G & Offline emulator-scenario and attack-agent generation & \emph{Feasibility:} Validator: schema/topology; NASim load-and-run test \\
+\addlinespace[1pt]
+\cite{e0arxiv250913901} & C & Declarative intents to GitOps/Nephio deployment & \emph{State:} GitOps operators: desired/runtime state drift \\
+\addlinespace[1pt]
+\end{longtable}
+\endgroup

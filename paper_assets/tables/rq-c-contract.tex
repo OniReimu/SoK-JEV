@@ -1,0 +1,28 @@
+\begin{table*}[!htbp]
+\centering\scriptsize
+\caption{Contract-catalogue correctness (\%) with 95\% Wilson intervals. 48 cases per condition. Two new candidates form the replacement arm. Valid counts and return p50/p95 refer to absent coverage. N/A denotes an unmeasured condition. The rule baseline uses lexical matching.}
+\label{tab:rq-c-contract}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}\setlength{\extrarowheight}{0pt}
+\def\familytab{\begin{tabular}{lrrrrrr}
+\toprule
+\rowcolor{ebAmber!45}
+\multicolumn{7}{l}{\textbf{\itshape Contract catalogue: stable / rekeyed / two new candidates / absent}} \\
+\rowcolor{ebBlue}
+Model & Stable & Rekeyed & Two new & Absent & Valid / $n$ & \shortstack{Return (s) $\downarrow$\\p50 / p95} \\
+\rowcolor{ebCoral!10}\sokjev & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[92.6,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[92.6,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[92.6,100.0]} & 93.8 \textcolor{black!60}{[83.2,97.9]} & 48/48 & 0.318 / 0.511 \\
+\deepseek & 97.9 \textcolor{black!60}{[89.1,99.6]} & 89.6 \textcolor{black!60}{[77.8,95.5]} & 77.1 \textcolor{black!60}{[63.5,86.7]} & 6.2 \textcolor{black!60}{[2.1,16.8]} & 48/48 & 0.413 / 2.696 \\
+\gemini & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[92.6,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[92.6,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[92.6,100.0]} & 29.2 \textcolor{black!60}{[18.2,43.2]} & 48/48 & 0.934 / 1.600 \\
+\sokglm & 56.2 \textcolor{black!60}{[42.3,69.3]} & 39.6 \textcolor{black!60}{[27.0,53.7]} & 2.1 \textcolor{black!60}{[0.4,10.9]} & 33.3 \textcolor{black!60}{[21.7,47.5]} & 48/48 & 0.825 / 2.943 \\
+\sokqwen & 54.2 \textcolor{black!60}{[40.3,67.4]} & 54.2 \textcolor{black!60}{[40.3,67.4]} & 64.6 \textcolor{black!60}{[50.4,76.6]} & 2.1 \textcolor{black!60}{[0.4,10.9]} & 48/48 & 0.243 / 0.331 \\
+Lexical rule & 50.0 \textcolor{black!60}{[36.4,63.6]} & 50.0 \textcolor{black!60}{[36.4,63.6]} & 50.0 \textcolor{black!60}{[36.4,63.6]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[92.6,100.0]} & 48/48 & 0.000 / 0.000 \\
+MiniLM & 37.5 \textcolor{black!60}{[25.2,51.6]} & 37.5 \textcolor{black!60}{[25.2,51.6]} & 27.1 \textcolor{black!60}{[16.6,41.0]} & 50.0 \textcolor{black!60}{[36.4,63.6]} & 48/48 & 0.041 / 0.046 \\
+First & 22.9 \textcolor{black!60}{[13.3,36.5]} & 29.2 \textcolor{black!60}{[18.2,43.2]} & N/A & 0.0 \textcolor{black!60}{[0.0,7.4]} & 48/48 & N/A / N/A \\
+\bottomrule
+\end{tabular}}
+\setlength{\tabcolsep}{0pt}\sbox0{\familytab}
+\dimen0=\linewidth\advance\dimen0 by -1pt\advance\dimen0 by -\wd0\divide\dimen0 by 14
+\ifdim\dimen0<1.5pt \dimen0=1.5pt\fi
+\setlength{\tabcolsep}{\dimen0}\familytab
+\end{table*}

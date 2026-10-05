@@ -1,0 +1,27 @@
+\begingroup\begin{table}[!htbp]\centering\scriptsize
+\caption{RQ-B: descriptive repair-selection evidence. Each of the six observation conditions has six cases; Valid and median response summarize all 36 fixed records. Req./Opt. missing denote required/optional observations; Resolved is fresh evidence resolving an older contradiction; Conflict is current disagreement. Correctness evaluates the initial action, including justified refresh; response time ends at decision return. Full rule checks observations and repairs; Ungated omits observation validity. Best correctness per condition is in bold.}
+\label{tab:retained-repair-observation}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrrrr}
+\toprule
+\rowcolor{ebBlue} \multicolumn{1}{c}{} & \multicolumn{6}{c}{Correct first decisions $\uparrow$} & \multicolumn{2}{c}{All displayed conditions} \\
+\rowcolor{ebBlue} Method & Complete & \shortstack{Req.\\missing} & \shortstack{Opt.\\missing} & Stale & Resolved & Conflict & Valid & Median (s) \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{9}{l}{\textbf{\textit{A. Observation conditions: six repair cases each}}} \\
+\rowcolor{ebCoral!10}\sokjev & 5/6 & \cellcolor{ebCoral!35}\textbf{6/6} & 5/6 & \cellcolor{ebCoral!35}\textbf{6/6} & 0/6 & \cellcolor{ebCoral!35}\textbf{6/6} & 36/36 & 0.336 \\
+\deepseek & 0/6 & \cellcolor{ebCoral!35}\textbf{6/6} & 0/6 & \cellcolor{ebCoral!35}\textbf{6/6} & 0/6 & \cellcolor{ebCoral!35}\textbf{6/6} & 36/36 & 0.491 \\
+\gemini & 5/6 & 3/6 & 4/6 & 5/6 & 4/6 & 2/6 & 36/36 & 0.949 \\
+\sokglm & 1/6 & 0/6 & 0/6 & 0/6 & 1/6 & 0/6 & 36/36 & 0.881 \\
+\sokqwen & 0/6 & 0/6 & 2/6 & 5/6 & 2/6 & 1/6 & 36/36 & 0.410 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{6/6} & \cellcolor{ebCoral!35}\textbf{6/6} & \cellcolor{ebCoral!35}\textbf{6/6} & \cellcolor{ebCoral!35}\textbf{6/6} & \cellcolor{ebCoral!35}\textbf{6/6} & \cellcolor{ebCoral!35}\textbf{6/6} & 36/36 & $<$0.001 \\
+Ungated & \cellcolor{ebCoral!35}\textbf{6/6} & 0/6 & \cellcolor{ebCoral!35}\textbf{6/6} & 0/6 & 2/6 & 0/6 & 36/36 & $<$0.001 \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/18\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sokfitcolumns{\retainedtab}{18}
+\sbox0{\retainedtab}
+\typeout{RETAINED repair-observation width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

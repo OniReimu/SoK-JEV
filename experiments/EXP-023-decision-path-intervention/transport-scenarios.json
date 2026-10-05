@@ -1,0 +1,752 @@
+[
+  {
+    "id": "T01",
+    "source": 1,
+    "destination": 3,
+    "offset": 2,
+    "prefix": "198.18.3.1/32",
+    "destination_ip": "198.18.3.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.8.1",
+    "intent": "Route service prefix 198.18.3.1/32 from r1 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 26
+  },
+  {
+    "id": "T02",
+    "source": 1,
+    "destination": 4,
+    "offset": 3,
+    "prefix": "198.18.4.1/32",
+    "destination_ip": "198.18.4.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.8.1",
+    "intent": "Route service prefix 198.18.4.1/32 from r1 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 30
+  },
+  {
+    "id": "T03",
+    "source": 1,
+    "destination": 5,
+    "offset": 4,
+    "prefix": "198.18.5.1/32",
+    "destination_ip": "198.18.5.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.8.1",
+    "intent": "Route service prefix 198.18.5.1/32 from r1 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 34
+  },
+  {
+    "id": "T04",
+    "source": 1,
+    "destination": 6,
+    "offset": 5,
+    "prefix": "198.18.6.1/32",
+    "destination_ip": "198.18.6.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.8.1",
+    "intent": "Route service prefix 198.18.6.1/32 from r1 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 28
+  },
+  {
+    "id": "T05",
+    "source": 2,
+    "destination": 4,
+    "offset": 2,
+    "prefix": "198.18.4.1/32",
+    "destination_ip": "198.18.4.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.1.1",
+    "intent": "Route service prefix 198.18.4.1/32 from r2 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 26
+  },
+  {
+    "id": "T06",
+    "source": 2,
+    "destination": 5,
+    "offset": 3,
+    "prefix": "198.18.5.1/32",
+    "destination_ip": "198.18.5.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.1.1",
+    "intent": "Route service prefix 198.18.5.1/32 from r2 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 30
+  },
+  {
+    "id": "T07",
+    "source": 2,
+    "destination": 6,
+    "offset": 4,
+    "prefix": "198.18.6.1/32",
+    "destination_ip": "198.18.6.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.1.1",
+    "intent": "Route service prefix 198.18.6.1/32 from r2 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 34
+  },
+  {
+    "id": "T08",
+    "source": 2,
+    "destination": 7,
+    "offset": 5,
+    "prefix": "198.18.7.1/32",
+    "destination_ip": "198.18.7.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.1.1",
+    "intent": "Route service prefix 198.18.7.1/32 from r2 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 28
+  },
+  {
+    "id": "T09",
+    "source": 3,
+    "destination": 5,
+    "offset": 2,
+    "prefix": "198.18.5.1/32",
+    "destination_ip": "198.18.5.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.2.1",
+    "intent": "Route service prefix 198.18.5.1/32 from r3 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 26
+  },
+  {
+    "id": "T10",
+    "source": 3,
+    "destination": 6,
+    "offset": 3,
+    "prefix": "198.18.6.1/32",
+    "destination_ip": "198.18.6.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.2.1",
+    "intent": "Route service prefix 198.18.6.1/32 from r3 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 30
+  },
+  {
+    "id": "T11",
+    "source": 3,
+    "destination": 7,
+    "offset": 4,
+    "prefix": "198.18.7.1/32",
+    "destination_ip": "198.18.7.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.2.1",
+    "intent": "Route service prefix 198.18.7.1/32 from r3 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 34
+  },
+  {
+    "id": "T12",
+    "source": 3,
+    "destination": 8,
+    "offset": 5,
+    "prefix": "198.18.8.1/32",
+    "destination_ip": "198.18.8.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.2.1",
+    "intent": "Route service prefix 198.18.8.1/32 from r3 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 28
+  },
+  {
+    "id": "T13",
+    "source": 4,
+    "destination": 6,
+    "offset": 2,
+    "prefix": "198.18.6.1/32",
+    "destination_ip": "198.18.6.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.3.1",
+    "intent": "Route service prefix 198.18.6.1/32 from r4 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 26
+  },
+  {
+    "id": "T14",
+    "source": 4,
+    "destination": 7,
+    "offset": 3,
+    "prefix": "198.18.7.1/32",
+    "destination_ip": "198.18.7.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.3.1",
+    "intent": "Route service prefix 198.18.7.1/32 from r4 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 30
+  },
+  {
+    "id": "T15",
+    "source": 4,
+    "destination": 8,
+    "offset": 4,
+    "prefix": "198.18.8.1/32",
+    "destination_ip": "198.18.8.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.3.1",
+    "intent": "Route service prefix 198.18.8.1/32 from r4 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 34
+  },
+  {
+    "id": "T16",
+    "source": 4,
+    "destination": 1,
+    "offset": 5,
+    "prefix": "198.18.1.1/32",
+    "destination_ip": "198.18.1.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.3.1",
+    "intent": "Route service prefix 198.18.1.1/32 from r4 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 28
+  },
+  {
+    "id": "T17",
+    "source": 5,
+    "destination": 7,
+    "offset": 2,
+    "prefix": "198.18.7.1/32",
+    "destination_ip": "198.18.7.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.4.1",
+    "intent": "Route service prefix 198.18.7.1/32 from r5 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 26
+  },
+  {
+    "id": "T18",
+    "source": 5,
+    "destination": 8,
+    "offset": 3,
+    "prefix": "198.18.8.1/32",
+    "destination_ip": "198.18.8.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.4.1",
+    "intent": "Route service prefix 198.18.8.1/32 from r5 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 30
+  },
+  {
+    "id": "T19",
+    "source": 5,
+    "destination": 1,
+    "offset": 4,
+    "prefix": "198.18.1.1/32",
+    "destination_ip": "198.18.1.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.4.1",
+    "intent": "Route service prefix 198.18.1.1/32 from r5 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 34
+  },
+  {
+    "id": "T20",
+    "source": 5,
+    "destination": 2,
+    "offset": 5,
+    "prefix": "198.18.2.1/32",
+    "destination_ip": "198.18.2.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.4.1",
+    "intent": "Route service prefix 198.18.2.1/32 from r5 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 28
+  },
+  {
+    "id": "T21",
+    "source": 6,
+    "destination": 8,
+    "offset": 2,
+    "prefix": "198.18.8.1/32",
+    "destination_ip": "198.18.8.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.5.1",
+    "intent": "Route service prefix 198.18.8.1/32 from r6 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 26
+  },
+  {
+    "id": "T22",
+    "source": 6,
+    "destination": 1,
+    "offset": 3,
+    "prefix": "198.18.1.1/32",
+    "destination_ip": "198.18.1.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.5.1",
+    "intent": "Route service prefix 198.18.1.1/32 from r6 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 30
+  },
+  {
+    "id": "T23",
+    "source": 6,
+    "destination": 2,
+    "offset": 4,
+    "prefix": "198.18.2.1/32",
+    "destination_ip": "198.18.2.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.5.1",
+    "intent": "Route service prefix 198.18.2.1/32 from r6 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 34
+  },
+  {
+    "id": "T24",
+    "source": 6,
+    "destination": 3,
+    "offset": 5,
+    "prefix": "198.18.3.1/32",
+    "destination_ip": "198.18.3.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.5.1",
+    "intent": "Route service prefix 198.18.3.1/32 from r6 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 28
+  },
+  {
+    "id": "T25",
+    "source": 7,
+    "destination": 1,
+    "offset": 2,
+    "prefix": "198.18.1.1/32",
+    "destination_ip": "198.18.1.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.6.1",
+    "intent": "Route service prefix 198.18.1.1/32 from r7 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 26
+  },
+  {
+    "id": "T26",
+    "source": 7,
+    "destination": 2,
+    "offset": 3,
+    "prefix": "198.18.2.1/32",
+    "destination_ip": "198.18.2.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.6.1",
+    "intent": "Route service prefix 198.18.2.1/32 from r7 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 30
+  },
+  {
+    "id": "T27",
+    "source": 7,
+    "destination": 3,
+    "offset": 4,
+    "prefix": "198.18.3.1/32",
+    "destination_ip": "198.18.3.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.6.1",
+    "intent": "Route service prefix 198.18.3.1/32 from r7 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 34
+  },
+  {
+    "id": "T28",
+    "source": 7,
+    "destination": 4,
+    "offset": 5,
+    "prefix": "198.18.4.1/32",
+    "destination_ip": "198.18.4.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.6.1",
+    "intent": "Route service prefix 198.18.4.1/32 from r7 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 28
+  },
+  {
+    "id": "T29",
+    "source": 8,
+    "destination": 2,
+    "offset": 2,
+    "prefix": "198.18.2.1/32",
+    "destination_ip": "198.18.2.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.7.1",
+    "intent": "Route service prefix 198.18.2.1/32 from r8 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 26
+  },
+  {
+    "id": "T30",
+    "source": 8,
+    "destination": 3,
+    "offset": 3,
+    "prefix": "198.18.3.1/32",
+    "destination_ip": "198.18.3.1",
+    "baseline": {
+      "eth1_cost": 10,
+      "eth2_cost": 100
+    },
+    "action": {
+      "eth1_cost": 200,
+      "eth2_cost": 100
+    },
+    "baseline_interface": "eth1",
+    "required_interface": "eth2",
+    "required_next_hop": "10.23.7.1",
+    "intent": "Route service prefix 198.18.3.1/32 from r8 without its clockwise link.",
+    "latency_profile": {
+      "clockwise_ms": 5,
+      "counterclockwise_ms": 1
+    },
+    "rtt_verification_bound_ms": 30
+  }
+]

@@ -1,0 +1,57 @@
+\begingroup\begin{table}[!htbp]\centering\scriptsize
+\caption{RQ-E: online execution, 24 preselected cases per condition, two per worker-count/demand stratum. Correct evaluates the initial decision; Direct counts feasible execution before fallback and permits one observation refresh and reselection; Final includes fallback. Fallback counts fallback trajectories. Time spans observation through verification, including all model and fallback waiting. Best correctness per condition is in bold.}
+\label{tab:retained-service-online}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrr}
+\toprule
+\rowcolor{ebBlue} Method & Correct & Direct & Fallback & Final & Median (s) & p95 (s) \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\textit{Complete / shared quota}}} \\
+\rowcolor{ebCoral!10}\sokjev & 1/24 & 1/24 & 23 & 24/24 & 0.715 & 1.318 \\
+\deepseek & 2/24 & 2/24 & 22 & 24/24 & 1.370 & 1.818 \\
+\gemini & 1/24 & 3/24 & 21 & 24/24 & 1.311 & 2.651 \\
+\sokglm & 0/24 & 0/24 & 24 & 24/24 & 2.100 & 7.166 \\
+\sokqwen & 3/24 & 3/24 & 21 & 24/24 & 0.315 & 0.429 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 24/24 & 0.025 & 0.044 \\
+Per-stage rule & 12/24 & 12/24 & 12 & 24/24 & 0.032 & 0.059 \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\textit{Stale required report}}} \\
+\rowcolor{ebCoral!10}\sokjev & \cellcolor{ebCoral!35}\textbf{24/24} & 2/24 & 22 & 24/24 & 1.252 & 1.443 \\
+\deepseek & \cellcolor{ebCoral!35}\textbf{24/24} & 1/24 & 23 & 24/24 & 1.396 & 1.687 \\
+\gemini & \cellcolor{ebCoral!35}\textbf{24/24} & 3/24 & 21 & 24/24 & 2.461 & 2.786 \\
+\sokglm & \cellcolor{ebCoral!35}\textbf{24/24} & 0/24 & 24 & 24/24 & 2.235 & 20.234 \\
+\sokqwen & 0/24 & 0/24 & 24 & 24/24 & 0.314 & 0.388 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 24/24 & 0.030 & 0.050 \\
+Per-stage rule & \cellcolor{ebCoral!35}\textbf{24/24} & 12/24 & 12 & 24/24 & 0.037 & 0.065 \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\textit{Shared quota + domain separation}}} \\
+\rowcolor{ebCoral!10}\sokjev & 1/24 & 1/24 & 23 & 24/24 & 0.668 & 1.275 \\
+\deepseek & 0/24 & 0/24 & 24 & 24/24 & 1.367 & 1.624 \\
+\gemini & 8/24 & 9/24 & 15 & 24/24 & 1.364 & 2.440 \\
+\sokglm & 0/24 & 0/24 & 24 & 24/24 & 2.109 & 18.291 \\
+\sokqwen & 1/24 & 1/24 & 23 & 24/24 & 0.318 & 0.392 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 24/24 & 0.023 & 0.037 \\
+Per-stage rule & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 24/24 & 0.022 & 0.034 \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\textit{Public gate / shared quota}}} \\
+\rowcolor{ebCoral!10}\sokjev & 8/24 & 8/24 & 16 & 24/24 & 0.631 & 0.766 \\
+\deepseek & 6/24 & 6/24 & 18 & 24/24 & 0.716 & 0.864 \\
+\gemini & 8/24 & 11/24 & 13 & 24/24 & 1.279 & 1.462 \\
+\sokglm & 7/24 & 7/24 & 17 & 24/24 & 1.132 & 3.311 \\
+\sokqwen & 6/24 & 6/24 & 18 & 24/24 & 0.395 & 0.487 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 24/24 & 0.026 & 0.041 \\
+Per-stage rule & 12/24 & 12/24 & 12 & 24/24 & 0.043 & 0.069 \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\textit{Public gate / domain separation}}} \\
+\rowcolor{ebCoral!10}\sokjev & 9/24 & 9/24 & 15 & 24/24 & 0.626 & 0.744 \\
+\deepseek & 2/24 & 2/24 & 22 & 24/24 & 0.691 & 0.871 \\
+\gemini & 10/24 & 13/24 & 11 & 24/24 & 1.215 & 1.470 \\
+\sokglm & 6/24 & 7/24 & 17 & 24/24 & 1.141 & 6.420 \\
+\sokqwen & 3/24 & 3/24 & 21 & 24/24 & 0.387 & 0.457 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 24/24 & 0.025 & 0.051 \\
+Per-stage rule & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 24/24 & 0.025 & 0.034 \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/14\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sbox0{\retainedtab}
+\typeout{RETAINED service-online width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

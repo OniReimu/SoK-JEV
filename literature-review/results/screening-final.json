@@ -1,0 +1,23 @@
+{
+  "records": 847,
+  "routes": {
+    "agreed": 730,
+    "split_to_fulltext": 83,
+    "reconciled": 34
+  },
+  "final": {
+    "include": 594,
+    "background": 101,
+    "exclude": 152
+  },
+  "frame": 594,
+  "strata": {
+    "lm": 267,
+    "pre_llm": 327
+  },
+  "sample": {
+    "lm": 50,
+    "pre_llm": 50
+  },
+  "seed": 42
+}

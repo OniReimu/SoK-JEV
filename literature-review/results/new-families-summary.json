@@ -1,0 +1,383 @@
+{
+  "families": 7,
+  "independent_family_level_agreement": {
+    "endpoint": "7/7",
+    "denominator": "5/7",
+    "tail": "7/7",
+    "deadline": "7/7",
+    "load": "6/7",
+    "queue": "6/7",
+    "stability": "7/7",
+    "baseline": "6/7",
+    "loop_claim": "7/7",
+    "loop_match": "7/7",
+    "deployment": "5/7",
+    "roundtrip": "7/7",
+    "format": "7/7",
+    "semantic": "6/7",
+    "final_state": "6/7",
+    "gate_separation": "6/7",
+    "code": "5/7",
+    "data": "7/7"
+  },
+  "independent_agreement_total": "114/126",
+  "unresolved_after_reconciliation": [
+    {
+      "family": "Q006",
+      "field": "semantic",
+      "A_values": [
+        "not_reported",
+        "reported"
+      ],
+      "B_values": [
+        "reported",
+        "unclear"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q010",
+      "field": "task_group",
+      "A": [
+        "orchestration"
+      ],
+      "B": [
+        "orchestration",
+        "configuration"
+      ]
+    },
+    {
+      "family": "Q010",
+      "field": "load",
+      "A_values": [
+        "yes"
+      ],
+      "B_values": [
+        "unclear",
+        "yes"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q010",
+      "field": "queue",
+      "A_values": [
+        "not_reported"
+      ],
+      "B_values": [
+        "not_reported",
+        "yes"
+      ],
+      "A_positive": false,
+      "B_positive": true,
+      "bounds_differ": true
+    },
+    {
+      "family": "Q010",
+      "field": "loop_claim",
+      "A_values": [
+        "non_rt"
+      ],
+      "B_values": [
+        "non_rt",
+        "other"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q010",
+      "field": "deployment",
+      "A_values": [
+        "other",
+        "unclear"
+      ],
+      "B_values": [
+        "cpu",
+        "edge",
+        "other",
+        "unclear"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q010",
+      "field": "semantic",
+      "A_values": [
+        "reported"
+      ],
+      "B_values": [
+        "not_reported",
+        "reported"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q010",
+      "field": "gate_separation",
+      "A_values": [
+        "partial"
+      ],
+      "B_values": [
+        "no",
+        "partial"
+      ],
+      "A_positive": false,
+      "B_positive": false,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q060",
+      "field": "format",
+      "A_values": [
+        "not_reported"
+      ],
+      "B_values": [
+        "na",
+        "not_reported"
+      ],
+      "A_positive": false,
+      "B_positive": false,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q077",
+      "field": "endpoint",
+      "A_values": [
+        "other"
+      ],
+      "B_values": [
+        "model",
+        "other"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q077",
+      "field": "denominator",
+      "A_values": [
+        "mixed",
+        "other"
+      ],
+      "B_values": [
+        "other",
+        "unclear"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q077",
+      "field": "deployment",
+      "A_values": [
+        "na",
+        "unclear"
+      ],
+      "B_values": [
+        "hosted",
+        "na",
+        "unclear"
+      ],
+      "A_positive": false,
+      "B_positive": true,
+      "bounds_differ": true
+    },
+    {
+      "family": "Q077",
+      "field": "semantic",
+      "A_values": [
+        "reported"
+      ],
+      "B_values": [
+        "reported",
+        "unclear"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q085",
+      "field": "semantic",
+      "A_values": [
+        "reported"
+      ],
+      "B_values": [
+        "reported",
+        "unclear"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q090",
+      "field": "endpoint",
+      "A_values": [
+        "not_reported",
+        "service"
+      ],
+      "B_values": [
+        "not_reported",
+        "other"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q090",
+      "field": "denominator",
+      "A_values": [
+        "all",
+        "na"
+      ],
+      "B_values": [
+        "na",
+        "unclear"
+      ],
+      "A_positive": true,
+      "B_positive": false,
+      "bounds_differ": true
+    },
+    {
+      "family": "Q090",
+      "field": "deployment",
+      "A_values": [
+        "unclear"
+      ],
+      "B_values": [
+        "hosted",
+        "unclear"
+      ],
+      "A_positive": false,
+      "B_positive": true,
+      "bounds_differ": true
+    },
+    {
+      "family": "Q090",
+      "field": "semantic",
+      "A_values": [
+        "reported"
+      ],
+      "B_values": [
+        "unclear"
+      ],
+      "A_positive": true,
+      "B_positive": false,
+      "bounds_differ": true
+    },
+    {
+      "family": "Q090",
+      "field": "final_state",
+      "A_values": [
+        "reported"
+      ],
+      "B_values": [
+        "reported",
+        "unclear"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q090",
+      "field": "gate_separation",
+      "A_values": [
+        "partial",
+        "three"
+      ],
+      "B_values": [
+        "no",
+        "partial"
+      ],
+      "A_positive": true,
+      "B_positive": false,
+      "bounds_differ": true
+    },
+    {
+      "family": "Q109",
+      "field": "endpoint",
+      "A_values": [
+        "dispatch",
+        "network",
+        "other",
+        "service"
+      ],
+      "B_values": [
+        "dispatch",
+        "other",
+        "service"
+      ],
+      "A_positive": true,
+      "B_positive": true,
+      "bounds_differ": false
+    },
+    {
+      "family": "Q109",
+      "field": "code",
+      "A_values": [
+        "public_link"
+      ],
+      "B_values": [
+        "not_reported"
+      ],
+      "A_positive": true,
+      "B_positive": false,
+      "bounds_differ": true
+    }
+  ],
+  "final_positive_counts": {
+    "endpoint": 5,
+    "denominator": 3,
+    "tail": 0,
+    "deadline": 0,
+    "load": 3,
+    "queue": 0,
+    "stability": 2,
+    "baseline": 2,
+    "loop_claim": 2,
+    "loop_match": 0,
+    "deployment": 3,
+    "roundtrip": 1,
+    "format": 2,
+    "semantic": 5,
+    "final_state": 5,
+    "gate_separation": 0,
+    "code": 0,
+    "data": 1
+  },
+  "upper_bound_positive_counts": {
+    "endpoint": 5,
+    "denominator": 4,
+    "tail": 0,
+    "deadline": 0,
+    "load": 3,
+    "queue": 1,
+    "stability": 2,
+    "baseline": 2,
+    "loop_claim": 2,
+    "loop_match": 0,
+    "deployment": 5,
+    "roundtrip": 1,
+    "format": 2,
+    "semantic": 6,
+    "final_state": 5,
+    "gate_separation": 1,
+    "code": 1,
+    "data": 1
+  }
+}

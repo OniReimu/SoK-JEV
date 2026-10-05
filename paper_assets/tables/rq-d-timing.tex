@@ -1,0 +1,51 @@
+\begin{table*}[tp]
+\centering\scriptsize
+\caption{Format-valid return by budget with task-family ownership. In the access-policy base condition, model rows summarize the same 81 base cases from the second collection batch, spread over all four request families, while rule rows summarize all 120 base cases. Return quantiles are in seconds. The p99 is descriptive. Probability intervals use 30\,s blocks. An asterisk marks fewer than eight occupied blocks. High-load $\rho$ uses 16 service arrivals/s and 2 RAN intents/s. Edge and RAN values are borrowed and reanalysed~\cite{li2026replacing,li2026intent}.}
+\label{tab:e1-timing}
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{0.94}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}\setlength{\extrarowheight}{0pt}
+\def\familytab{\begin{tabular}{llrrrrr}
+\toprule
+\rowcolor{ebBlue}
+Model & Ownership & $n$ & \shortstack{Return (s)\\p50 / p95 / p99} & \shortstack{$\leq100$ ms\\(\%) [CI]} & \shortstack{$\leq1$ s\\(\%) [CI]} & \shortstack{High-load\\$\rho$} \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{7}{l}{\textbf{\itshape Access policy, SoK-owned base condition}} \\
+\rowcolor{ebCoral!10}\sokjev & SoK-owned & 81 & 0.350 / 0.483 / 0.620 & 0.0 \textcolor{black!60}{[0.0,0.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} & N/A \\
+\deepseek & SoK-owned & 81 & 0.469 / 1.623 / 6.123 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 88.9 \textcolor{black!60}{[81.2,95.4]} & N/A \\
+\gemini & SoK-owned & 81 & 0.923 / 1.144 / 1.371 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 74.1 \textcolor{black!60}{[64.9,82.9]} & N/A \\
+\sokglm & SoK-owned & 81 & 0.812 / 1.504 / 7.866 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 72.8 \textcolor{black!60}{[62.3,82.7]} & N/A \\
+\sokqwen & SoK-owned & 81 & 0.329 / 0.388 / 0.435 & 0.0 \textcolor{black!60}{[0.0,0.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} & N/A \\
+Full rule & SoK-owned & 120 & 0.000 / 0.000 / 0.000 & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[N/A]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[N/A]} & N/A \\
+Cheapest & SoK-owned & 120 & 0.000 / 0.000 / 0.000 & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[N/A]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[N/A]} & N/A \\
+First & SoK-owned & 120 & \cellcolor{ebCoral!35}\textbf{0.000} / \cellcolor{ebCoral!35}\textbf{0.000} / \cellcolor{ebCoral!35}\textbf{0.000} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[N/A]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[N/A]} & N/A \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{7}{l}{\textbf{\itshape Service contract, reanalysed from the Edge study~\cite{li2026replacing}}} \\
+\rowcolor{ebCoral!10}\jev & From A & 300 & 0.274 / 0.381 / 0.536 & 0.0 \textcolor{black!60}{[0.0,0.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} & 1.084 \\
+\semif & From A & 300 & 0.124 / 0.296 / 0.323 & 0.3 \textcolor{black!60}{[0.0,0.5]}* & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]}* & 10.170 \\
+\laya & From A & 300 & 0.055 / 0.222 / 0.242 & 83.3 \textcolor{black!60}{[N/A]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[N/A]} & 1.037 \\
+\deepseek & From A & 300 & 0.378 / 1.054 / 4.933 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 94.7 \textcolor{black!60}{[88.8,98.7]} & 1.842 \\
+\glm & From A & 300 & 0.646 / 2.685 / 3.363 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 81.0 \textcolor{black!60}{[71.3,89.4]} & 2.972 \\
+\qwenflash & From A & 300 & 1.774 / 3.668 / 5.774 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 0.0 \textcolor{black!60}{[0.0,0.0]} & 5.876 \\
+\qwenjson & From A & 300 & 0.774 / 0.868 / 1.036 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 98.7 \textcolor{black!60}{[97.2,99.7]} & 15.823 \\
+Rule & From A & 300 & 0.000 / 0.000 / 0.000 & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[N/A]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[N/A]} & N/A \\
+Oracle & From A & 300 & \cellcolor{ebCoral!35}\textbf{0.000} / \cellcolor{ebCoral!35}\textbf{0.000} / \cellcolor{ebCoral!35}\textbf{0.000} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[N/A]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[N/A]} & 0.002 \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{7}{l}{\textbf{\itshape RAN policy at 57 fresh cells, reanalysed from the RAN study~\cite{li2026intent}}} \\
+\rowcolor{ebCoral!10}\jev & From B & 300 & \cellcolor{ebCoral!35}\textbf{0.275} / \cellcolor{ebCoral!35}\textbf{0.376} / 0.429 & \cellcolor{ebCoral!35}\textbf{0.0} \textcolor{black!60}{[0.0,0.0]}* & 99.7 \textcolor{black!60}{[99.0,100.0]}* & 0.149 \\
+\semif & From B & 300 & 0.431 / 0.524 / 0.556 & \cellcolor{ebCoral!35}\textbf{0.0} \textcolor{black!60}{[0.0,0.0]}* & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]}* & 0.261 \\
+\anyjev & From B & 300 & 0.403 / 0.422 / \cellcolor{ebCoral!35}\textbf{0.428} & \cellcolor{ebCoral!35}\textbf{0.0} \textcolor{black!60}{[0.0,0.0]}* & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]}* & 1.169 \\
+\deepseek & From B & 300 & 0.520 / 0.812 / 0.984 & \cellcolor{ebCoral!35}\textbf{0.0} \textcolor{black!60}{[0.0,0.0]}* & 99.0 \textcolor{black!60}{[97.7,100.0]}* & 0.403 \\
+\glm & From B & 300 & 1.128 / 2.111 / 4.195 & \cellcolor{ebCoral!35}\textbf{0.0} \textcolor{black!60}{[0.0,0.0]}* & 24.0 \textcolor{black!60}{[18.5,28.8]}* & 0.350 \\
+\qwenflash & From B & 300 & 2.220 / 2.945 / 4.124 & \cellcolor{ebCoral!35}\textbf{0.0} \textcolor{black!60}{[0.0,0.0]} & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1.085 \\
+\qwenjson & From B & 300 & 0.429 / 0.439 / 0.443 & \cellcolor{ebCoral!35}\textbf{0.0} \textcolor{black!60}{[0.0,0.0]}* & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]}* & 0.217 \\
+\bottomrule
+\end{tabular}}
+\setlength{\tabcolsep}{0pt}\sbox0{\familytab}
+\dimen0=\linewidth\advance\dimen0 by -1pt\advance\dimen0 by -\wd0\divide\dimen0 by 14
+\ifdim\dimen0<1.5pt \dimen0=1.5pt\fi
+\setlength{\tabcolsep}{\dimen0}\familytab
+\end{table*}

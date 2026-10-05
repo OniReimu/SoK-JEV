@@ -1,0 +1,25 @@
+\begingroup\begin{table}[!htbp]\centering\scriptsize
+\caption{RQ-C: online route execution, 24 trajectories per condition. Correct is the first decision; Direct is feasible execution before fallback, including a justified catalogue rebuild that loads a preconstructed certified catalogue. All trajectories finally complete. Time includes observation, all model waiting, execution, checking, and fallback. Bold marks the largest displayed correct fraction within a condition and column, including ties.}
+\label{tab:retained-route-online}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrrrr}
+\toprule
+\rowcolor{ebBlue} \multicolumn{1}{c}{} & \multicolumn{4}{c}{Feasible candidate present} & \multicolumn{4}{c}{No feasible candidate listed} \\
+\rowcolor{ebBlue} Method & Correct $\uparrow$ & Direct $\uparrow$ & Fallback $\downarrow$ & Median (s) $\downarrow$ & Correct $\uparrow$ & Direct $\uparrow$ & Fallback $\downarrow$ & Median (s) $\downarrow$ \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{9}{l}{\textbf{\textit{C. Online forwarding: decisions, direct completion, fallback and median total time}}} \\
+\rowcolor{ebCoral!10}\sokjev & 17/24 & 22/24 & 2 & 0.686 & 0/24 & 0/24 & 24 & 0.833 \\
+\deepseek & 15/24 & 19/24 & 5 & 0.736 & 15/24 & 10/24 & 14 & 1.212 \\
+\gemini & 18/24 & 21/24 & 3 & 1.343 & 10/24 & 8/24 & 16 & 1.588 \\
+\sokglm & 1/24 & 3/24 & 21 & 2.230 & 21/24 & 1/24 & 23 & 2.275 \\
+\sokqwen & 8/24 & 14/24 & 10 & 0.753 & 0/24 & 0/24 & 24 & 0.840 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 0.249 & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 0.339 \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/18\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sbox0{\retainedtab}
+\typeout{RETAINED route-online width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

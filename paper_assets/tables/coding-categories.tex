@@ -1,0 +1,55 @@
+\begin{table}[!htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{1.10}
+\newlength{\sokcategorywidth}
+\setlength{\sokcategorywidth}{\dimexpr\textwidth-1pt-4\tabcolsep\relax}
+\caption{Adjudicated category counts across the 405 scopes coded by the two researchers. Each single-choice row sums to 405. Timing endpoint and execution location allow multiple selections. N/A denotes inapplicability, and unlisted response categories have zero count. Table~\ref{tab:e0-audit} reports positive coverage and its family-clustered intervals.}\label{tab:e0-categories}
+\begin{tabular}{>{\raggedright\arraybackslash}p{.27\sokcategorywidth}>{\raggedright\arraybackslash}p{.73\sokcategorywidth}}
+\toprule
+\rowcolor{ebBlue} Field & Response category: number of scopes \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{2}{l}{\textbf{\itshape Timing, workload, and comparison}} \\*
+Named timing endpoint & Model return:~39; Dispatch:~6; Network effect:~12; Service result:~23; Other:~86; Not reported:~253; Unclear:~2 \\
+\addlinespace[3pt]
+Specified metric denominator & All attempts:~48; Successful:~5; Other:~16; Mixed:~7; Unclear:~76; N/A:~253 \\
+\addlinespace[3pt]
+p95 or higher & Reported:~14; Not reported:~390; Unclear:~1 \\
+\addlinespace[3pt]
+Deadline attainment & Reported:~7; Not reported:~397; Unclear:~1 \\
+\addlinespace[3pt]
+Input load & Reported:~81; Not reported:~324 \\
+\addlinespace[3pt]
+Queue / waiting & Reported:~11; Not reported:~394 \\
+\addlinespace[3pt]
+Stability evidence & Reported:~44; Not reported:~361 \\
+\addlinespace[3pt]
+Non-learning comparison & Reported:~64; Not reported:~337; Unclear:~4 \\
+\addlinespace[3pt]
+\rowcolor{ebAmber!45}\multicolumn{2}{l}{\textbf{\itshape Control-loop claim and deployment}} \\*
+Explicit loop claim & RT/fast:~54; Near-RT:~11; Non-RT:~36; Other:~19; Not stated:~285 \\
+\addlinespace[3pt]
+Supported loop claim & Matched:~7; Mismatch:~1; Insufficient:~397 \\
+\addlinespace[3pt]
+Named execution location & Hosted API:~143; Local GPU:~66; Local CPU:~21; Other:~29; Unclear:~105; N/A:~95 \\
+\addlinespace[3pt]
+Network round trip included & Included:~35; Excluded:~5; Unclear:~91; N/A:~274 \\
+\addlinespace[3pt]
+\rowcolor{ebAmber!45}\multicolumn{2}{l}{\textbf{\itshape Validation responsibilities}} \\*
+Format check reported & Reported:~135; Not reported:~266; N/A:~4 \\
+\addlinespace[3pt]
+Semantic check reported & Reported:~344; Explicitly unchecked:~3; Not reported:~58 \\
+\addlinespace[3pt]
+Final-state check reported & Reported:~75; Explicitly unchecked:~31; Not reported:~96; Unclear:~8; N/A:~195 \\
+\addlinespace[3pt]
+Three gates distinguished & All three:~12; Partial:~262; Combined:~130; Unclear:~1 \\
+\addlinespace[3pt]
+\rowcolor{ebAmber!45}\multicolumn{2}{l}{\textbf{\itshape Artifact pointers}} \\*
+Public code pointer & Public link:~96; On request/private:~3; Not public:~4; Not reported:~284; Unclear:~18 \\
+\addlinespace[3pt]
+Public data pointer & Public link:~139; On request/private:~4; Not public:~1; Not reported:~248; Unclear:~13 \\
+\addlinespace[3pt]
+\bottomrule
+\end{tabular}
+\end{table}

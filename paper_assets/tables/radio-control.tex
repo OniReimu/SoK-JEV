@@ -1,0 +1,29 @@
+\begin{table*}[!htbp]
+\centering\scriptsize
+\caption{Radio-loop simulation borrowed from the RAN study~\cite{li2026intent}. Latency-only contrasts use 0.3 intents/s, 30\,km/h and five UEs per cell. Values are challenger minus anchor SLA violation with paired time-block intervals and Holm adjustment across eight tests.}
+\label{tab:sixg-published-radio}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}\setlength{\extrarowheight}{0pt}
+\def\familytab{\begin{tabular}{lrrrr}
+\toprule
+\rowcolor{ebBlue}
+Challenger - anchor & Endpoint & $\Delta$ violation pp [95\% CI] & $p_{\mathrm{Holm}}$ & Contrast direction \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{5}{l}{\textbf{\itshape Radio base point: latency-only arms, event-triggered mode}} \\
+DeepSeek - Jev & Affected class & 0.03 \textcolor{black!60}{[-1.45,1.55]} & 1 & Unresolved \\
+DeepSeek - Jev & Network-wide & -0.66 \textcolor{black!60}{[-2.14,0.46]} & 1 & Unresolved \\
+GLM 5.3 - Jev & Affected class & -2.45 \textcolor{black!60}{[-5.13,-0.63]} & 0.0072 & Lower violation \\
+GLM 5.3 - Jev & Network-wide & -2.66 \textcolor{black!60}{[-4.94,-1.03]} & 0.0007999 & Lower violation \\
+Qwen 3.8 - Jev & Affected class & -0.98 \textcolor{black!60}{[-2.21,0.23]} & 0.581 & Unresolved \\
+Qwen 3.8 - Jev & Network-wide & -0.66 \textcolor{black!60}{[-2.44,0.50]} & 1 & Unresolved \\
+Qwen JSON - SemIf & Affected class & 1.46 \textcolor{black!60}{[-0.31,3.97]} & 0.6232 & Unresolved \\
+Qwen JSON - SemIf & Network-wide & 1.12 \textcolor{black!60}{[0.46,1.97]} & 0.0007999 & Higher violation \\
+\bottomrule
+\end{tabular}}
+\setlength{\tabcolsep}{0pt}\sbox0{\familytab}
+\dimen0=\linewidth\advance\dimen0 by -1pt\advance\dimen0 by -\wd0\divide\dimen0 by 10
+\ifdim\dimen0<1.5pt \dimen0=1.5pt\fi
+\setlength{\tabcolsep}{\dimen0}\familytab
+\end{table*}

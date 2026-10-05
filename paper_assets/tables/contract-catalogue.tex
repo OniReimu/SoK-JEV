@@ -1,0 +1,26 @@
+\begingroup\begin{table}[!htbp]\centering\scriptsize
+\caption{Contract interpretation on 48 configurations per condition. Replacement introduces two incoming candidates. Absent requires new candidates. Valid and median response refer only to Stable. Rule is a lexical contract matcher. MiniLM re-ranks descriptions. Best correctness per condition is in bold.}
+\label{tab:retained-contract-catalogue}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrr}
+\toprule
+\rowcolor{ebBlue} \multicolumn{1}{c}{} & \multicolumn{4}{c}{Correct decisions $\uparrow$} & \multicolumn{2}{c}{Stable only} \\
+\rowcolor{ebBlue} Method & Stable & Rekeyed & Replacement & Absent & Valid & Median (s) \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\textit{A. Contract interpretation: 48 configurations per condition}}} \\
+\rowcolor{ebCoral!10}\sokjev & \cellcolor{ebCoral!35}\textbf{48/48} & \cellcolor{ebCoral!35}\textbf{48/48} & \cellcolor{ebCoral!35}\textbf{48/48} & 45/48 & 48/48 & 0.323 \\
+\deepseek & 47/48 & 43/48 & 37/48 & 3/48 & 48/48 & 0.447 \\
+\gemini & \cellcolor{ebCoral!35}\textbf{48/48} & \cellcolor{ebCoral!35}\textbf{48/48} & \cellcolor{ebCoral!35}\textbf{48/48} & 14/48 & 48/48 & 0.893 \\
+\sokglm & 27/48 & 19/48 & 1/48 & 16/48 & 48/48 & 0.775 \\
+\sokqwen & 26/48 & 26/48 & 31/48 & 1/48 & 48/48 & 0.243 \\
+Rule & 24/48 & 24/48 & 24/48 & \cellcolor{ebCoral!35}\textbf{48/48} & 48/48 & $<0.001$ \\
+MiniLM & 18/48 & 18/48 & 13/48 & 24/48 & 48/48 & 0.041 \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/14\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sbox0{\retainedtab}
+\typeout{RETAINED contract-catalogue width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

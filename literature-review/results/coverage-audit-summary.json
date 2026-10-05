@@ -1,0 +1,249 @@
+{
+  "coded": 98,
+  "draws": 100,
+  "by_stratum": {
+    "lm": {
+      "draws": 50,
+      "coded": 49,
+      "eligible": 45,
+      "eligibility_unresolved": 0,
+      "loop_claim": {
+        "k": 15,
+        "n": 45,
+        "wilson95": [
+          0.21358692207276764,
+          0.479297831907446
+        ],
+        "field_unresolved": 6,
+        "lower_counts": [
+          15,
+          46
+        ],
+        "upper_counts": [
+          22,
+          46
+        ]
+      },
+      "matched_claim": {
+        "k": 3,
+        "n": 45,
+        "wilson95": [
+          0.022931616462147086,
+          0.17856874388640825
+        ],
+        "field_unresolved": 6,
+        "lower_counts": [
+          3,
+          46
+        ],
+        "upper_counts": [
+          10,
+          46
+        ]
+      },
+      "tail_p95": {
+        "k": 2,
+        "n": 45,
+        "wilson95": [
+          0.012273869040444335,
+          0.14827779183880616
+        ],
+        "field_unresolved": 1,
+        "lower_counts": [
+          2,
+          46
+        ],
+        "upper_counts": [
+          4,
+          46
+        ]
+      },
+      "deadline": {
+        "k": 1,
+        "n": 45,
+        "wilson95": [
+          0.003933497522757505,
+          0.11566946388718813
+        ],
+        "field_unresolved": 0,
+        "lower_counts": [
+          1,
+          46
+        ],
+        "upper_counts": [
+          2,
+          46
+        ]
+      }
+    },
+    "pre_llm": {
+      "draws": 50,
+      "coded": 49,
+      "eligible": 32,
+      "eligibility_unresolved": 2,
+      "loop_claim": {
+        "k": 10,
+        "n": 32,
+        "wilson95": [
+          0.17952352116618736,
+          0.4856699969803239
+        ],
+        "field_unresolved": 2,
+        "lower_counts": [
+          10,
+          35
+        ],
+        "upper_counts": [
+          15,
+          35
+        ]
+      },
+      "matched_claim": {
+        "k": 2,
+        "n": 32,
+        "wilson95": [
+          0.017310203195157234,
+          0.2014746724800358
+        ],
+        "field_unresolved": 2,
+        "lower_counts": [
+          2,
+          35
+        ],
+        "upper_counts": [
+          7,
+          35
+        ]
+      },
+      "tail_p95": {
+        "k": 2,
+        "n": 32,
+        "wilson95": [
+          0.017310203195157234,
+          0.2014746724800358
+        ],
+        "field_unresolved": 1,
+        "lower_counts": [
+          2,
+          35
+        ],
+        "upper_counts": [
+          6,
+          35
+        ]
+      },
+      "deadline": {
+        "k": 1,
+        "n": 32,
+        "wilson95": [
+          0.005537717362550945,
+          0.15744607800372734
+        ],
+        "field_unresolved": 1,
+        "lower_counts": [
+          1,
+          35
+        ],
+        "upper_counts": [
+          5,
+          35
+        ]
+      }
+    }
+  },
+  "weighted": {
+    "loop_claim": {
+      "estimate": 0.3236353930334979,
+      "bootstrap95": [
+        0.22187095847104468,
+        0.42909238249594817
+      ]
+    },
+    "matched_claim": {
+      "estimate": 0.06472707860669959,
+      "bootstrap95": [
+        0.013013598479309841,
+        0.12449220285676847
+      ]
+    },
+    "tail_p95": {
+      "estimate": 0.052849326037635126,
+      "bootstrap95": [
+        0.011571967234429855,
+        0.10831551138507987
+      ]
+    },
+    "deadline": {
+      "estimate": 0.026424663018817563,
+      "bootstrap95": [
+        0.0,
+        0.06857686040195546
+      ]
+    }
+  },
+  "bounds": {
+    "loop_claim": {
+      "lm": {
+        "lower": 0.32608695652173914,
+        "upper": 0.4782608695652174
+      },
+      "pre_llm": {
+        "lower": 0.2857142857142857,
+        "upper": 0.42857142857142855
+      },
+      "frame_weighted": {
+        "lower": 0.3066127196864332,
+        "upper": 0.4542925780756101
+      }
+    },
+    "matched_claim": {
+      "lm": {
+        "lower": 0.06521739130434782,
+        "upper": 0.21739130434782608
+      },
+      "pre_llm": {
+        "lower": 0.05714285714285714,
+        "upper": 0.2
+      },
+      "frame_weighted": {
+        "lower": 0.061322543937286644,
+        "upper": 0.20900240232646355
+      }
+    },
+    "tail_p95": {
+      "lm": {
+        "lower": 0.043478260869565216,
+        "upper": 0.08695652173913043
+      },
+      "pre_llm": {
+        "lower": 0.05714285714285714,
+        "upper": 0.17142857142857143
+      },
+      "frame_weighted": {
+        "lower": 0.05006954102920723,
+        "upper": 0.1277026172714629
+      }
+    },
+    "deadline": {
+      "lm": {
+        "lower": 0.021739130434782608,
+        "upper": 0.043478260869565216
+      },
+      "pre_llm": {
+        "lower": 0.02857142857142857,
+        "upper": 0.14285714285714285
+      },
+      "frame_weighted": {
+        "lower": 0.025034770514603615,
+        "upper": 0.09141484384877989
+      }
+    }
+  },
+  "corpus": {
+    "loop_claim": 0.36363636363636365,
+    "matched_claim": 0.030303030303030304,
+    "tail_p95": 0.06818181818181818,
+    "deadline": 0.030303030303030304
+  },
+  "assumption": "The frame-weighted estimate and its interval assume that access and coding are missing at random within stratum; the bounds make no such assumption."
+}

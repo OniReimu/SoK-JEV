@@ -1,0 +1,27 @@
+\begingroup\begin{table}[htbp]\centering\scriptsize
+\caption{Supplementary network selection, six cases per catalogue condition. Distractor/Effective denote distractor/effective replacement. Valid and median response refer to Stable with four candidates. Rule is the complete network checker; MiniLM re-ranks descriptions.}
+\label{tab:retained-network-catalogue}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrrrrrrr}
+\toprule
+\rowcolor{ebBlue} \multicolumn{1}{c}{} & \multicolumn{3}{c}{4 candidates} & \multicolumn{3}{c}{8 candidates} & \multicolumn{3}{c}{16 candidates} & \multicolumn{2}{c}{Stable, 4 candidates} \\
+\rowcolor{ebBlue} Method & Stable & Distractor & Effective & Stable & Distractor & Effective & Stable & Distractor & Effective & Valid & Median (s) \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{12}{l}{\textbf{\textit{B. Network selection: six cases per catalogue condition}}} \\
+\rowcolor{ebCoral!10}\sokjev & 5/6 & 6/6 & 6/6 & 4/6 & 5/6 & 6/6 & 5/6 & 5/6 & 6/6 & 6/6 & 0.374 \\
+\deepseek & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 1.611 \\
+\gemini & 6/6 & 5/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 0.986 \\
+\sokglm & 5/6 & 4/6 & 6/6 & 3/6 & 4/6 & 6/6 & 3/6 & 4/6 & 6/6 & 6/6 & 0.795 \\
+\sokqwen & 5/6 & 6/6 & 6/6 & 4/6 & 4/6 & 6/6 & 2/6 & 3/6 & 6/6 & 6/6 & 0.505 \\
+Rule & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & 6/6 & $<0.001$ \\
+MiniLM & 0/6 & 0/6 & 2/6 & 0/6 & 0/6 & 2/6 & 0/6 & 0/6 & 2/6 & 6/6 & 0.954 \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/24\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sokfitcolumns{\retainedtab}{24}
+\sbox0{\retainedtab}
+\typeout{RETAINED network-catalogue width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

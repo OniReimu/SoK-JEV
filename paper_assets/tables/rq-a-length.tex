@@ -1,0 +1,49 @@
+\begin{table*}[!htbp]
+\centering\scriptsize
+\caption{Paired pure-length effects. Contract effects are borrowed and reanalysed from the Edge study~\cite{li2026replacing}. Policy effects are SoK-owned. Exact McNemar p-values use the complete 89-comparison structure family. The conditions retain the requirement set.}
+\label{tab:rq-a-length}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}\setlength{\extrarowheight}{0pt}
+\def\familytab{\begin{tabular}{lrrrrr}
+\toprule
+\rowcolor{ebBlue}
+Method & Condition & n & $\Delta$ correctness pp [CI] & $p_{\mathrm{Holm}}$ & Paired $\Delta$ return (s) [CI] \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{6}{l}{\textbf{\itshape Service-contract padding: 16384 tokens minus base}} \\
+\rowcolor{ebCoral!10}\jev & Padding & 300 & -2.7 \textcolor{black!60}{[-5.7,0.3]} & 1 & 0.149 \textcolor{black!60}{[0.135,0.157]} \\
+\semif & Padding & 300 & -15.7 \textcolor{black!60}{[-21.3,-9.7]} & $4.31\times10^{-5}$ & 1.034 \textcolor{black!60}{[1.032,1.036]} \\
+\laya & Padding & 300 & -9.3 \textcolor{black!60}{[-13.0,-6.0]} & $1.823\times10^{-5}$ & 0.082 \textcolor{black!60}{[0.081,0.082]} \\
+\deepseek & Padding & 300 & -1.7 \textcolor{black!60}{[-3.3,-0.3]} & 1 & 0.259 \textcolor{black!60}{[0.249,0.276]} \\
+\glm & Padding & 300 & -4.7 \textcolor{black!60}{[-7.3,-2.0]} & 0.07742 & 0.883 \textcolor{black!60}{[0.781,0.962]} \\
+\qwenflash & Padding & 300 & 0.0 \textcolor{black!60}{[-2.3,2.0]} & 1 & 1.191 \textcolor{black!60}{[1.135,1.272]} \\
+\qwenjson & Padding & 300 & -30.0 \textcolor{black!60}{[-35.3,-24.7]} & $2.117\times10^{-21}$ & 0.781 \textcolor{black!60}{[0.774,0.791]} \\
+Rule & Padding & 300 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 0.002 \textcolor{black!60}{[0.002,0.003]} \\
+Oracle & Padding & 300 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 0.000 \textcolor{black!60}{[0.000,0.000]} \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{6}{l}{\textbf{\itshape Access policy: irrelevant context or repetition minus base}} \\
+\rowcolor{ebCoral!10}\sokjev & Irrelevant text & 120 & 0.8 \textcolor{black!60}{[-1.7,3.3]} & 1 & 0.044 \textcolor{black!60}{[0.022,0.084]} \\
+\rowcolor{ebCoral!10}\sokjev & Repetition & 120 & 3.3 \textcolor{black!60}{[-0.8,8.3]} & 1 & 0.048 \textcolor{black!60}{[0.013,0.084]} \\
+\deepseek & Irrelevant text & 120 & -5.0 \textcolor{black!60}{[-10.8,0.8]} & 1 & 0.030 \textcolor{black!60}{[-0.011,0.096]} \\
+\deepseek & Repetition & 120 & -3.3 \textcolor{black!60}{[-10.8,4.2]} & 1 & 0.099 \textcolor{black!60}{[0.011,0.124]} \\
+\gemini & Irrelevant text & 120 & 1.7 \textcolor{black!60}{[-6.7,9.2]} & 1 & 0.158 \textcolor{black!60}{[0.118,0.219]} \\
+\gemini & Repetition & 120 & 1.7 \textcolor{black!60}{[-7.5,10.8]} & 1 & 0.172 \textcolor{black!60}{[0.148,0.221]} \\
+\sokglm & Irrelevant text & 120 & -3.3 \textcolor{black!60}{[-8.3,0.8]} & 1 & 0.141 \textcolor{black!60}{[0.053,0.204]} \\
+\sokglm & Repetition & 120 & -5.0 \textcolor{black!60}{[-11.7,1.7]} & 1 & 0.247 \textcolor{black!60}{[0.136,0.314]} \\
+\sokqwen & Irrelevant text & 120 & -2.5 \textcolor{black!60}{[-8.3,3.3]} & 1 & 0.239 \textcolor{black!60}{[0.235,0.243]} \\
+\sokqwen & Repetition & 120 & 8.3 \textcolor{black!60}{[0.8,15.8]} & 1 & 0.653 \textcolor{black!60}{[0.647,0.662]} \\
+Full rule & Irrelevant text & 120 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 0.000 \textcolor{black!60}{[0.000,0.000]} \\
+Full rule & Repetition & 120 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 0.000 \textcolor{black!60}{[0.000,0.000]} \\
+Cheapest & Irrelevant text & 120 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 0.000 \textcolor{black!60}{[0.000,0.000]} \\
+Cheapest & Repetition & 120 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 0.000 \textcolor{black!60}{[0.000,0.000]} \\
+First & Irrelevant text & 120 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 0.000 \textcolor{black!60}{[0.000,0.000]} \\
+First & Repetition & 120 & 0.0 \textcolor{black!60}{[0.0,0.0]} & 1 & 0.000 \textcolor{black!60}{[0.000,0.000]} \\
+\bottomrule
+\end{tabular}}
+\setlength{\tabcolsep}{0pt}\sbox0{\familytab}
+\dimen0=\linewidth\advance\dimen0 by -1pt\advance\dimen0 by -\wd0\divide\dimen0 by 12
+\ifdim\dimen0<1.5pt \dimen0=1.5pt\fi
+\setlength{\tabcolsep}{\dimen0}\familytab
+\end{table*}

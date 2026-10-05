@@ -1,0 +1,9 @@
+# Downloaded from Hugging Face (see README)
+studies/sok/data/*.tar.gz
+runs/
+# Local environments and outputs
+.venv/
+artifacts/
+out/
+__pycache__/
+*.pyc

@@ -1,0 +1,32 @@
+\begin{table}[!htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{1.10}
+\newlength{\sokoptionwidth}
+\setlength{\sokoptionwidth}{\dimexpr\textwidth-1pt-12\tabcolsep\relax}
+\caption{Pre-adjudication option agreement for the two multi-select fields over all 405 paired scopes (231 initial pairs and 174 independent rechecks after scope alignment). Counts give the number of selections by each researcher. A counts both joint selections and joint non-selections. N/A denotes undefined $\kappa$ for a constant category.}\label{tab:e0-agreement-options}
+\begin{tabular}{>{\raggedright\arraybackslash}p{.30\sokoptionwidth}>{\raggedleft\arraybackslash}p{.18\sokoptionwidth}>{\raggedleft\arraybackslash}p{.18\sokoptionwidth}>{\raggedleft\arraybackslash}p{.12\sokoptionwidth}>{\raggedleft\arraybackslash}p{.11\sokoptionwidth}>{\raggedleft\arraybackslash}p{.11\sokoptionwidth}}
+\toprule
+\rowcolor{ebBlue} Option & \shortstack{Researcher 1\\selected} & \shortstack{Researcher 2\\selected} & A (\%) & $\kappa$ & AC1 \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{6}{l}{\textbf{\itshape Timing endpoint}} \\*
+Model return & 38 & 41 & 97.3 & 0.846 & 0.967 \\
+Dispatch & 2 & 6 & 98.5 & 0.244 & 0.985 \\
+Network effect & 11 & 12 & 99.3 & 0.866 & 0.992 \\
+Service result & 23 & 22 & 97.8 & 0.788 & 0.975 \\
+Other & 92 & 81 & 94.3 & 0.831 & 0.914 \\
+Not reported & 251 & 252 & 98.8 & 0.974 & 0.977 \\
+Unclear & 7 & 5 & 98.0 & 0.324 & 0.980 \\
+N/A & 0 & 0 & 100.0 & N/A & 1.000 \\
+\rowcolor{ebAmber!45}\multicolumn{6}{l}{\textbf{\itshape Execution location}} \\*
+Hosted API & 147 & 128 & 93.3 & 0.852 & 0.879 \\
+Local GPU & 62 & 67 & 97.3 & 0.899 & 0.963 \\
+Edge device & 0 & 0 & 100.0 & N/A & 1.000 \\
+Local CPU & 21 & 22 & 98.8 & 0.877 & 0.986 \\
+Other & 39 & 24 & 91.4 & 0.400 & 0.899 \\
+Unclear & 103 & 115 & 92.6 & 0.812 & 0.878 \\
+N/A & 94 & 89 & 95.8 & 0.880 & 0.935 \\
+\bottomrule
+\end{tabular}
+\end{table}

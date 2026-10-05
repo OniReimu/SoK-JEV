@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "date": "2026-10-05",
+  "archives": [
+    {
+      "path": "data/analysis.tar.gz",
+      "sha256": "055b84a7bf205c3984aef0774809f156fd5584e20887f8eed785b0cd0d0125b1",
+      "bytes": 7207204,
+      "files": 92,
+      "expanded_bytes": 118804456,
+      "manifest_sha256": "9ebf9a673a16b3a997bd45b448a04373f83165e740f76473f7730a414bd18c92"
+    },
+    {
+      "path": "data/coding.tar.gz",
+      "sha256": "80ad7c0cd1b03377a94d8fc2441a3b8bc66015c23b2e390290d5f2dc3aed94e6",
+      "bytes": 748425,
+      "files": 7,
+      "expanded_bytes": 7022079,
+      "manifest_sha256": "7f3947688c484b095025f8bf047e2502fc4517c780999f443b4a2621567faf01"
+    },
+    {
+      "path": "data/fixed-workloads.tar.gz",
+      "sha256": "7279e90e4d93aa2962be68debbd89ecb115612e20113565ddf16fbd57f7872f6",
+      "bytes": 14965186,
+      "files": 14459,
+      "expanded_bytes": 308034969,
+      "manifest_sha256": "30066b6541e16bee71811e18e791747c207df630501a4a6ab37dc37e7e369e2d"
+    },
+    {
+      "path": "data/interventions.tar.gz",
+      "sha256": "bcdac0d1803993d6914c375d6ca62adabd871d3a9cdea125629e35c765e4cd8c",
+      "bytes": 35993288,
+      "files": 126,
+      "expanded_bytes": 135323783,
+      "manifest_sha256": "3c11fa596f8732a9491643bbf27d8dba6ad512f8687c62be18cd1a501f5a47ce"
+    },
+    {
+      "path": "data/network-source.tar.gz",
+      "sha256": "2ceda9e3ad0e544898295608738d70e5ba9f20152506b2c91015deb05cc07d8f",
+      "bytes": 594672,
+      "files": 183,
+      "expanded_bytes": 2287154,
+      "manifest_sha256": "084e8c01535d04ead0d261b6898b8dc3c23c5179fe4965048a6032cd1246df75"
+    },
+    {
+      "path": "data/network-workloads.tar.gz",
+      "sha256": "63a679f0e3a5bd09cb33607f9c7beba1d374b18b4d399d8f508d8fb7309e198c",
+      "bytes": 45637681,
+      "files": 521,
+      "expanded_bytes": 480282522,
+      "manifest_sha256": "924869fa8f4ffc8c2ce7c49fd89e5c0708fec169d0c06dec665e51b2c38826d4"
+    }
+  ],
+  "code_files": [
+    "scripts/sok_6g_analysis.py",
+    "scripts/sok_cross_study.py",
+    "scripts/sok_cross_study_figures.py",
+    "scripts/sok_e1_analysis.py",
+    "scripts/sok_e1_figures.py",
+    "scripts/sok_family_figures.py",
+    "scripts/sok_e0_tables.py",
+    "scripts/sok_retained_tables.py",
+    "scripts/sok_systematization.py",
+    "scripts/sok_style_check.py",
+    "scripts/sok_concept_figures.py",
+    "experiments/EXP-023-decision-path-intervention/analyze_load.py",
+    "experiments/EXP-023-decision-path-intervention/analyze_sparse.py",
+    "experiments/EXP-023-decision-path-intervention/check_analysis.py",
+    "experiments/EXP-023-decision-path-intervention/edge_measure.py",
+    "experiments/EXP-023-decision-path-intervention/edge_probe.py",
+    "experiments/EXP-023-decision-path-intervention/edge_setup.py",
+    "experiments/EXP-023-decision-path-intervention/image_service.py",
+    "experiments/EXP-023-decision-path-intervention/prepare_load.py",
+    "experiments/EXP-023-decision-path-intervention/render_results.py",
+    "experiments/EXP-023-decision-path-intervention/run_load.py",
+    "experiments/EXP-023-decision-path-intervention/run_sparse.py",
+    "experiments/EXP-023-decision-path-intervention/transport_measure.py",
+    "experiments/EXP-023-decision-path-intervention/transport_setup.py",
+    "experiments/EXP-023-decision-path-intervention/guest_experiment.py",
+    "experiments/EXP-023-decision-path-intervention/Dockerfile",
+    "experiments/EXP-023-decision-path-intervention/edge-scenarios.json",
+    "experiments/EXP-023-decision-path-intervention/edge-service.json",
+    "experiments/EXP-023-decision-path-intervention/transport-scenarios.json",
+    "experiments/EXP-023-decision-path-intervention/load-empirical-inputs.json",
+    "experiments/EXP-023-decision-path-intervention/transport-ring/daemons",
+    "experiments/EXP-023-decision-path-intervention/transport-ring/r1.conf",
+    "experiments/EXP-023-decision-path-intervention/transport-ring/r2.conf",
+    "experiments/EXP-023-decision-path-intervention/transport-ring/r3.conf",
+    "experiments/EXP-023-decision-path-intervention/transport-ring/r4.conf",
+    "experiments/EXP-023-decision-path-intervention/transport-ring/r5.conf",
+    "experiments/EXP-023-decision-path-intervention/transport-ring/r6.conf",
+    "experiments/EXP-023-decision-path-intervention/transport-ring/r7.conf",
+    "experiments/EXP-023-decision-path-intervention/transport-ring/r8.conf",
+    "experiments/EXP-023-decision-path-intervention/transport-ring/ring.clab.yml",
+    "experiments/EXP-023-decision-path-intervention/transport-ring/vtysh.conf"
+  ]
+}

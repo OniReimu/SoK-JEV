@@ -1,0 +1,41 @@
+\begin{table*}[!htbp]
+\centering\scriptsize
+\caption{Observation-state correctness with 95\% Wilson intervals. The RAN rows are borrowed and reanalysed~\cite{li2026intent}. Placement rows are SoK-owned. Valid counts and return p50/p95 use contradictory telemetry or resolved conflict.}
+\label{tab:rq-b-native}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}\setlength{\extrarowheight}{0pt}
+\def\familytab{\begin{tabular}{lrrrrrr}
+\toprule
+\rowcolor{ebAmber!45}
+\multicolumn{7}{l}{\textbf{\itshape RAN policy: fresh / stale / noisy / contradictory, 57 cells}} \\
+\rowcolor{ebBlue}
+Model & Fresh & Stale & Noisy & Contradictory & Valid / $n$ & \shortstack{Return (s) $\downarrow$\\p50 / p95} \\
+\rowcolor{ebCoral!10}\jev & 90.7 \textcolor{black!60}{[84.9,94.4]} & 70.0 \textcolor{black!60}{[62.2,76.8]} & 88.7 \textcolor{black!60}{[82.6,92.8]} & 63.3 \textcolor{black!60}{[55.4,70.6]} & 150/150 & 0.292 / 0.408 \\
+\semif & 14.0 \textcolor{black!60}{[9.3,20.5]} & 5.3 \textcolor{black!60}{[2.7,10.2]} & 14.7 \textcolor{black!60}{[9.9,21.2]} & 16.7 \textcolor{black!60}{[11.6,23.4]} & 150/150 & 0.601 / 0.713 \\
+\anyjev & 28.0 \textcolor{black!60}{[21.4,35.7]} & 21.3 \textcolor{black!60}{[15.5,28.6]} & 24.0 \textcolor{black!60}{[17.9,31.4]} & 24.7 \textcolor{black!60}{[18.5,32.1]} & 150/150 & 0.492 / 0.504 \\
+\deepseek & 96.0 \textcolor{black!60}{[91.5,98.2]} & 69.3 \textcolor{black!60}{[61.5,76.2]} & \cellcolor{ebCoral!35}\textbf{97.3} \textcolor{black!60}{[93.3,99.0]} & 66.7 \textcolor{black!60}{[58.8,73.7]} & 150/150 & 0.683 / 1.013 \\
+\glm & \cellcolor{ebCoral!35}\textbf{96.7} \textcolor{black!60}{[92.4,98.6]} & \cellcolor{ebCoral!35}\textbf{95.3} \textcolor{black!60}{[90.7,97.7]} & 96.7 \textcolor{black!60}{[92.4,98.6]} & \cellcolor{ebCoral!35}\textbf{85.3} \textcolor{black!60}{[78.8,90.1]} & 137/150 & 1.851 / 2.975 \\
+\qwenflash & 88.0 \textcolor{black!60}{[81.8,92.3]} & 73.3 \textcolor{black!60}{[65.7,79.8]} & 90.7 \textcolor{black!60}{[84.9,94.4]} & 62.0 \textcolor{black!60}{[54.0,69.4]} & 150/150 & 2.445 / 7.214 \\
+\qwenjson & 28.7 \textcolor{black!60}{[22.0,36.4]} & 27.3 \textcolor{black!60}{[20.8,35.0]} & 27.3 \textcolor{black!60}{[20.8,35.0]} & 30.0 \textcolor{black!60}{[23.2,37.8]} & 150/150 & 0.478 / 0.486 \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{7}{l}{\textbf{\itshape Placement: missing / stale / conflict / resolved conflict}} \\
+\rowcolor{ebBlue}
+Model & Missing & Stale & Current conflict & Resolved conflict & Valid / $n$ & \shortstack{Return (s) $\downarrow$\\p50 / p95} \\
+\rowcolor{ebCoral!10}\sokjev & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & 99.2 \textcolor{black!60}{[95.4,99.9]} & 41.7 \textcolor{black!60}{[33.2,50.6]} & 9.2 \textcolor{black!60}{[5.2,15.7]} & 120/120 & 0.374 / 0.590 \\
+\deepseek & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & 1.7 \textcolor{black!60}{[0.5,5.9]} & 120/120 & 0.507 / 0.813 \\
+\gemini & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & 25.8 \textcolor{black!60}{[18.8,34.3]} & 25.8 \textcolor{black!60}{[18.8,34.3]} & 120/120 & 1.015 / 1.276 \\
+\sokglm & 99.2 \textcolor{black!60}{[95.4,99.9]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & 0.8 \textcolor{black!60}{[0.1,4.6]} & 120/120 & 0.861 / 6.439 \\
+\sokqwen & 0.0 \textcolor{black!60}{[0.0,3.1]} & 7.5 \textcolor{black!60}{[4.0,13.6]} & 1.7 \textcolor{black!60}{[0.5,5.9]} & 1.7 \textcolor{black!60}{[0.5,5.9]} & 120/120 & 0.249 / 0.334 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & 120/120 & 0.000 / 0.000 \\
+Per-stage rule & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & 50.0 \textcolor{black!60}{[41.2,58.8]} & 120/120 & 0.000 / 0.000 \\
+Ungated & 0.0 \textcolor{black!60}{[0.0,3.1]} & 0.0 \textcolor{black!60}{[0.0,3.1]} & 0.0 \textcolor{black!60}{[0.0,3.1]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & 120/120 & 0.000 / 0.000 \\
+First & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & 25.8 \textcolor{black!60}{[18.8,34.3]} & 120/120 & 0.000 / 0.000 \\
+\bottomrule
+\end{tabular}}
+\setlength{\tabcolsep}{0pt}\sbox0{\familytab}
+\dimen0=\linewidth\advance\dimen0 by -1pt\advance\dimen0 by -\wd0\divide\dimen0 by 14
+\ifdim\dimen0<1.5pt \dimen0=1.5pt\fi
+\setlength{\tabcolsep}{\dimen0}\familytab
+\end{table*}

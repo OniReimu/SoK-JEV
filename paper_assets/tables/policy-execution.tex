@@ -1,0 +1,41 @@
+\begingroup\begin{table}[!htbp]\centering\scriptsize
+\caption{RQ-A: online policy execution on 24 preselected cases, six per demand family, in each condition. Correct requires the minimum-cost choice; Direct counts successful execution before fallback; Final includes fallback; Fallback counts fallback trajectories. Time spans observation, selection, installation, verification, and fallback. Best correctness per condition is in bold.}
+\label{tab:retained-policy-online}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrr}
+\toprule
+\rowcolor{ebBlue} Method & Correct & Direct & Fallback & Final & Median (s) & p95 (s) \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\textit{Online policy: Long irrelevant context}}} \\
+\rowcolor{ebCoral!10}\sokjev & 21/24 & 21/24 & 3 & 24/24 & 1.196 & 1.523 \\
+\deepseek & 16/24 & 18/24 & 6 & 24/24 & 1.458 & 2.214 \\
+\gemini & 17/24 & 21/24 & 3 & 24/24 & 1.939 & 2.584 \\
+\sokglm & 15/24 & 17/24 & 7 & 24/24 & 1.706 & 3.300 \\
+\sokqwen & 2/24 & 2/24 & 22 & 24/24 & 1.514 & 2.007 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 24/24 & 0.668 & 0.876 \\
+Cheapest & 18/24 & 18/24 & 6 & 24/24 & 0.780 & 1.387 \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\textit{Online policy: Repeated requirements}}} \\
+\rowcolor{ebCoral!10}\sokjev & 20/24 & 21/24 & 3 & 24/24 & 1.213 & 1.582 \\
+\deepseek & 14/24 & 15/24 & 9 & 24/24 & 1.499 & 1.968 \\
+\gemini & 16/24 & 21/24 & 3 & 24/24 & 1.809 & 2.100 \\
+\sokglm & 15/24 & 18/24 & 6 & 24/24 & 1.812 & 2.411 \\
+\sokqwen & 3/24 & 4/24 & 20 & 24/24 & 1.973 & 2.313 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 24/24 & 0.641 & 0.946 \\
+Cheapest & 18/24 & 18/24 & 6 & 24/24 & 0.747 & 1.478 \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\textit{Online policy: 64 distinct requirements}}} \\
+\rowcolor{ebCoral!10}\sokjev & 8/24 & 8/24 & 16 & 24/24 & 1.324 & 1.803 \\
+\deepseek & 7/24 & 7/24 & 17 & 24/24 & 1.460 & 1.963 \\
+\gemini & 16/24 & 16/24 & 8 & 24/24 & 1.793 & 2.813 \\
+\sokglm & 9/24 & 9/24 & 15 & 24/24 & 1.946 & 3.122 \\
+\sokqwen & 0/24 & 0/24 & 24 & 24/24 & 1.632 & 2.002 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{24/24} & 24/24 & 0 & 24/24 & 0.698 & 0.993 \\
+Cheapest & 9/24 & 9/24 & 15 & 24/24 & 0.901 & 1.539 \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/14\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sbox0{\retainedtab}
+\typeout{RETAINED policy-online width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

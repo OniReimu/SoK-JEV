@@ -1,0 +1,46 @@
+\begin{table*}[!htbp]
+\centering\scriptsize
+\caption{Service admission at 1 and 2 arrivals/s, borrowed and reanalysed from the Edge study~\cite{li2026replacing}. Offered $\rho$ estimates dispatched service demand. Return and native modeled completion use all arrivals. Queue quantiles condition on observed waits.}
+\label{tab:rq-d-capacity}
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{0.94}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}\setlength{\extrarowheight}{0pt}
+\def\familytab{\begin{tabular}{lrrrrr}
+\toprule
+\rowcolor{ebBlue}
+Implementation & \shortstack{Offered $\rho$\\{}[CI]} & \shortstack{Accepted\\$\rho$} & \shortstack{Queue (s)\\p50 / p95} & \shortstack{Return $\leq B$\\(\%) [CI]} & \shortstack{Native completion\\(\%) [CI]} \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{6}{l}{\textbf{\itshape Service admission: 1 arrivals/s, B = 2 s. 300 arrivals per row}} \\
+\rowcolor{ebCoral!10}\jev & 0.071 \textcolor{black!60}{[0.070,0.073]} & 0.071 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & 94.0 \textcolor{black!60}{[90.7,96.8]} \\
+\semif & 0.170 \textcolor{black!60}{[0.156,0.184]} & 0.170 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & 63.0 \textcolor{black!60}{[56.6,69.9]} \\
+\laya & 0.028 \textcolor{black!60}{[0.027,0.029]} & 0.028 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & 11.7 \textcolor{black!60}{[7.3,15.7]} \\
+\deepseek & 0.171 \textcolor{black!60}{[0.094,0.273]} & 0.165 & 0.002 / 0.002 & 92.3 \textcolor{black!60}{[83.3,100.0]} & 90.7 \textcolor{black!60}{[81.7,97.9]} \\
+\glm & 0.217 \textcolor{black!60}{[0.202,0.231]} & 0.217 & 0.002 / 0.002 & 93.3 \textcolor{black!60}{[90.7,96.1]} & 91.7 \textcolor{black!60}{[88.7,94.8]} \\
+\qwenflash & 0.338 \textcolor{black!60}{[0.326,0.350]} & 0.338 & 0.002 / 0.002 & 95.0 \textcolor{black!60}{[92.6,97.6]} & 90.0 \textcolor{black!60}{[87.5,92.7]} \\
+\qwenjson & 0.739 \textcolor{black!60}{[0.506,0.984]} & 0.643 & 0.002 / 1.807 & 38.0 \textcolor{black!60}{[15.1,63.7]} & 19.3 \textcolor{black!60}{[6.8,33.4]} \\
+Fixed 0.3 s & 0.077 \textcolor{black!60}{[0.077,0.077]} & 0.077 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+Fixed 0.6 s & 0.152 \textcolor{black!60}{[0.152,0.152]} & 0.152 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+Fixed 1.2 s & 0.302 \textcolor{black!60}{[0.302,0.302]} & 0.302 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+Oracle & 0.000 \textcolor{black!60}{[0.000,0.000]} & 0.000 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{6}{l}{\textbf{\itshape Service admission: 2 arrivals/s, B = 2 s. 300 arrivals per row}} \\
+\rowcolor{ebCoral!10}\jev & 0.139 \textcolor{black!60}{[0.133,0.144]} & 0.138 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & 95.3 \textcolor{black!60}{[92.4,98.2]} \\
+\semif & 1.164 \textcolor{black!60}{[1.027,1.268]} & 0.966 & 1.074 / 1.910 & 11.0 \textcolor{black!60}{[0.4,29.1]} & 8.7 \textcolor{black!60}{[0.3,24.5]} \\
+\laya & 0.049 \textcolor{black!60}{[0.048,0.050]} & 0.049 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & 11.7 \textcolor{black!60}{[7.9,16.8]} \\
+\deepseek & 0.217 \textcolor{black!60}{[0.199,0.236]} & 0.217 & 0.002 / 0.002 & 99.3 \textcolor{black!60}{[98.1,100.0]} & 97.7 \textcolor{black!60}{[95.8,99.4]} \\
+\glm & 0.490 \textcolor{black!60}{[0.384,0.607]} & 0.489 & 0.002 / 0.574 & 85.3 \textcolor{black!60}{[74.2,95.4]} & 82.3 \textcolor{black!60}{[70.0,93.4]} \\
+\qwenflash & 0.733 \textcolor{black!60}{[0.719,0.749]} & 0.727 & 0.002 / 1.439 & 73.0 \textcolor{black!60}{[60.9,86.3]} & 66.0 \textcolor{black!60}{[54.0,79.3]} \\
+\qwenjson & 2.154 \textcolor{black!60}{[2.114,2.196]} & 1.019 & 1.658 / 1.943 & 0.7 \textcolor{black!60}{[0.0,2.0]} & 0.3 \textcolor{black!60}{[0.0,1.0]} \\
+Fixed 0.3 s & 0.154 \textcolor{black!60}{[0.154,0.154]} & 0.154 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+Fixed 0.6 s & 0.304 \textcolor{black!60}{[0.304,0.304]} & 0.304 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+Fixed 1.2 s & 0.604 \textcolor{black!60}{[0.604,0.604]} & 0.603 & 0.002 / 0.449 & 99.0 \textcolor{black!60}{[97.8,100.0]} & 98.3 \textcolor{black!60}{[96.5,100.0]} \\
+Oracle & 0.000 \textcolor{black!60}{[0.000,0.000]} & 0.000 & 0.002 / 0.002 & 100.0 \textcolor{black!60}{[100.0,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[100.0,100.0]} \\
+\bottomrule
+\end{tabular}}
+\setlength{\tabcolsep}{0pt}\sbox0{\familytab}
+\dimen0=\linewidth\advance\dimen0 by -1pt\advance\dimen0 by -\wd0\divide\dimen0 by 12
+\ifdim\dimen0<1.5pt \dimen0=1.5pt\fi
+\setlength{\tabcolsep}{\dimen0}\familytab
+\end{table*}

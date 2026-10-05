@@ -1,0 +1,36 @@
+{
+  "records": 111,
+  "coderA": {
+    "exclude": 61,
+    "include": 14,
+    "background": 36
+  },
+  "coderB": {
+    "exclude": 70,
+    "include": 14,
+    "background": 27
+  },
+  "three_class": {
+    "exact": 0.8108108108108109,
+    "kappa": 0.6613395321807353,
+    "ac1": 0.7380825304081576
+  },
+  "include_vs_not": {
+    "exact": 0.9099099099099099,
+    "kappa": 0.5913107511045657,
+    "ac1": 0.8844351900052057
+  },
+  "both_include": 9,
+  "disagreements": 21,
+  "crosstab": {
+    "background|background": 24,
+    "background|exclude": 10,
+    "background|include": 2,
+    "exclude|background": 1,
+    "exclude|exclude": 57,
+    "exclude|include": 3,
+    "include|background": 2,
+    "include|exclude": 3,
+    "include|include": 9
+  }
+}

@@ -1,0 +1,54 @@
+\begin{table*}[!htbp]
+\centering\scriptsize
+\caption{Structural growth on three native axes. Contract and RAN rows are borrowed and reanalysed~\cite{li2026replacing,li2026intent}. Policy rows are SoK-owned. Correctness is in percent with 95\% Wilson intervals. Contract inputs differ, so their $\Delta$ is N/A.}
+\label{tab:rq-a-native}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}\setlength{\extrarowheight}{0pt}
+\def\familytab{\begin{tabular}{lrrrrrrr}
+\toprule
+\rowcolor{ebAmber!45}
+\multicolumn{8}{l}{\textbf{\itshape Service contract: 4 / 6 / 8 fields, low constraint density}} \\
+\rowcolor{ebBlue}
+Model & 4 fields & 6 fields & 8 fields & N/A & \shortstack{$\Delta_{\mathrm{last-first}}$\\pp [CI]} & Valid / $n$ & \shortstack{Return (s) $\downarrow$\\p50 / p95} \\
+\rowcolor{ebCoral!10}\jev & 92.3 \textcolor{black!60}{[88.8,94.8]} & 78.7 \textcolor{black!60}{[73.7,82.9]} & 57.7 \textcolor{black!60}{[52.0,63.1]} & N/A & N/A & 300/300 & 0.272 / 0.371 \\
+\semif & 54.3 \textcolor{black!60}{[48.7,59.9]} & 40.0 \textcolor{black!60}{[34.6,45.6]} & 13.3 \textcolor{black!60}{[9.9,17.6]} & N/A & N/A & 300/300 & 0.133 / 0.194 \\
+\laya & 25.3 \textcolor{black!60}{[20.7,30.5]} & 7.7 \textcolor{black!60}{[5.2,11.2]} & 1.0 \textcolor{black!60}{[0.3,2.9]} & N/A & N/A & 300/300 & 0.057 / 0.242 \\
+\deepseek & 98.3 \textcolor{black!60}{[96.2,99.3]} & 95.7 \textcolor{black!60}{[92.7,97.5]} & 90.0 \textcolor{black!60}{[86.1,92.9]} & N/A & N/A & 300/300 & 0.460 / 0.591 \\
+\glm & 89.7 \textcolor{black!60}{[85.7,92.6]} & 96.3 \textcolor{black!60}{[93.6,97.9]} & 80.3 \textcolor{black!60}{[75.5,84.4]} & N/A & N/A & 300/300 & 0.930 / 1.954 \\
+\qwenflash & 98.3 \textcolor{black!60}{[96.2,99.3]} & 90.0 \textcolor{black!60}{[86.1,92.9]} & 82.3 \textcolor{black!60}{[77.6,86.2]} & N/A & N/A & 298/300 & 2.092 / 3.525 \\
+\qwenjson & 53.0 \textcolor{black!60}{[47.4,58.6]} & 48.3 \textcolor{black!60}{[42.7,54.0]} & 30.0 \textcolor{black!60}{[25.1,35.4]} & N/A & N/A & 300/300 & 1.507 / 1.789 \\
+Rule & 4.0 \textcolor{black!60}{[2.3,6.9]} & 0.3 \textcolor{black!60}{[0.1,1.9]} & 0.0 \textcolor{black!60}{[0.0,1.3]} & N/A & N/A & 300/300 & 0.000 / 0.000 \\
+Oracle & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[98.7,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[98.7,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[98.7,100.0]} & N/A & N/A & 300/300 & 0.000 / 0.000 \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{8}{l}{\textbf{\itshape RAN policy: 3 / 7 / 21 / 57 cells, fresh, state-dependent target}} \\
+\rowcolor{ebBlue}
+Model & 3 cells & 7 cells & 21 cells & 57 cells & \shortstack{$\Delta_{\mathrm{last-first}}$\\pp [CI]} & Valid / $n$ & \shortstack{Return (s) $\downarrow$\\p50 / p95} \\
+\rowcolor{ebCoral!10}\jev & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[97.5,100.0]} & 96.7 \textcolor{black!60}{[92.4,98.6]} & 90.0 \textcolor{black!60}{[84.2,93.8]} & 90.7 \textcolor{black!60}{[84.9,94.4]} & -9.3 \textcolor{black!60}{[-14.0,-5.3]} & 150/150 & 0.281 / 0.378 \\
+\semif & 24.7 \textcolor{black!60}{[18.5,32.1]} & 12.7 \textcolor{black!60}{[8.3,18.9]} & 13.3 \textcolor{black!60}{[8.8,19.7]} & 14.0 \textcolor{black!60}{[9.3,20.5]} & -10.7 \textcolor{black!60}{[-18.0,-3.3]} & 150/150 & 0.432 / 0.524 \\
+\anyjev & 59.3 \textcolor{black!60}{[51.3,66.9]} & 36.7 \textcolor{black!60}{[29.4,44.6]} & 28.0 \textcolor{black!60}{[21.4,35.7]} & 28.0 \textcolor{black!60}{[21.4,35.7]} & -31.3 \textcolor{black!60}{[-40.0,-22.0]} & 150/150 & 0.404 / 0.422 \\
+\deepseek & 98.0 \textcolor{black!60}{[94.3,99.3]} & 98.7 \textcolor{black!60}{[95.3,99.6]} & 96.7 \textcolor{black!60}{[92.4,98.6]} & 96.0 \textcolor{black!60}{[91.5,98.2]} & -2.0 \textcolor{black!60}{[-4.7,0.0]} & 150/150 & 0.522 / 0.825 \\
+\glm & 99.3 \textcolor{black!60}{[96.3,99.9]} & \cellcolor{ebCoral!35}\textbf{99.3} \textcolor{black!60}{[96.3,99.9]} & \cellcolor{ebCoral!35}\textbf{98.0} \textcolor{black!60}{[94.3,99.3]} & \cellcolor{ebCoral!35}\textbf{96.7} \textcolor{black!60}{[92.4,98.6]} & -2.7 \textcolor{black!60}{[-6.0,0.0]} & 150/150 & 1.234 / 2.248 \\
+\qwenflash & 99.3 \textcolor{black!60}{[96.3,99.9]} & 97.3 \textcolor{black!60}{[93.3,99.0]} & 92.7 \textcolor{black!60}{[87.3,95.9]} & 88.0 \textcolor{black!60}{[81.8,92.3]} & -11.3 \textcolor{black!60}{[-16.7,-6.7]} & 150/150 & 2.213 / 3.053 \\
+\qwenjson & 63.3 \textcolor{black!60}{[55.4,70.6]} & 47.3 \textcolor{black!60}{[39.5,55.3]} & 36.7 \textcolor{black!60}{[29.4,44.6]} & 28.7 \textcolor{black!60}{[22.0,36.4]} & -34.7 \textcolor{black!60}{[-43.3,-26.7]} & 150/150 & 0.432 / 0.440 \\
+\midrule
+\rowcolor{ebAmber!45}
+\multicolumn{8}{l}{\textbf{\itshape Access policy: 4 / 16 / 64 distinct requirements}} \\
+\rowcolor{ebBlue}
+Model & 4 requirements & 16 requirements & 64 requirements & N/A & \shortstack{$\Delta_{\mathrm{last-first}}$\\pp [CI]} & Valid / $n$ & \shortstack{Return (s) $\downarrow$\\p50 / p95} \\
+\rowcolor{ebCoral!10}\sokjev & 89.2 \textcolor{black!60}{[82.3,93.6]} & 80.8 \textcolor{black!60}{[72.9,86.9]} & 39.2 \textcolor{black!60}{[30.9,48.1]} & N/A & -50.0 \textcolor{black!60}{[-59.2,-40.8]} & 120/120 & 0.406 / 0.758 \\
+\deepseek & 67.5 \textcolor{black!60}{[58.7,75.2]} & 52.5 \textcolor{black!60}{[43.6,61.2]} & 41.7 \textcolor{black!60}{[33.2,50.6]} & N/A & -25.8 \textcolor{black!60}{[-37.5,-14.2]} & 120/120 & 0.634 / 1.601 \\
+\gemini & 71.7 \textcolor{black!60}{[63.0,79.0]} & 63.3 \textcolor{black!60}{[54.4,71.4]} & 65.8 \textcolor{black!60}{[57.0,73.7]} & N/A & -5.8 \textcolor{black!60}{[-16.7,5.0]} & 120/120 & 1.140 / 1.393 \\
+\sokglm & 68.3 \textcolor{black!60}{[59.6,76.0]} & 52.5 \textcolor{black!60}{[43.6,61.2]} & 37.5 \textcolor{black!60}{[29.4,46.4]} & N/A & -30.8 \textcolor{black!60}{[-40.8,-20.8]} & 120/120 & 1.033 / 2.793 \\
+\sokqwen & 18.3 \textcolor{black!60}{[12.4,26.2]} & 4.2 \textcolor{black!60}{[1.8,9.4]} & 1.7 \textcolor{black!60}{[0.5,5.9]} & N/A & -16.7 \textcolor{black!60}{[-23.3,-10.0]} & 120/120 & 0.601 / 0.688 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & \cellcolor{ebCoral!35}\textbf{100.0} \textcolor{black!60}{[96.9,100.0]} & N/A & 0.0 \textcolor{black!60}{[0.0,0.0]} & 120/120 & 0.000 / 0.000 \\
+Cheapest & 77.5 \textcolor{black!60}{[69.2,84.1]} & 60.8 \textcolor{black!60}{[51.9,69.1]} & 37.5 \textcolor{black!60}{[29.4,46.4]} & N/A & -40.0 \textcolor{black!60}{[-49.2,-31.7]} & 120/120 & 0.000 / 0.000 \\
+First & 30.8 \textcolor{black!60}{[23.3,39.6]} & 29.2 \textcolor{black!60}{[21.8,37.8]} & 25.0 \textcolor{black!60}{[18.1,33.4]} & N/A & -5.8 \textcolor{black!60}{[-15.0,3.3]} & 120/120 & 0.000 / 0.000 \\
+\bottomrule
+\end{tabular}}
+\setlength{\tabcolsep}{0pt}\sbox0{\familytab}
+\dimen0=\linewidth\advance\dimen0 by -1pt\advance\dimen0 by -\wd0\divide\dimen0 by 16
+\ifdim\dimen0<1.5pt \dimen0=1.5pt\fi
+\setlength{\tabcolsep}{\dimen0}\familytab
+\end{table*}

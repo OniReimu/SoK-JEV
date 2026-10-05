@@ -1,0 +1,26 @@
+\begingroup\begin{table}[htbp]\centering\scriptsize
+\caption{Supplementary repair selection. Each fault condition has six cases; independent/dependent pairs contain two faults. Valid and median response summarize all 24 fixed records. Correct decisions can request refresh. Best correctness per condition is in bold.}
+\label{tab:retained-repair-faults}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrr}
+\toprule
+\rowcolor{ebBlue} \multicolumn{1}{c}{} & \multicolumn{4}{c}{Correct decisions $\uparrow$} & \multicolumn{2}{c}{All four conditions} \\
+\rowcolor{ebBlue} Method & Single & \shortstack{Independent\\pair} & \shortstack{Dependent\\pair} & Triple & Valid & Median (s) \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\textit{B. Fault combinations: six repair cases each}}} \\
+\rowcolor{ebCoral!10}\sokjev & 3/6 & \cellcolor{ebCoral!35}\textbf{6/6} & 5/6 & \cellcolor{ebCoral!35}\textbf{6/6} & 24/24 & 0.358 \\
+\deepseek & 5/6 & 5/6 & 5/6 & 5/6 & 24/24 & 0.559 \\
+\gemini & \cellcolor{ebCoral!35}\textbf{6/6} & \cellcolor{ebCoral!35}\textbf{6/6} & \cellcolor{ebCoral!35}\textbf{6/6} & \cellcolor{ebCoral!35}\textbf{6/6} & 24/24 & 0.928 \\
+\sokglm & 0/6 & 5/6 & 1/6 & 3/6 & 24/24 & 0.787 \\
+\sokqwen & 3/6 & 3/6 & 3/6 & 5/6 & 24/24 & 0.424 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{6/6} & \cellcolor{ebCoral!35}\textbf{6/6} & \cellcolor{ebCoral!35}\textbf{6/6} & \cellcolor{ebCoral!35}\textbf{6/6} & 24/24 & $<0.001$ \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/14\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sokfitcolumns{\retainedtab}{14}
+\sbox0{\retainedtab}
+\typeout{RETAINED repair-faults width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

@@ -1,0 +1,692 @@
+[
+  {
+    "id": "E01",
+    "kind": "migration",
+    "fixture": {
+      "id": "W1",
+      "image": "image-inputs/frame-128.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 49353,
+      "input_sha256": "e25c5476c6efb11158c2a011d9bbebde458dfce22769534930fafe5e5ba23b19",
+      "expected_gray_pixels_sha256": "3c0fd9b50ede2f70c74e3dc794dc1de6ab32155d1741dce60ef070775af7ff81",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 1,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 10
+    },
+    "intent": "Move image workload W1 from remote site B to site A near the fixed control/probe client."
+  },
+  {
+    "id": "E02",
+    "kind": "migration",
+    "fixture": {
+      "id": "W2",
+      "image": "image-inputs/frame-256.png",
+      "width": 256,
+      "height": 256,
+      "bytes": 197171,
+      "input_sha256": "ded1ee1fa31a89323cedd824764e32f82c7bb0d87502ff90f37256127ad5d8ac",
+      "expected_gray_pixels_sha256": "165fe5aeaba267747cff909d4726ddd4dfe4df99d236910238ce4b327e9d295e",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 1,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 10
+    },
+    "intent": "Move image workload W2 from remote site B to site A near the fixed control/probe client."
+  },
+  {
+    "id": "E03",
+    "kind": "migration",
+    "fixture": {
+      "id": "W3",
+      "image": "image-inputs/frame-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 787920,
+      "input_sha256": "103d8ff916add1d6274edd2d8f709e4b948d1ff96385e831993e7f11c962f751",
+      "expected_gray_pixels_sha256": "d94dc6e335cdf29b8df048a5173567d3a9f765c730ed53a432d212d9af3f7bf0",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 1,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 10
+    },
+    "intent": "Move image workload W3 from remote site B to site A near the fixed control/probe client."
+  },
+  {
+    "id": "E04",
+    "kind": "migration",
+    "fixture": {
+      "id": "W4",
+      "image": "image-inputs/frame-1024.png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 3151256,
+      "input_sha256": "fa085186db78b098e169bab020ed797def0af5d997e2f4306f49f8a880473cfd",
+      "expected_gray_pixels_sha256": "162e4e48408be651d2849a94b88584c813636511ec8ab1d436d48dcb70c8d3f5",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 1,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 10
+    },
+    "intent": "Move image workload W4 from remote site B to site A near the fixed control/probe client."
+  },
+  {
+    "id": "E05",
+    "kind": "migration",
+    "fixture": {
+      "id": "W5",
+      "image": "image-inputs/frame-1536.png",
+      "width": 1536,
+      "height": 1536,
+      "bytes": 7087966,
+      "input_sha256": "f084480e10bcfbbfd9c41f51b4a79b1a36cd1532bd732e07f0d9838ea7411c32",
+      "expected_gray_pixels_sha256": "f75b7da358c550d988c756020615d7486fd9d802a3e082a06c40c6d0edca16d9",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 1,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 10
+    },
+    "intent": "Move image workload W5 from remote site B to site A near the fixed control/probe client."
+  },
+  {
+    "id": "E06",
+    "kind": "migration",
+    "fixture": {
+      "id": "W1",
+      "image": "image-inputs/frame-128.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 49353,
+      "input_sha256": "e25c5476c6efb11158c2a011d9bbebde458dfce22769534930fafe5e5ba23b19",
+      "expected_gray_pixels_sha256": "3c0fd9b50ede2f70c74e3dc794dc1de6ab32155d1741dce60ef070775af7ff81",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 1,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Move image workload W1 from remote site B to site A near the fixed control/probe client."
+  },
+  {
+    "id": "E07",
+    "kind": "migration",
+    "fixture": {
+      "id": "W2",
+      "image": "image-inputs/frame-256.png",
+      "width": 256,
+      "height": 256,
+      "bytes": 197171,
+      "input_sha256": "ded1ee1fa31a89323cedd824764e32f82c7bb0d87502ff90f37256127ad5d8ac",
+      "expected_gray_pixels_sha256": "165fe5aeaba267747cff909d4726ddd4dfe4df99d236910238ce4b327e9d295e",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 1,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Move image workload W2 from remote site B to site A near the fixed control/probe client."
+  },
+  {
+    "id": "E08",
+    "kind": "migration",
+    "fixture": {
+      "id": "W3",
+      "image": "image-inputs/frame-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 787920,
+      "input_sha256": "103d8ff916add1d6274edd2d8f709e4b948d1ff96385e831993e7f11c962f751",
+      "expected_gray_pixels_sha256": "d94dc6e335cdf29b8df048a5173567d3a9f765c730ed53a432d212d9af3f7bf0",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 1,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Move image workload W3 from remote site B to site A near the fixed control/probe client."
+  },
+  {
+    "id": "E09",
+    "kind": "migration",
+    "fixture": {
+      "id": "W4",
+      "image": "image-inputs/frame-1024.png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 3151256,
+      "input_sha256": "fa085186db78b098e169bab020ed797def0af5d997e2f4306f49f8a880473cfd",
+      "expected_gray_pixels_sha256": "162e4e48408be651d2849a94b88584c813636511ec8ab1d436d48dcb70c8d3f5",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 1,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Move image workload W4 from remote site B to site A near the fixed control/probe client."
+  },
+  {
+    "id": "E10",
+    "kind": "migration",
+    "fixture": {
+      "id": "W5",
+      "image": "image-inputs/frame-1536.png",
+      "width": 1536,
+      "height": 1536,
+      "bytes": 7087966,
+      "input_sha256": "f084480e10bcfbbfd9c41f51b4a79b1a36cd1532bd732e07f0d9838ea7411c32",
+      "expected_gray_pixels_sha256": "f75b7da358c550d988c756020615d7486fd9d802a3e082a06c40c6d0edca16d9",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 1,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Move image workload W5 from remote site B to site A near the fixed control/probe client."
+  },
+  {
+    "id": "E11",
+    "kind": "scale",
+    "fixture": {
+      "id": "W1",
+      "image": "image-inputs/frame-128.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 49353,
+      "input_sha256": "e25c5476c6efb11158c2a011d9bbebde458dfce22769534930fafe5e5ba23b19",
+      "expected_gray_pixels_sha256": "3c0fd9b50ede2f70c74e3dc794dc1de6ab32155d1741dce60ef070775af7ff81",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-0",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 2,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W1 on k3d-jev-e2-pilot-agent-0 from one to 2 replicas."
+  },
+  {
+    "id": "E12",
+    "kind": "scale",
+    "fixture": {
+      "id": "W2",
+      "image": "image-inputs/frame-256.png",
+      "width": 256,
+      "height": 256,
+      "bytes": 197171,
+      "input_sha256": "ded1ee1fa31a89323cedd824764e32f82c7bb0d87502ff90f37256127ad5d8ac",
+      "expected_gray_pixels_sha256": "165fe5aeaba267747cff909d4726ddd4dfe4df99d236910238ce4b327e9d295e",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-0",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 2,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W2 on k3d-jev-e2-pilot-agent-0 from one to 2 replicas."
+  },
+  {
+    "id": "E13",
+    "kind": "scale",
+    "fixture": {
+      "id": "W3",
+      "image": "image-inputs/frame-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 787920,
+      "input_sha256": "103d8ff916add1d6274edd2d8f709e4b948d1ff96385e831993e7f11c962f751",
+      "expected_gray_pixels_sha256": "d94dc6e335cdf29b8df048a5173567d3a9f765c730ed53a432d212d9af3f7bf0",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-0",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 2,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W3 on k3d-jev-e2-pilot-agent-0 from one to 2 replicas."
+  },
+  {
+    "id": "E14",
+    "kind": "scale",
+    "fixture": {
+      "id": "W4",
+      "image": "image-inputs/frame-1024.png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 3151256,
+      "input_sha256": "fa085186db78b098e169bab020ed797def0af5d997e2f4306f49f8a880473cfd",
+      "expected_gray_pixels_sha256": "162e4e48408be651d2849a94b88584c813636511ec8ab1d436d48dcb70c8d3f5",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-0",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 2,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W4 on k3d-jev-e2-pilot-agent-0 from one to 2 replicas."
+  },
+  {
+    "id": "E15",
+    "kind": "scale",
+    "fixture": {
+      "id": "W5",
+      "image": "image-inputs/frame-1536.png",
+      "width": 1536,
+      "height": 1536,
+      "bytes": 7087966,
+      "input_sha256": "f084480e10bcfbbfd9c41f51b4a79b1a36cd1532bd732e07f0d9838ea7411c32",
+      "expected_gray_pixels_sha256": "f75b7da358c550d988c756020615d7486fd9d802a3e082a06c40c6d0edca16d9",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-0",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 2,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W5 on k3d-jev-e2-pilot-agent-0 from one to 2 replicas."
+  },
+  {
+    "id": "E16",
+    "kind": "scale",
+    "fixture": {
+      "id": "W1",
+      "image": "image-inputs/frame-128.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 49353,
+      "input_sha256": "e25c5476c6efb11158c2a011d9bbebde458dfce22769534930fafe5e5ba23b19",
+      "expected_gray_pixels_sha256": "3c0fd9b50ede2f70c74e3dc794dc1de6ab32155d1741dce60ef070775af7ff81",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-0",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 3,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W1 on k3d-jev-e2-pilot-agent-0 from one to 3 replicas."
+  },
+  {
+    "id": "E17",
+    "kind": "scale",
+    "fixture": {
+      "id": "W2",
+      "image": "image-inputs/frame-256.png",
+      "width": 256,
+      "height": 256,
+      "bytes": 197171,
+      "input_sha256": "ded1ee1fa31a89323cedd824764e32f82c7bb0d87502ff90f37256127ad5d8ac",
+      "expected_gray_pixels_sha256": "165fe5aeaba267747cff909d4726ddd4dfe4df99d236910238ce4b327e9d295e",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-0",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 3,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W2 on k3d-jev-e2-pilot-agent-0 from one to 3 replicas."
+  },
+  {
+    "id": "E18",
+    "kind": "scale",
+    "fixture": {
+      "id": "W3",
+      "image": "image-inputs/frame-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 787920,
+      "input_sha256": "103d8ff916add1d6274edd2d8f709e4b948d1ff96385e831993e7f11c962f751",
+      "expected_gray_pixels_sha256": "d94dc6e335cdf29b8df048a5173567d3a9f765c730ed53a432d212d9af3f7bf0",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-0",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 3,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W3 on k3d-jev-e2-pilot-agent-0 from one to 3 replicas."
+  },
+  {
+    "id": "E19",
+    "kind": "scale",
+    "fixture": {
+      "id": "W4",
+      "image": "image-inputs/frame-1024.png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 3151256,
+      "input_sha256": "fa085186db78b098e169bab020ed797def0af5d997e2f4306f49f8a880473cfd",
+      "expected_gray_pixels_sha256": "162e4e48408be651d2849a94b88584c813636511ec8ab1d436d48dcb70c8d3f5",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-0",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 3,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W4 on k3d-jev-e2-pilot-agent-0 from one to 3 replicas."
+  },
+  {
+    "id": "E20",
+    "kind": "scale",
+    "fixture": {
+      "id": "W5",
+      "image": "image-inputs/frame-1536.png",
+      "width": 1536,
+      "height": 1536,
+      "bytes": 7087966,
+      "input_sha256": "f084480e10bcfbbfd9c41f51b4a79b1a36cd1532bd732e07f0d9838ea7411c32",
+      "expected_gray_pixels_sha256": "f75b7da358c550d988c756020615d7486fd9d802a3e082a06c40c6d0edca16d9",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-0",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-0",
+    "target_replicas": 3,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W5 on k3d-jev-e2-pilot-agent-0 from one to 3 replicas."
+  },
+  {
+    "id": "E21",
+    "kind": "scale",
+    "fixture": {
+      "id": "W1",
+      "image": "image-inputs/frame-128.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 49353,
+      "input_sha256": "e25c5476c6efb11158c2a011d9bbebde458dfce22769534930fafe5e5ba23b19",
+      "expected_gray_pixels_sha256": "3c0fd9b50ede2f70c74e3dc794dc1de6ab32155d1741dce60ef070775af7ff81",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-1",
+    "target_replicas": 2,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W1 on k3d-jev-e2-pilot-agent-1 from one to 2 replicas."
+  },
+  {
+    "id": "E22",
+    "kind": "scale",
+    "fixture": {
+      "id": "W2",
+      "image": "image-inputs/frame-256.png",
+      "width": 256,
+      "height": 256,
+      "bytes": 197171,
+      "input_sha256": "ded1ee1fa31a89323cedd824764e32f82c7bb0d87502ff90f37256127ad5d8ac",
+      "expected_gray_pixels_sha256": "165fe5aeaba267747cff909d4726ddd4dfe4df99d236910238ce4b327e9d295e",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-1",
+    "target_replicas": 2,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W2 on k3d-jev-e2-pilot-agent-1 from one to 2 replicas."
+  },
+  {
+    "id": "E23",
+    "kind": "scale",
+    "fixture": {
+      "id": "W3",
+      "image": "image-inputs/frame-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 787920,
+      "input_sha256": "103d8ff916add1d6274edd2d8f709e4b948d1ff96385e831993e7f11c962f751",
+      "expected_gray_pixels_sha256": "d94dc6e335cdf29b8df048a5173567d3a9f765c730ed53a432d212d9af3f7bf0",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-1",
+    "target_replicas": 2,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W3 on k3d-jev-e2-pilot-agent-1 from one to 2 replicas."
+  },
+  {
+    "id": "E24",
+    "kind": "scale",
+    "fixture": {
+      "id": "W4",
+      "image": "image-inputs/frame-1024.png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 3151256,
+      "input_sha256": "fa085186db78b098e169bab020ed797def0af5d997e2f4306f49f8a880473cfd",
+      "expected_gray_pixels_sha256": "162e4e48408be651d2849a94b88584c813636511ec8ab1d436d48dcb70c8d3f5",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-1",
+    "target_replicas": 2,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W4 on k3d-jev-e2-pilot-agent-1 from one to 2 replicas."
+  },
+  {
+    "id": "E25",
+    "kind": "scale",
+    "fixture": {
+      "id": "W5",
+      "image": "image-inputs/frame-1536.png",
+      "width": 1536,
+      "height": 1536,
+      "bytes": 7087966,
+      "input_sha256": "f084480e10bcfbbfd9c41f51b4a79b1a36cd1532bd732e07f0d9838ea7411c32",
+      "expected_gray_pixels_sha256": "f75b7da358c550d988c756020615d7486fd9d802a3e082a06c40c6d0edca16d9",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-1",
+    "target_replicas": 2,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W5 on k3d-jev-e2-pilot-agent-1 from one to 2 replicas."
+  },
+  {
+    "id": "E26",
+    "kind": "scale",
+    "fixture": {
+      "id": "W1",
+      "image": "image-inputs/frame-128.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 49353,
+      "input_sha256": "e25c5476c6efb11158c2a011d9bbebde458dfce22769534930fafe5e5ba23b19",
+      "expected_gray_pixels_sha256": "3c0fd9b50ede2f70c74e3dc794dc1de6ab32155d1741dce60ef070775af7ff81",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-1",
+    "target_replicas": 3,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W1 on k3d-jev-e2-pilot-agent-1 from one to 3 replicas."
+  },
+  {
+    "id": "E27",
+    "kind": "scale",
+    "fixture": {
+      "id": "W2",
+      "image": "image-inputs/frame-256.png",
+      "width": 256,
+      "height": 256,
+      "bytes": 197171,
+      "input_sha256": "ded1ee1fa31a89323cedd824764e32f82c7bb0d87502ff90f37256127ad5d8ac",
+      "expected_gray_pixels_sha256": "165fe5aeaba267747cff909d4726ddd4dfe4df99d236910238ce4b327e9d295e",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-1",
+    "target_replicas": 3,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W2 on k3d-jev-e2-pilot-agent-1 from one to 3 replicas."
+  },
+  {
+    "id": "E28",
+    "kind": "scale",
+    "fixture": {
+      "id": "W3",
+      "image": "image-inputs/frame-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 787920,
+      "input_sha256": "103d8ff916add1d6274edd2d8f709e4b948d1ff96385e831993e7f11c962f751",
+      "expected_gray_pixels_sha256": "d94dc6e335cdf29b8df048a5173567d3a9f765c730ed53a432d212d9af3f7bf0",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-1",
+    "target_replicas": 3,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W3 on k3d-jev-e2-pilot-agent-1 from one to 3 replicas."
+  },
+  {
+    "id": "E29",
+    "kind": "scale",
+    "fixture": {
+      "id": "W4",
+      "image": "image-inputs/frame-1024.png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 3151256,
+      "input_sha256": "fa085186db78b098e169bab020ed797def0af5d997e2f4306f49f8a880473cfd",
+      "expected_gray_pixels_sha256": "162e4e48408be651d2849a94b88584c813636511ec8ab1d436d48dcb70c8d3f5",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-1",
+    "target_replicas": 3,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W4 on k3d-jev-e2-pilot-agent-1 from one to 3 replicas."
+  },
+  {
+    "id": "E30",
+    "kind": "scale",
+    "fixture": {
+      "id": "W5",
+      "image": "image-inputs/frame-1536.png",
+      "width": 1536,
+      "height": 1536,
+      "bytes": 7087966,
+      "input_sha256": "f084480e10bcfbbfd9c41f51b4a79b1a36cd1532bd732e07f0d9838ea7411c32",
+      "expected_gray_pixels_sha256": "f75b7da358c550d988c756020615d7486fd9d802a3e082a06c40c6d0edca16d9",
+      "origin": "procedural RGB fixture, seed42; not natural-image accuracy evidence"
+    },
+    "baseline_node": "k3d-jev-e2-pilot-agent-1",
+    "baseline_replicas": 1,
+    "target_node": "k3d-jev-e2-pilot-agent-1",
+    "target_replicas": 3,
+    "link_delay_ms": {
+      "k3d-jev-e2-pilot-agent-0": 1,
+      "k3d-jev-e2-pilot-agent-1": 25
+    },
+    "intent": "Expand image workload W5 on k3d-jev-e2-pilot-agent-1 from one to 3 replicas."
+  }
+]

@@ -1,0 +1,25 @@
+\begingroup\begin{table}[htbp]\centering\scriptsize
+\caption{Supplementary online repair, six trajectories per condition. Direct is completion before fallback, allowing observation refresh; all trajectories finally complete, so fallback count is six minus Direct. Time includes model waiting, execution and fallback. Complete/Stale and Single/Triple are separate matrices.}
+\label{tab:retained-repair-online}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrrrr}
+\toprule
+\rowcolor{ebBlue} \multicolumn{1}{c}{} & \multicolumn{2}{c}{Complete} & \multicolumn{2}{c}{Stale} & \multicolumn{2}{c}{Single fault} & \multicolumn{2}{c}{Triple fault} \\
+\rowcolor{ebBlue} Method & Direct & Median (s) & Direct & Median (s) & Direct & Median (s) & Direct & Median (s) \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{9}{l}{\textbf{\textit{C. Online repair: direct completion and median workflow seconds}}} \\
+\rowcolor{ebCoral!10}\sokjev & 6/6 & 3.453 & 6/6 & 3.969 & 3/6 & 1.613 & 6/6 & 1.477 \\
+\deepseek & 0/6 & 6.996 & 0/6 & 6.801 & 5/6 & 1.952 & 5/6 & 1.656 \\
+\gemini & 5/6 & 4.092 & 5/6 & 5.341 & 6/6 & 2.063 & 6/6 & 2.310 \\
+\sokglm & 1/6 & 6.587 & 0/6 & 6.530 & 0/6 & 4.521 & 2/6 & 2.565 \\
+\sokqwen & 0/6 & 6.164 & 0/6 & 6.707 & 3/6 & 2.831 & 4/6 & 1.999 \\
+Full rule & 6/6 & 3.041 & 6/6 & 3.230 & 6/6 & 1.079 & 6/6 & 1.153 \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/18\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sbox0{\retainedtab}
+\typeout{RETAINED repair-online width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

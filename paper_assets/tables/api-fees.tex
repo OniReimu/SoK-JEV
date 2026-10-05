@@ -1,0 +1,51 @@
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}\setlength{\LTcapwidth}{\textwidth}
+\newlength{\sokbillingwidth}
+\setlength{\sokbillingwidth}{\dimexpr\textwidth-1pt-14\tabcolsep\relax}
+\begin{longtable}{>{\raggedright\arraybackslash}p{.365\sokbillingwidth}>{\raggedleft\arraybackslash}p{.04\sokbillingwidth}>{\raggedleft\arraybackslash}p{.065\sokbillingwidth}>{\raggedleft\arraybackslash}p{.075\sokbillingwidth}>{\raggedleft\arraybackslash}p{.08\sokbillingwidth}>{\raggedleft\arraybackslash}p{.065\sokbillingwidth}>{\raggedright\arraybackslash}p{.31\sokbillingwidth}}
+\caption{Reported API fees in US dollars for the displayed application-control batches. Each row gives the batch size and rounded total returned charge per method. N/A denotes an unavailable charge; Other methods lists methods with N/A charges. F denotes fixed decision records and O denotes online trajectories. The complete/shared condition appears in two result tables; its charge is counted once.}\label{tab:retained-billing}\\
+\toprule\rowcolor{ebBlue} Task / condition & $n$ & Jev & DeepSeek & Gemini 3.1 & GLM 4.7 & Other methods (N/A) \\
+\midrule\endfirsthead\caption[]{Reported batch API fees (continued).}\\
+\toprule\rowcolor{ebBlue} Task / condition & $n$ & Jev & DeepSeek & Gemini 3.1 & GLM 4.7 & Other methods (N/A) \\
+\midrule\endhead\bottomrule\endfoot
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Policy structure (F)}} \\*
+Short input: 4 requirements, 6k characters & 120 & 0.0108 & 0.0247 & 0.0564 & 0.0102 & Qwen, Full rule, Cheapest, First entry \\
+Long irrelevant context: 4 requirements, 24k characters & 120 & 0.0248 & 0.0820 & 0.1464 & 0.0303 & Qwen, Full rule, Cheapest, First entry \\
+Repeated requirements: 4 requirements, 24k characters & 120 & 0.0480 & 0.3199 & 0.2759 & 0.0515 & Qwen, Full rule, Cheapest, First entry \\
+16 distinct requirements: 16 requirements, 24k characters & 120 & 0.0252 & 0.0955 & 0.1487 & 0.0306 & Qwen, Full rule, Cheapest, First entry \\
+64 distinct requirements: 64 requirements, 24k characters & 120 & 0.0269 & 0.1063 & 0.1579 & 0.0319 & Qwen, Full rule, Cheapest, First entry \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Online policy (O)}} \\*
+Online policy: Long irrelevant context & 24 & 0.0050 & 0.0099 & 0.0293 & 0.0061 & Qwen, Full rule, Cheapest \\
+Online policy: Repeated requirements & 24 & 0.0096 & 0.0250 & 0.0552 & 0.0103 & Qwen, Full rule, Cheapest \\
+Online policy: 64 distinct requirements & 24 & 0.0054 & 0.0115 & 0.0316 & 0.0064 & Qwen, Full rule, Cheapest \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Service selection (F)}} \\*
+Complete / shared quota & 120 & 0.0108 & 0.0357 & 0.0543 & 0.0127 & Qwen, Full rule, Ungated rule, Per-stage rule \\
+Equivalent prose & 120 & 0.0108 & 0.0384 & 0.0545 & 0.0126 & Qwen, Full rule, Ungated rule \\
+Missing required report & 120 & 0.0107 & 0.0371 & 0.0537 & 0.0126 & Qwen, Full rule, Ungated rule \\
+Stale required report & 120 & 0.0107 & 0.0357 & 0.0543 & 0.0127 & Qwen, Full rule, Ungated rule \\
+Conflicting current reports & 120 & 0.0109 & 0.0364 & 0.0549 & 0.0128 & Qwen, Full rule, Ungated rule \\
+Older conflict resolved & 120 & 0.0109 & 0.0368 & 0.0549 & 0.0128 & Qwen, Full rule, Ungated rule \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Repair observations (F)}} \\*
+A. Observation conditions: six repair cases each & 36 & 0.0051 & 0.0099 & 0.0273 & 0.0055 & Qwen, Full rule, Ungated \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Repair faults (F)}} \\*
+B. Fault combinations: six repair cases each & 24 & 0.0034 & 0.0178 & 0.0188 & 0.0037 & Qwen, Full rule \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Service selection (F)}} \\*
+Independent quota & 120 & 0.0108 & 0.0387 & 0.0543 & 0.0127 & Qwen, Full rule, Per-stage rule \\
+Shared quota + domain separation & 120 & 0.0108 & 0.0387 & 0.0543 & 0.0127 & Qwen, Full rule, Per-stage rule \\
+Public gate / independent quota & 120 & 0.0106 & 0.0381 & 0.0533 & 0.0123 & Qwen, Full rule, Per-stage rule \\
+Public gate / shared quota & 120 & 0.0106 & 0.0381 & 0.0533 & 0.0124 & Qwen, Full rule, Per-stage rule \\
+Public gate / domain separation & 120 & 0.0106 & 0.0385 & 0.0533 & 0.0124 & Qwen, Full rule, Per-stage rule \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Online service (O)}} \\*
+Complete / shared quota & 24 & 0.0030 & 0.0019 & 0.0145 & 0.0050 & Qwen, Full rule, Per-stage rule \\
+Stale required report & 24 & 0.0043 & 0.0029 & 0.0217 & 0.0051 & Qwen, Full rule, Per-stage rule \\
+Shared quota + domain separation & 24 & 0.0029 & 0.0022 & 0.0136 & 0.0051 & Qwen, Full rule, Per-stage rule \\
+Public gate / shared quota & 24 & 0.0021 & 0.0013 & 0.0106 & 0.0025 & Qwen, Full rule, Per-stage rule \\
+Public gate / domain separation & 24 & 0.0021 & 0.0010 & 0.0107 & 0.0025 & Qwen, Full rule, Per-stage rule \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Contract catalogue (F)}} \\*
+Stable contract catalogue only & 48 & 0.0021 & 0.0045 & 0.0086 & 0.0020 & Qwen, Rule, MiniLM \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Network catalogue (F)}} \\*
+Stable network catalogue, 4 candidates only & 6 & 0.0008 & 0.0044 & 0.0046 & 0.0009 & Qwen, Rule, MiniLM \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Held-out route catalogue (F)}} \\*
+A. Feasible candidate present & 120 & 0.0128 & 0.0666 & 0.0648 & 0.0150 & Qwen, Full rule, Link-only, First entry \\
+B. No feasible candidate listed & 120 & 0.0128 & 0.0679 & 0.0649 & 0.0150 & Qwen, Full rule, Link-only, First entry \\
+\end{longtable}\endgroup

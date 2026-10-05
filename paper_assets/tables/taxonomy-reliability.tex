@@ -1,0 +1,32 @@
+\begin{table}[!htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\caption{Reproducibility of the three-axis systematization over the 129 families outside the 10-family pilot. Two model coders (GPT and Claude) recoded each family blind from full text under a frozen codebook. A third blind pass mapped the published cells into the same fields. A is observed agreement. Rows without $\kappa$ report exact set agreement. The last two columns give each coder's agreement with the published entries ($\kappa$, or exact agreement in percent), over families whose published cells settle the field (path 103, receiving roles 125). Owner and mechanism comparisons with fewer than 20 shared checks are omitted.}\label{tab:tx-reliability}
+\begin{tabular}{@{}p{0.34\columnwidth}rrrrrr@{}}
+\toprule
+\rowcolor{ebBlue} & & \multicolumn{3}{c}{Coder vs coder} & \multicolumn{2}{c}{Coder vs table} \\
+\rowcolor{ebBlue} Field & $n$ & A (\%) & $\kappa$ & AC1 & GPT & Claude \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Decision interface}} \\*
+Selection (S) & 129 & 76.7 & 0.50 & 0.58 & 0.39 & 0.51 \\
+Generation (G) & 129 & 86.8 & 0.72 & 0.75 & 0.76 & 0.72 \\
+Computation (C) & 129 & 82.9 & 0.67 & 0.66 & 0.57 & 0.69 \\
+Exact interface set & 129 & 53.5 & -- & -- & 46.5\% & 53.5\% \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Execution path}} \\*
+Offline / request-driven / both & 129 & 88.4 & 0.69 & 0.87 & 0.47 & 0.54 \\
+Exact receiving-role set & 129 & 58.9 & -- & -- & 43.2\% & 55.2\% \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Check present}} \\*
+Observation & 129 & 81.4 & 0.62 & 0.64 & 0.13 & 0.12 \\
+Feasibility & 129 & 89.1 & 0.73 & 0.82 & 0.42 & 0.42 \\
+Coverage & 129 & 86.8 & 0.72 & 0.75 & 0.10 & 0.17 \\
+\rowcolor{ebAmber!45}\multicolumn{7}{l}{\textbf{\itshape Check owner and mechanism, where both coders find the check}} \\*
+Observation owner & 40 & 67.5 & -- & -- & -- & -- \\
+Observation mechanism & 40 & 70.0 & -- & -- & -- & -- \\
+Feasibility owner & 87 & 66.7 & -- & -- & 43.4\% & 47.2\% \\
+Feasibility mechanism & 87 & 81.6 & -- & -- & 63.2\% & 64.3\% \\
+Coverage owner & 43 & 65.1 & -- & -- & -- & -- \\
+Coverage mechanism & 43 & 81.4 & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

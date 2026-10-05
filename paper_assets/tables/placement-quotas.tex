@@ -1,0 +1,66 @@
+\begingroup\begin{table}[!htbp]\centering\scriptsize
+\caption{Observation gates and coupled quotas. Each node-count group has 40 cases across four demand families, balanced by shared-quota binding. Correct requires minimum-cost feasible selection or justified refresh. Per-stage rule checks capacities separately, omitting combined demand on a shared worker. Complete/shared reuses Table~\ref{tab:retained-observation}. Public gating preserves state bytes and candidates while changing instructions and removing refresh. Quota conditions are paired within case.}
+\label{tab:retained-quota}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrrr}
+\toprule
+\rowcolor{ebBlue} \multicolumn{1}{c}{} & \multicolumn{4}{c}{Correct decisions $\uparrow$} & \multicolumn{1}{c}{Valid $\uparrow$} & \multicolumn{2}{c}{Response (s) $\downarrow$} \\
+\rowcolor{ebBlue} Method & 3 nodes & 5 nodes & 8 nodes & All & All & Median & p95 \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Independent quota}}} \\
+\rowcolor{ebCoral!10}\sokjev & 17/40 & 7/40 & 5/40 & 29/120 & 120/120 & 0.358 & 0.642 \\
+\deepseek & 12/40 & 5/40 & 2/40 & 19/120 & 120/120 & 0.502 & 0.861 \\
+\gemini & 18/40 & 18/40 & 4/40 & 40/120 & 120/120 & 0.994 & 1.326 \\
+\sokglm & 0/40 & 1/40 & 0/40 & 1/120 & 120/120 & 0.813 & 9.581 \\
+\sokqwen & 17/40 & 10/40 & 3/40 & 30/120 & 120/120 & 0.246 & 0.329 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Per-stage rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Complete / shared quota}}} \\
+\rowcolor{ebCoral!10}\sokjev & 10/40 & 2/40 & 2/40 & 14/120 & 120/120 & 0.364 & 0.619 \\
+\deepseek & 10/40 & 4/40 & 0/40 & 14/120 & 120/120 & 0.499 & 0.754 \\
+\gemini & 17/40 & 10/40 & 9/40 & 36/120 & 120/120 & 1.027 & 1.584 \\
+\sokglm & 0/40 & 1/40 & 0/40 & 1/120 & 120/120 & 0.884 & 8.373 \\
+\sokqwen & 14/40 & 5/40 & 1/40 & 20/120 & 120/120 & 0.247 & 0.352 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Per-stage rule & 20/40 & 20/40 & 20/40 & 60/120 & 120/120 & $<.001$ & $<.001$ \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Shared quota + domain separation}}} \\
+\rowcolor{ebCoral!10}\sokjev & 6/40 & 0/40 & 0/40 & 6/120 & 120/120 & 0.354 & 0.627 \\
+\deepseek & 3/40 & 1/40 & 0/40 & 4/120 & 120/120 & 0.499 & 0.790 \\
+\gemini & 14/40 & 14/40 & 14/40 & 42/120 & 120/120 & 0.989 & 1.220 \\
+\sokglm & 0/40 & 0/40 & 0/40 & 0/120 & 120/120 & 0.823 & 2.839 \\
+\sokqwen & 2/40 & 1/40 & 1/40 & 4/120 & 120/120 & 0.248 & 0.340 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Per-stage rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Public gate / independent quota}}} \\
+\rowcolor{ebCoral!10}\sokjev & 29/40 & 25/40 & 30/40 & 84/120 & 120/120 & 0.358 & 0.604 \\
+\deepseek & 22/40 & 21/40 & 17/40 & 60/120 & 120/120 & 0.509 & 1.175 \\
+\gemini & 27/40 & 22/40 & 20/40 & 69/120 & 120/120 & 1.009 & 1.241 \\
+\sokglm & 26/40 & 21/40 & 24/40 & 71/120 & 119/120 & 0.843 & 3.553 \\
+\sokqwen & 21/40 & 18/40 & 13/40 & 52/120 & 120/120 & 0.311 & 0.411 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Per-stage rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Public gate / shared quota}}} \\
+\rowcolor{ebCoral!10}\sokjev & 16/40 & 13/40 & 13/40 & 42/120 & 120/120 & 0.353 & 0.715 \\
+\deepseek & 15/40 & 10/40 & 8/40 & 33/120 & 120/120 & 0.501 & 1.087 \\
+\gemini & 17/40 & 13/40 & 10/40 & 40/120 & 120/120 & 1.009 & 1.234 \\
+\sokglm & 17/40 & 16/40 & 17/40 & 50/120 & 120/120 & 0.840 & 8.439 \\
+\sokqwen & 15/40 & 13/40 & 11/40 & 39/120 & 120/120 & 0.319 & 0.389 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Per-stage rule & 20/40 & 20/40 & 20/40 & 60/120 & 120/120 & $<.001$ & $<.001$ \\
+\rowcolor{ebAmber!45}\multicolumn{8}{l}{\textbf{\textit{Public gate / domain separation}}} \\
+\rowcolor{ebCoral!10}\sokjev & 17/40 & 11/40 & 17/40 & 45/120 & 120/120 & 0.375 & 0.585 \\
+\deepseek & 9/40 & 6/40 & 2/40 & 17/120 & 120/120 & 0.506 & 0.999 \\
+\gemini & 16/40 & 18/40 & 27/40 & 61/120 & 120/120 & 1.021 & 1.276 \\
+\sokglm & 9/40 & 12/40 & 13/40 & 34/120 & 120/120 & 0.808 & 3.075 \\
+\sokqwen & 3/40 & 6/40 & 5/40 & 14/120 & 120/120 & 0.322 & 0.401 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+Per-stage rule & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{40/40} & \cellcolor{ebCoral!35}\textbf{120/120} & 120/120 & $<.001$ & $<.001$ \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/16\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sbox0{\retainedtab}
+\typeout{RETAINED quota width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

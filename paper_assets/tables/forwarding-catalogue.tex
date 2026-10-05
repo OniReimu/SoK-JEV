@@ -1,0 +1,36 @@
+\begingroup\begin{table}[!htbp]\centering\scriptsize
+\caption{Held-out route catalogues, 20 new graphs per contract and 120 per condition, with eight candidates. Link-only chooses the cheapest connected listed path without the other contract checks. Correct requires minimum-cost feasible selection or justified catalogue rebuilding, which loads a preconstructed certified catalogue. All fixed responses are valid. Response time ends at decision return. Best correctness per condition is in bold.}
+\label{tab:retained-route-catalogue}
+\setlength{\tabcolsep}{3pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{0.94}
+\def\retainedtab{\begin{tabular}{lrrrrrrrrr}
+\toprule
+\rowcolor{ebBlue} \multicolumn{1}{c}{} & \multicolumn{7}{c}{Correct decisions $\uparrow$} & \multicolumn{2}{c}{Response (s) $\downarrow$} \\
+\rowcolor{ebBlue} Method & Connectivity & Required & Avoid & Hops & Budget & Ordered & Overall & Median & p95 \\
+\midrule
+\rowcolor{ebAmber!45}\multicolumn{10}{l}{\textbf{\textit{A. Feasible candidate present}}} \\
+\rowcolor{ebCoral!10}\sokjev & 17/20 & 15/20 & 16/20 & 19/20 & 18/20 & 10/20 & 95/120 & 0.351 & 0.484 \\
+\deepseek & 14/20 & 16/20 & 13/20 & 17/20 & 6/20 & 12/20 & 78/120 & 0.525 & 0.722 \\
+\gemini & 15/20 & 16/20 & 19/20 & 16/20 & 18/20 & 13/20 & 97/120 & 0.954 & 1.208 \\
+\sokglm & 1/20 & 1/20 & 1/20 & 5/20 & 0/20 & 1/20 & 9/120 & 0.872 & 6.666 \\
+\sokqwen & 5/20 & 4/20 & 6/20 & 7/20 & 3/20 & 6/20 & 31/120 & 0.357 & 0.447 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{120/120} & $<.001$ & $<.001$ \\
+Link-only & \cellcolor{ebCoral!35}\textbf{20/20} & 6/20 & 16/20 & 18/20 & \cellcolor{ebCoral!35}\textbf{20/20} & 1/20 & 81/120 & $<.001$ & $<.001$ \\
+First entry & 3/20 & 1/20 & 1/20 & 3/20 & 1/20 & 3/20 & 12/120 & $<.001$ & $<.001$ \\
+\rowcolor{ebAmber!45}\multicolumn{10}{l}{\textbf{\textit{B. No feasible candidate listed}}} \\
+\rowcolor{ebCoral!10}\sokjev & 0/20 & 1/20 & 0/20 & 0/20 & 1/20 & 2/20 & 4/120 & 0.350 & 0.507 \\
+\deepseek & 3/20 & 4/20 & 12/20 & 13/20 & 18/20 & 17/20 & 67/120 & 0.512 & 0.744 \\
+\gemini & 1/20 & 3/20 & 16/20 & 7/20 & 9/20 & 13/20 & 49/120 & 0.950 & 1.322 \\
+\sokglm & 18/20 & 16/20 & 19/20 & 19/20 & \cellcolor{ebCoral!35}\textbf{20/20} & 17/20 & 109/120 & 0.853 & 5.507 \\
+\sokqwen & 0/20 & 0/20 & 2/20 & 0/20 & 0/20 & 0/20 & 2/120 & 0.363 & 0.451 \\
+Full rule & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{20/20} & \cellcolor{ebCoral!35}\textbf{120/120} & $<.001$ & $<.001$ \\
+Link-only & \cellcolor{ebCoral!35}\textbf{20/20} & 0/20 & 0/20 & 0/20 & 0/20 & 0/20 & 20/120 & $<.001$ & $<.001$ \\
+First entry & 0/20 & 0/20 & 0/20 & 0/20 & 0/20 & 0/20 & 0/120 & $<.001$ & $<.001$ \\
+\bottomrule\end{tabular}}
+\sbox0{\retainedtab}
+\setlength{\tabcolsep}{\dimexpr\tabcolsep+(\linewidth-\wd0-1pt)/20\relax}
+\ifdim\tabcolsep<1.5pt\setlength{\tabcolsep}{1.5pt}\fi
+\sbox0{\retainedtab}
+\typeout{RETAINED route-catalogue width=\the\wd0\space limit=\the\linewidth}
+\retainedtab\end{table}\endgroup

@@ -1,0 +1,79 @@
+\section{Search Strategy and Evidence Definitions}\label{app:e0-protocol}
+\subsection{Search and Eligibility}
+The arXiv API was queried on 28 September 2026 with the following title-and-abstract searches, covering 1 January 2016--28 September 2026. Q1, Q2 and Q3 returned 115, 28 and 16 hits, all of which were retrieved. Duplicates within arXiv results were removed by identifier. Cross-source matches used exact normalized titles. Related reports were grouped by work while preserving their distinct tasks and versions.
+\smallskip\noindent\textbf{Q1 (115 hits).}
+\begingroup\footnotesize\ttfamily\raggedright
+((ti:"network configuration" OR abs:"network configuration") OR (ti:"router configuration" OR abs:"router configuration") OR (ti:"intent based networking" OR abs:"intent based networking") OR (ti:"network intent" OR abs:"network intent")) AND ((ti:"language model" OR abs:"language model") OR (ti:"language models" OR abs:"language models") OR (ti:"LLM" OR abs:"LLM") OR (ti:"LLMs" OR abs:"LLMs") OR (ti:"natural language" OR abs:"natural language") OR (ti:"intent based" OR abs:"intent based") OR (ti:"intent driven" OR abs:"intent driven")) AND submittedDate:[201601010000 TO 202609282359]
+\par\endgroup
+\smallskip\noindent\textbf{Q2 (28 hits).}
+\begingroup\footnotesize\ttfamily\raggedright
+((ti:"network orchestration" OR abs:"network orchestration") OR (ti:"service orchestration" OR abs:"service orchestration") OR (ti:"network function deployment" OR abs:"network function deployment") OR (ti:"intent driven resource allocation" OR abs:"intent driven resource allocation")) AND ((ti:"language model" OR abs:"language model") OR (ti:"language models" OR abs:"language models") OR (ti:"LLM" OR abs:"LLM") OR (ti:"LLMs" OR abs:"LLMs") OR (ti:"natural language" OR abs:"natural language") OR (ti:"intent based" OR abs:"intent based") OR (ti:"intent driven" OR abs:"intent driven")) AND submittedDate:[201601010000 TO 202609282359]
+\par\endgroup
+\smallskip\noindent\textbf{Q3 (16 hits).}
+\begingroup\footnotesize\ttfamily\raggedright
+((ti:"network troubleshooting" OR abs:"network troubleshooting") OR (ti:"network diagnosis" OR abs:"network diagnosis") OR (ti:"network fault diagnosis" OR abs:"network fault diagnosis") OR (ti:"network fault localization" OR abs:"network fault localization")) AND ((ti:"language model" OR abs:"language model") OR (ti:"language models" OR abs:"language models") OR (ti:"LLM" OR abs:"LLM") OR (ti:"LLMs" OR abs:"LLMs") OR (ti:"natural language" OR abs:"natural language") OR (ti:"intent based" OR abs:"intent based") OR (ti:"intent driven" OR abs:"intent driven")) AND submittedDate:[201601010000 TO 202609282359]
+\par\endgroup
+\smallskip\noindent\textbf{Publisher-page discovery and citation tracing.}
+Targeted web searches used the following queries to locate individual IEEE Xplore and ACM Digital Library pages.
+\par\smallskip
+\noindent{\footnotesize\ttfamily "network configuration" ("LLM" OR "language models"); domains: ieeexplore.ieee.org, dl.acm.org\par}
+\noindent{\footnotesize\ttfamily "intent" "orchestration" "language models"; domains: ieeexplore.ieee.org, dl.acm.org\par}
+\noindent{\footnotesize\ttfamily "network troubleshooting" ("LLM" OR "language models"); domains: ieeexplore.ieee.org, dl.acm.org\par}
+\noindent{\footnotesize\ttfamily site:dl.acm.org "network troubleshooting" "language models"\par}
+\noindent{\footnotesize\ttfamily site:dl.acm.org "network configuration" "language models"\par}
+\noindent{\footnotesize\ttfamily site:dl.acm.org "intent" "service orchestration"\par}
+One backward-reference round examined 152 references from INTA (arXiv:2501.08760), Chat-Driven Optimal Management (arXiv:2512.24614) and A Network Arena for Benchmarking AI Agents on Network Troubleshooting (arXiv:2512.16381). These seeds represent configuration, orchestration and diagnosis. The 21 additional records combine targeted discovery, this citation round and one previously uncited source.
+
+Eligibility requires an identifiable network configuration, orchestration or diagnostic decision. Conceptual designs and studies without latency measurements remain eligible when their decision task is explicit. Mixed-domain studies contribute their network tasks. Title/abstract screening assigned 79 records to background and excluded 26 as out of scope. Relevant full-text review assigned six further records to background. Independent researcher review excluded one work concerned only with CPU-consumption prediction. A blind second screening of all 111 set-aside records found seven eligible under this criterion, and these enter the corpus as additional families ($\S$\ref{sec:review-verification}). Figure~\ref{fig:e0-screening} gives the resulting record, report and family counts.
+\subsection{Coverage Audit}\label{app:coverage-audit}
+The OpenAlex search applied a title-and-abstract filter for publications dated from 1 January 2016 to 28 September 2026. Three queries paired a task concept with an interface concept. The configuration concept was ``network configuration'', ``router configuration'', ``intent based networking'' or ``network intent''. The orchestration concept was ``network orchestration'', ``service orchestration'', ``network function deployment'' or ``intent driven resource allocation''. The diagnosis concept was ``network troubleshooting'', ``network diagnosis'', ``network fault diagnosis'' or ``network fault localization''. Each was combined by AND with ``language model'', ``language models'', LLM, LLMs, ``natural language'', ``intent based'' or ``intent driven''.
+
+The sampling frame is the 594 records that passed title-and-abstract screening. A fixed pattern over title and abstract assigned 267 records to the language-model stratum when they mention LLM, language model, GPT, generative AI, GenAI, agentic, agent, natural language, NLP or SLM. The other 327 form the earlier intent-networking stratum. Fifty records were drawn from each stratum with seed 42 before any access check. Full text was sought from open-access locations, then by arXiv identifier or a unique arXiv title match, then through a library request.
+
+In the language-model stratum, 49 draws were coded and 45 are eligible, with 15 explicit loop claims, 3 matched claims, 2 p95 reports and 1 deadline report. In the earlier stratum, 49 were coded, 32 are eligible and 2 remain unresolved, with 10, 2, 2 and 1 positives. Each coded draw carries the weight of its stratum frame size over the coded draws in that stratum. A weighted rate divides weighted positives by weighted eligible draws. Its interval comes from 2,000 bootstrap resamples of coded draws within each stratum, with seed 42. This estimate assumes that access and coding are missing at random within each stratum. The bounds in $\S$\ref{sec:review-verification} drop that assumption by counting the two unretrieved draws and every unresolved code as negative or as positive.
+
+\subsection{Evidence Definitions}
+Table~\ref{tab:e0-codebook} defines the 18 reporting indicators. ``Not reported'' means that the relevant methods, evaluation and appendices supply no explicit report. ``Unclear'' means that the available description does not resolve the category, and N/A denotes an inapplicable measurement or operation. A positive indicator satisfies the stated criterion. Explicit absence, missing reporting and inapplicability remain separate categories.
+
+A coding unit is a work--task--decision step at a specified measurement boundary. Different implementations or versions can contribute linked scopes of the same step. A shared aggregate measurement belongs to its measured scope. Inference location concerns decision execution, and code/data indicators concern public pointers supplied by the study.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}
+\renewcommand{\arraystretch}{1.10}
+\setlength{\LTcapwidth}{\textwidth}
+\newlength{\sokdefinitionwidth}
+\setlength{\sokdefinitionwidth}{\dimexpr\textwidth-1pt-6\tabcolsep\relax}
+\begin{longtable}{>{\raggedright\arraybackslash}p{.20\sokdefinitionwidth}>{\raggedright\arraybackslash}p{.47\sokdefinitionwidth}>{\raggedright\arraybackslash}p{.33\sokdefinitionwidth}}
+\caption{Definitions and response categories for the 18 evidence fields. The criterion specifies positive coverage in Table~\ref{tab:e0-audit}. Timing endpoint and execution location permit multiple selections. All other fields are single-choice.}\label{tab:e0-codebook}\\
+\toprule\rowcolor{ebBlue} Field & Positive reporting criterion & Response categories \\
+\midrule\endfirsthead
+\caption[]{Evidence definitions (continued).}\\
+\toprule\rowcolor{ebBlue} Field & Positive reporting criterion & Response categories \\
+\midrule\endhead\bottomrule\endfoot
+\rowcolor{ebAmber!45}\multicolumn{3}{l}{\textbf{\itshape Timing, workload, and comparison}} \\*
+Timing endpoint & Explicit end event for a measured interval: model return, action dispatch, confirmed network effect, verified service result, or another named event. & Model; dispatch; network; service; other; not reported; unclear; N/A. \\ \addlinespace[3pt]
+Metric denominator & Explicit population entering the metric: all attempts, successful requests, another subset, or different denominators for different metrics. & All; successful; other; mixed; unclear; N/A. \\ \addlinespace[3pt]
+Tail latency & A latency quantile at p95 or higher. & Reported; not reported; unclear; N/A. \\ \addlinespace[3pt]
+Deadline attainment & The fraction or count attaining an explicit deadline. & Reported; not reported; unclear; N/A. \\ \addlinespace[3pt]
+Input load & Operational arrival rate, traffic load, concurrency or queue input, as defined below. & Reported; not reported; unclear; N/A. \\ \addlinespace[3pt]
+Queue / waiting & Explicit queueing or waiting evidence for the decision or service path. & Reported; not reported; unclear; N/A. \\ \addlinespace[3pt]
+Stability evidence & Timing or operating-state behavior over operational time or load, as defined below. & Reported; not reported; unclear; N/A. \\ \addlinespace[3pt]
+Non-learning comparison & A rule, solver or traditional controller evaluated as an independent comparator. & Reported; not reported; unclear; N/A. \\ \addlinespace[3pt]
+\rowcolor{ebAmber!45}\multicolumn{3}{l}{\textbf{\itshape Control-loop claim and deployment}} \\*
+Explicit loop claim & An explicit control-loop class or time-budget claim. & RT/fast; near-RT; non-RT; other budget or multiple loops; not stated; unclear; N/A. \\ \addlinespace[3pt]
+Supported loop claim & A measurement supports the claimed budget at the corresponding execution boundary. & Matched; mismatch; insufficient evidence; N/A. \\ \addlinespace[3pt]
+Execution location & An explicit location of inference or decision computation. & Hosted API; local GPU; edge device; local CPU; other; unclear; N/A. \\ \addlinespace[3pt]
+Network round trip & The reported decision latency explicitly includes its network communication. & Included; excluded; unclear; N/A. \\ \addlinespace[3pt]
+\rowcolor{ebAmber!45}\multicolumn{3}{l}{\textbf{\itshape Validation responsibilities}} \\*
+Format check & Evaluation of output syntax or structural validity. & Reported; explicitly unchecked; not reported; unclear; N/A. \\ \addlinespace[3pt]
+Semantic check & Evaluation of task meaning or decision correctness. & Reported; explicitly unchecked; not reported; unclear; N/A. \\ \addlinespace[3pt]
+Final-state check & Evaluation of the resulting network or service state. & Reported; explicitly unchecked; not reported; unclear; N/A. \\ \addlinespace[3pt]
+Three gates distinguished & Format, semantic and final-state checking are explicitly distinguished within the scope. & All three; partial; combined; unclear; N/A. \\ \addlinespace[3pt]
+\rowcolor{ebAmber!45}\multicolumn{3}{l}{\textbf{\itshape Artifact pointers}} \\*
+Public code pointer & A public code address or resource is given in the paper or its supplement. & Public link; on request/private; explicitly not public; not reported; unclear; N/A. \\ \addlinespace[3pt]
+Public data pointer & A public data address or resource is given in the paper or its supplement. & Public link; on request/private; explicitly not public; not reported; unclear; N/A. \\ \addlinespace[3pt]
+\end{longtable}\endgroup
+\subsection{Load and Stability Definitions}\label{app:e0-c1}
+During adjudication, the researchers clarified two ambiguous field definitions after comparing their independent answers. Operational load includes request/service arrivals, concurrency, traffic offered to the system and queue input, with the decision or service boundary identified. Evidence can be measured, simulated or analytical. Training batch size, prompt length, topology size and single-instance computational complexity describe different quantities.
+
+Stability evidence concerns timing or operating-state behavior over operational time or load, including queue/control oscillation and delay under varying traffic. Both stable and unstable behavior qualify. Fixed-condition run-to-run dispersion, a single-request runtime curve and training convergence are distinct from this indicator. The clarification applies to final reporting coverage. The pre-adjudication agreement in Table~\ref{tab:e0-agreement} uses the earlier independent responses.

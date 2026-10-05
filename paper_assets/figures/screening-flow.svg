@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7in" height="3.15278in" viewBox="0 0 2016 908">
+<title>Bounded corpus formation and independent coding</title><desc>Counts distinguish discovery records, retained source versions, reading groups, included families and paired coded scopes. Screening is assistant-led. Researcher 1 and Researcher 2 independently code, then adjudicate. No personal names are displayed.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#111111"/></marker></defs>
+<rect x="0" y="0" width="2016" height="908" rx="0" fill="#FFFFFF" stroke="none" stroke-width="2.3"/>
+<rect x="4" y="4" width="2008" height="160" rx="0" fill="#F2F2F0" stroke="none" stroke-width="2.3"/>
+<rect x="4" y="182" width="2008" height="208" rx="0" fill="#F2F2F0" stroke="none" stroke-width="2.3"/>
+<rect x="4" y="405" width="2008" height="271" rx="0" fill="#F2F2F0" stroke="none" stroke-width="2.3"/>
+<rect x="24" y="18" width="306" height="86" rx="0" fill="#F5CEA5" stroke="#111111" stroke-width="2.3"/>
+<g aria-label="papers">
+<rect x="54" y="32" width="40" height="48" rx="0" fill="#DCE3F0" stroke="#111111" stroke-width="1.9"/>
+<rect x="48" y="37" width="40" height="48" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="1.9"/>
+<rect x="42" y="42" width="40" height="48" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<polyline points="49,53 74,53" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="49,62 74,62" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="49,71 66,71" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<rect x="358" y="18" width="404" height="86" rx="0" fill="#F5CEA5" stroke="#111111" stroke-width="2.3"/>
+<g aria-label="search">
+<rect x="376" y="42" width="40" height="48" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<polyline points="383,53 408,53" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="383,62 408,62" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="383,71 400,71" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="416" cy="64" r="14" fill="#DCE3F0" stroke="#111111" stroke-width="2.3"/>
+<polyline points="426,75 437,88" fill="none" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+</g>
+<rect x="790" y="18" width="340" height="86" rx="0" fill="#F5CEA5" stroke="#111111" stroke-width="2.3"/>
+<g aria-label="citations">
+<polyline points="819,60 853,41" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="819,60 853,80" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+<rect x="811" y="52" width="16" height="18" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<polyline points="815,58 823,58" fill="none" stroke="#111111" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="815,63 823,63" fill="none" stroke="#111111" stroke-width="1.7" stroke-linejoin="round"/>
+<rect x="845" y="33" width="16" height="18" rx="0" fill="#DCE3F0" stroke="#111111" stroke-width="2"/>
+<polyline points="849,39 857,39" fill="none" stroke="#111111" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="849,44 857,44" fill="none" stroke="#111111" stroke-width="1.7" stroke-linejoin="round"/>
+<rect x="845" y="72" width="16" height="18" rx="0" fill="#DCE3F0" stroke="#111111" stroke-width="2"/>
+<polyline points="849,78 857,78" fill="none" stroke="#111111" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="849,83 857,83" fill="none" stroke="#111111" stroke-width="1.7" stroke-linejoin="round"/>
+</g>
+<text x="215" y="53" font-family="Times New Roman" font-size="38" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">92 cited</text>
+<text x="215" y="89" font-family="Times New Roman" font-size="31" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">records</text>
+<text x="596" y="53" font-family="Times New Roman" font-size="34" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">151 unique arXiv IDs</text>
+<text x="596" y="89" font-family="Times New Roman" font-size="29" font-weight="normal" font-style="italic" text-anchor="middle" fill="#3453A5">159 hits − 8 repeats</text>
+<text x="999" y="53" font-family="Times New Roman" font-size="36" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">21 additions</text>
+<text x="999" y="89" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">targeted discovery</text>
+<polyline points="177,104 177,117" fill="none" stroke="#111111" stroke-width="2.3" stroke-linejoin="round"/>
+<polyline points="560,104 560,117" fill="none" stroke="#111111" stroke-width="2.3" stroke-linejoin="round"/>
+<polyline points="960,104 960,117" fill="none" stroke="#111111" stroke-width="2.3" stroke-linejoin="round"/>
+<polyline points="177,117 1170,117 1170,94 1514,94" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1337" y="39" font-family="Times New Roman" font-size="31" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">−14 cross-source</text>
+<text x="1337" y="72" font-family="Times New Roman" font-size="31" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">overlaps</text>
+<rect x="1518" y="18" width="470" height="86" rx="0" fill="#AAB8CC" stroke="#111111" stroke-width="2.3"/>
+<g aria-label="folder">
+<rect x="1538" y="35" width="44" height="40" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<rect x="1535" y="45" width="24" height="12" rx="0" fill="#F5CEA5" stroke="#111111" stroke-width="2"/>
+<rect x="1535" y="55" width="58" height="30" rx="0" fill="#F5CEA5" stroke="#111111" stroke-width="2"/>
+<polyline points="1542,66 1566,66" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<text x="1790" y="54" font-family="Times New Roman" font-size="38" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">250 merged records</text>
+<text x="1790" y="89" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">after source deduplication</text>
+<rect x="20" y="124" width="304.25" height="40" rx="0" fill="#FFD78C" stroke="#111111" stroke-width="2.3"/>
+<text x="33" y="153" font-family="Times New Roman" font-size="32" font-weight="bold" font-style="italic" text-anchor="start" fill="#111111">1. Discovery + merge</text>
+<text x="1980" y="151" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="end" fill="#3453A5">bounded through 28 September 2026</text>
+<rect x="24" y="197" width="360" height="87" rx="0" fill="#AAB8CC" stroke="#111111" stroke-width="2.3"/>
+<g aria-label="filter">
+<polyline points="42,215 98,215 76,241 76,261 65,268 65,241 42,215" fill="none" stroke="#111111" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="52,224 88,224" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<text x="240" y="233" font-family="Times New Roman" font-size="38" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">250 records</text>
+<text x="240" y="268" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">title / abstract screen</text>
+<rect x="600" y="197" width="424" height="87" rx="0" fill="#AAB8CC" stroke="#111111" stroke-width="2.3"/>
+<text x="812" y="233" font-family="Times New Roman" font-size="35" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">145 full-text candidates</text>
+<text x="812" y="268" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">134 retained + 11 boundary</text>
+<rect x="1234" y="197" width="408" height="87" rx="0" fill="#AAB8CC" stroke="#111111" stroke-width="2.3"/>
+<text x="1438" y="233" font-family="Times New Roman" font-size="33" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">139 source/version records</text>
+<text x="1438" y="268" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">137 eligible + 2 linked versions</text>
+<rect x="1770" y="197" width="218" height="87" rx="0" fill="#AAB8CC" stroke="#111111" stroke-width="2.3"/>
+<text x="1879" y="233" font-family="Times New Roman" font-size="39" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">133</text>
+<text x="1879" y="268" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">reading groups</text>
+<polyline points="384,240 596,240" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="1024,240 1230,240" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="1642,240 1766,240" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="487,240 487,292" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="386" y="295" width="282" height="70" rx="0" fill="#F7D3D2" stroke="#ED826F" stroke-width="2.3" stroke-dasharray="6 4"/>
+<text x="527" y="321" font-family="Times New Roman" font-size="29" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">−79 background</text>
+<text x="527" y="353" font-family="Times New Roman" font-size="29" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">−26 out of scope</text>
+<polyline points="1130,240 1130,309" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1006" y="312" width="248" height="50" rx="0" fill="#F7D3D2" stroke="#ED826F" stroke-width="2.3" stroke-dasharray="6 4"/>
+<text x="1130" y="346" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">−6 background</text>
+<g aria-label="linked">
+<rect x="1680" y="187" width="25" height="33" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="1.8"/>
+<polyline points="1685,196 1700,196" fill="none" stroke="#111111" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="1707" y="199" width="25" height="33" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="1.8"/>
+<polyline points="1712,208 1727,208" fill="none" stroke="#111111" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="1692,214 1692,227 1719,227" fill="none" stroke="#111111" stroke-width="2.5" stroke-linejoin="round"/>
+</g>
+<text x="1706" y="300" font-family="Times New Roman" font-size="28" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">6 pairs</text>
+<text x="1706" y="331" font-family="Times New Roman" font-size="28" font-weight="normal" font-style="italic" text-anchor="middle" fill="#3453A5">grouped</text>
+<rect x="20" y="348" width="336.25" height="40" rx="0" fill="#FFD78C" stroke="#111111" stroke-width="2.3"/>
+<text x="33" y="377" font-family="Times New Roman" font-size="31" font-weight="bold" font-style="italic" text-anchor="start" fill="#111111">2. Screening + grouping</text>
+<text x="1438" y="373" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#3453A5">assistant-led</text>
+<rect x="24" y="439" width="234" height="90" rx="0" fill="#AAB8CC" stroke="#111111" stroke-width="2.3"/>
+<text x="141" y="478" font-family="Times New Roman" font-size="39" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">133</text>
+<text x="141" y="514" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">reading groups</text>
+<polyline points="258,484 288,484 288,443 313,443" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="288,484 288,521 313,521" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="317" y="411" width="288" height="64" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="2.3"/>
+<circle cx="341.24" cy="427.08" r="8.64" fill="#FFD78C" stroke="#111111" stroke-width="2.3"/>
+<path d="M329,458.76 v-12.959999999999999 q12.24,-14.399999999999999 24.48,0 v12.959999999999999 Z" fill="#FFD78C" stroke="#111111" stroke-width="2.3"/>
+<text x="478" y="438" font-family="Times New Roman" font-size="32" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">Researcher 1</text>
+<text x="478" y="468" font-family="Times New Roman" font-size="29" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">independent coding</text>
+<polyline points="605,443 630,443 630,484" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="317" y="489" width="288" height="64" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="2.3"/>
+<circle cx="341.24" cy="505.08" r="8.64" fill="#FFD78C" stroke="#111111" stroke-width="2.3"/>
+<path d="M329,536.76 v-12.959999999999999 q12.24,-14.399999999999999 24.48,0 v12.959999999999999 Z" fill="#FFD78C" stroke="#111111" stroke-width="2.3"/>
+<text x="478" y="516" font-family="Times New Roman" font-size="32" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">Researcher 2</text>
+<text x="478" y="546" font-family="Times New Roman" font-size="29" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">independent coding</text>
+<polyline points="605,521 630,521 630,484" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round"/>
+<polyline points="630,484 654,484" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="658" y="439" width="382" height="90" rx="0" fill="#F5CEA5" stroke="#111111" stroke-width="2.3"/>
+<g aria-label="compare">
+<rect x="674" y="455" width="26" height="46" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<polyline points="679,467 695,467" fill="none" stroke="#111111" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="679,476 695,476" fill="none" stroke="#111111" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="679,485 695,485" fill="none" stroke="#111111" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="709" y="455" width="26" height="46" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<polyline points="714,467 730,467" fill="none" stroke="#111111" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="714,476 730,476" fill="none" stroke="#ED826F" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="714,485 730,485" fill="none" stroke="#111111" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="687,503 687,509 722,509 722,503" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<text x="884" y="478" font-family="Times New Roman" font-size="33" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">Compare answers</text>
+<text x="884" y="514" font-family="Times New Roman" font-size="31" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">adjudicate scope</text>
+<polyline points="1040,484 1440,484" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="1244,484 1244,548" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1100" y="551" width="288" height="78" rx="0" fill="#F7D3D2" stroke="#ED826F" stroke-width="2.3" stroke-dasharray="6 4"/>
+<text x="1244" y="583" font-family="Times New Roman" font-size="31" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">−1 reading group</text>
+<text x="1244" y="616" font-family="Times New Roman" font-size="29" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">CPU forecasts only</text>
+<rect x="1444" y="432" width="544" height="111" rx="0" fill="#FFD78C" stroke="#111111" stroke-width="2.3"/>
+<g aria-label="folder">
+<rect x="1464" y="452" width="44" height="40" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<rect x="1461" y="462" width="24" height="12" rx="0" fill="#F5CEA5" stroke="#111111" stroke-width="2"/>
+<rect x="1461" y="472" width="58" height="30" rx="0" fill="#F5CEA5" stroke="#111111" stroke-width="2"/>
+<polyline points="1468,483 1492,483" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<text x="1750" y="481" font-family="Times New Roman" font-size="40" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">132 included families</text>
+<text x="1716" y="528" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">138 source IDs · 137 bibliography entries</text>
+<text x="1716" y="579" font-family="Times New Roman" font-size="29" font-weight="normal" font-style="italic" text-anchor="middle" fill="#3453A5">Task and version scopes remain distinct</text>
+<text x="315" y="589" font-family="Times New Roman" font-size="33" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">132 families → 405 coded scopes</text>
+<text x="315" y="625" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">374 step definitions + 31 linked scopes</text>
+<text x="849" y="567" font-family="Times New Roman" font-size="31" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">231 initially comparable</text>
+<text x="849" y="602" font-family="Times New Roman" font-size="31" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">+ 174 aligned rechecks</text>
+<text x="849" y="637" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#3453A5">= 405 answer pairs</text>
+<text x="1716" y="620" font-family="Times New Roman" font-size="33" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">18 evidence fields</text>
+<text x="1716" y="656" font-family="Times New Roman" font-size="30" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">field-level reporting and agreement</text>
+<rect x="20" y="636" width="597.5" height="40" rx="0" fill="#FFD78C" stroke="#111111" stroke-width="2.3"/>
+<text x="33" y="665" font-family="Times New Roman" font-size="31" font-weight="bold" font-style="italic" text-anchor="start" fill="#111111">3. Independent coding + author adjudication</text>
+<rect x="4" y="688" width="2008" height="216" rx="0" fill="#F2F2F0" stroke="none" stroke-width="2.3"/>
+<rect x="24" y="704" width="330" height="80" rx="0" fill="#AAB8CC" stroke="#111111" stroke-width="2.3"/>
+<text x="189.0" y="738" font-family="Times New Roman" font-size="32" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">111 set-aside records</text>
+<text x="189.0" y="771" font-family="Times New Roman" font-size="28" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">79 + 26 + 6 from stage 2</text>
+<rect x="410" y="704" width="370" height="80" rx="0" fill="#F5CEA5" stroke="#111111" stroke-width="2.3"/>
+<text x="595.0" y="738" font-family="Times New Roman" font-size="32" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">Blind second screen</text>
+<text x="595.0" y="771" font-family="Times New Roman" font-size="28" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">two model coders</text>
+<rect x="836" y="704" width="330" height="80" rx="0" fill="#AAB8CC" stroke="#111111" stroke-width="2.3"/>
+<text x="1001.0" y="738" font-family="Times New Roman" font-size="32" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">24 full-text checks</text>
+<text x="1001.0" y="771" font-family="Times New Roman" font-size="28" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">7 eligible · 2 split</text>
+<rect x="1222" y="704" width="300" height="80" rx="0" fill="#FFD78C" stroke="#111111" stroke-width="2.3"/>
+<text x="1372.0" y="738" font-family="Times New Roman" font-size="32" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">+7 families</text>
+<text x="1372.0" y="771" font-family="Times New Roman" font-size="28" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">24 coded scopes</text>
+<polyline points="354,744 406,744" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="780,744 832,744" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="1166,744 1218,744" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="1522,744 1580,744" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1584" y="698" width="404" height="92" rx="0" fill="#FFD78C" stroke="#111111" stroke-width="2.3"/>
+<g aria-label="folder">
+<rect x="1601" y="715" width="44" height="40" rx="0" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<rect x="1598" y="725" width="24" height="12" rx="0" fill="#F5CEA5" stroke="#111111" stroke-width="2"/>
+<rect x="1598" y="735" width="58" height="30" rx="0" fill="#F5CEA5" stroke="#111111" stroke-width="2"/>
+<polyline points="1605,746 1629,746" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<text x="1810" y="738" font-family="Times New Roman" font-size="34" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">139 analysed families</text>
+<text x="1830" y="774" font-family="Times New Roman" font-size="27" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">429 scopes · 393 steps</text>
+<rect x="24" y="810" width="330" height="70" rx="0" fill="#DCE3F0" stroke="#111111" stroke-width="2.3"/>
+<text x="189.0" y="840" font-family="Times New Roman" font-size="30" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">966 OpenAlex works</text>
+<text x="189.0" y="870" font-family="Times New Roman" font-size="27" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">−119 already in corpus</text>
+<rect x="410" y="810" width="370" height="70" rx="0" fill="#DCE3F0" stroke="#111111" stroke-width="2.3"/>
+<text x="595.0" y="840" font-family="Times New Roman" font-size="30" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">847 screened</text>
+<text x="595.0" y="870" font-family="Times New Roman" font-size="27" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">594 pass title / abstract</text>
+<rect x="836" y="810" width="330" height="70" rx="0" fill="#DCE3F0" stroke="#111111" stroke-width="2.3"/>
+<text x="1001.0" y="840" font-family="Times New Roman" font-size="30" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">100 sampled</text>
+<text x="1001.0" y="870" font-family="Times New Roman" font-size="27" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">50 + 50 by stratum</text>
+<rect x="1222" y="810" width="430" height="70" rx="0" fill="#DCE3F0" stroke="#111111" stroke-width="2.3" stroke-dasharray="6 4"/>
+<text x="1437.0" y="840" font-family="Times New Roman" font-size="30" font-weight="bold" font-style="italic" text-anchor="middle" fill="#111111">98 coded · 77 eligible</text>
+<text x="1437.0" y="870" font-family="Times New Roman" font-size="27" font-weight="normal" font-style="italic" text-anchor="middle" fill="#111111">coverage audit, not added</text>
+<polyline points="354,845 406,845" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="780,845 832,845" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="1166,845 1218,845" fill="none" stroke="#111111" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1662" y="862" width="345.69921875" height="40" rx="0" fill="#FFD78C" stroke="#111111" stroke-width="2.3"/>
+<text x="1675" y="891" font-family="Times New Roman" font-size="30" font-weight="bold" font-style="italic" text-anchor="start" fill="#111111">4. Verification + coverage</text>
+</svg>

@@ -1,0 +1,52 @@
+{
+ "units": 24,
+ "independent_agreement": 19,
+ "both_eligible_independent": [
+  "Q006",
+  "Q010",
+  "Q060",
+  "Q077",
+  "Q085",
+  "Q090",
+  "Q109"
+ ],
+ "final": {
+  "Q006": "eligible",
+  "Q008": "exclude",
+  "Q010": "eligible",
+  "Q011": "background",
+  "Q047": "exclude",
+  "Q060": "eligible",
+  "Q064": "background",
+  "Q066": "background",
+  "Q072": "background",
+  "Q074": "exclude",
+  "Q077": "eligible",
+  "Q080": "background",
+  "Q085": "eligible",
+  "Q086": "background",
+  "Q088": "split",
+  "Q089": "background",
+  "Q090": "eligible",
+  "Q093": "background",
+  "Q096": "background",
+  "Q099": "background",
+  "Q101": "background",
+  "Q104": "split",
+  "Q106": "exclude",
+  "Q109": "eligible"
+ },
+ "eligible": [
+  "Q006",
+  "Q010",
+  "Q060",
+  "Q077",
+  "Q085",
+  "Q090",
+  "Q109"
+ ],
+ "split": [
+  "Q088",
+  "Q104"
+ ]
+}
