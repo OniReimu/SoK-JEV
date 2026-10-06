@@ -4,6 +4,7 @@ Code, data and results for the paper
 
 > **SoK: Semantic Decision Engines in Network Control Loops**
 > Delong Li, Chen Li, Xu Wang, Haochen Gong, Rui Lang, and Guangsheng Yu. University of Technology Sydney (UTS).
+> arXiv: [2610.06425](https://arxiv.org/abs/2610.06425)
 
 The SoK codes 139 paper families by decision interface, execution path and check ownership, and audits reporting evidence with 50 loop claims and 4 matched claims. Bounded fixed-action tests on transport and edge stacks separate interpretation time from execution and verification.
 
